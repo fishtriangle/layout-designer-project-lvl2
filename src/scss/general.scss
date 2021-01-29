@@ -1,2 +1,15 @@
 /* CSS Document */
 
+@media (min-width: 1240px) {
+    .document-width {
+        width: 1200px;
+    }
+}
+
+.display-flex {
+    display: flex;
+}
+
+.content-center {
+    justify-content: center;
+}

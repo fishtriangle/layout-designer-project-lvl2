@@ -1,2 +1,17 @@
 @import "variables";
 @import "general";
+
+.header-position {
+    position: absolute;
+    top: 25px;
+    left: 120px;
+    z-index: 100;
+    margin: 0;
+    padding: 0;
+}
+
+.header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
