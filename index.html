@@ -6,9 +6,37 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Портал «Music Box» Hexlet: fish-triangle</title>
 
-    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="src/css/default.css">
 </head>	
 
 <body>
+    <header class="header-position header">
+        <div class="display-flex direction-row align-center">
+            <img src="src/images/logo.svg" class="margin-right-10 logo-header-size" alt="logo">
+            <span class="font-bold">MUSIC BOX</span>
+        </div>
+        <nav class="nav">
+            <ul class="horizontal-nav">
+                <li><a href="#main">ГЛАВНАЯ</a></li>
+                <li><a href="#catalogue">КАТАЛОГ</a></li>
+                <li><a href="#artists">ИСПОЛНИТЕЛИ</a></li>
+                <li><a href="#contacts">КОНТАКТЫ</a></li>
+            </ul>
+        </nav>
+        <div>
+            <form>
+                <label for="search" class="sr-only">Поиск</label>
+                <input id="search"  type="text" placeholder="ПОИСК...">
+            </form>
+        </div>
+    </header>
+    <div class="height-min-300 backgr-big-picture">
+        <div class="container align-center text-white content-center direction-column">
+            <img src="images/logo.svg" alt="logo" class="logo-main-size">
+            <h1 class="font-bold lineheight-05 font-40">ЖК «Лунное море»</h1>
+            <span class="font-bold lineheight-05 margin-bottom-50">Место, откуда не хочется улетать</span>
+            <a href="#send-form" class="btn white-decor">Забронировать</a>
+        </div>
+    </div>
 </body>
 </html>
