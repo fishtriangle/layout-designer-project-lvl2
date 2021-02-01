@@ -6,41 +6,45 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Портал «Music Box» Hexlet: fish-triangle</title>
 
-    <link rel="stylesheet" href="src/css/default.css">
+    <link rel="stylesheet" href="src/scss/app.css">
 </head>	
 
-<body class="display-flex .content-center">
-    <header class="header-position header document-width">
-        <div class="display-flex direction-row align-center">
-            <img src="src/images/logo.svg" class="margin-right-10 logo-header-size" alt="logo">
-            <span class="font-bold">MUSIC BOX</span>
+<body class="display-flex content-center">
+    <header class="header document-width align-center uppercase flex-wrap">
+        <div class="display-flex direction-row align-center flex-wrap">
+            <div class="display-flex direction-row align-center margin-right-88 flex-no-wrap">
+                <img src="src/images/logo.svg" class="logo-header-size margin-right-16" alt="logo">
+                <span>MUSIC BOX</span>
+            </div>
+            <nav class="nav">
+                <ul class="display-flex uppercase flex-wrap">
+                    <li><a href="#main">ГЛАВНАЯ</a></li>
+                    <li><a href="#catalogue">КАТАЛОГ</a></li>
+                    <li><a href="#artists">ИСПОЛНИТЕЛИ</a></li>
+                    <li><a href="#contacts">КОНТАКТЫ</a></li>
+                </ul>
+            </nav>
         </div>
-        <nav class="nav">
-            <ul class="horizontal-nav">
-                <li><a href="#main">ГЛАВНАЯ</a></li>
-                <li><a href="#catalogue">КАТАЛОГ</a></li>
-                <li><a href="#artists">ИСПОЛНИТЕЛИ</a></li>
-                <li><a href="#contacts">КОНТАКТЫ</a></li>
-            </ul>
-        </nav>
         <div>
             <form>
                 <label for="search" class="sr-only">Поиск</label>
-                <input id="search"  type="text" placeholder="ПОИСК...">
+                <input id="search" class="find-form" type="text" placeholder="ПОИСК...">
             </form>
         </div>
     </header>
+
+
     <div class="height-min-300 backgr-big-picture">
         <div class="container align-center text-white content-center direction-column">
-            <h1 class="font-bold lineheight-05 font-40">ОНЛАЙН МУЗЫКА ГДЕ УГОДНО</h1>
-            <h2>БЕЗ ОГРАНИЧЕНИЙ</h2>
+            <h1 class="font-bold lineheight-05 font-40 uppercase">ОНЛАЙН МУЗЫКА ГДЕ УГОДНО</h1>
+            <h2 class="font-bold lineheight-05 font-40 uppercase">БЕЗ ОГРАНИЧЕНИЙ</h2>
             <span class="font-bold lineheight-05 margin-bottom-50">Получите доступ всего за несколько шагов. Заполните форму ниже и откройте мир музыки</span>
             <form>
                 <label for="registration-name" class="sr-only">Ваше имя</label>
                 <input id="registration-name"  type="text" placeholder="Имя">
                 <label for="registration-mail" class="sr-only">Ваша почта</label>
                 <input id="registration-mail"  type="text" placeholder="Email">
-                <button>ПОЛУЧИТЬ ДОСТУП</button>
+                <button class="font-bold lineheight-05 font-40 uppercase">ПОЛУЧИТЬ ДОСТУП</button>
             </form>
         </div>
     </div>
