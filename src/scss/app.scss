@@ -4,13 +4,17 @@
 .header {
     position: absolute;
     top: 25px;
+    left: 0;
+    right: 0;
     z-index: 100;
-    margin: 0;
+    margin: 0 auto;
+    box-sizing: border-box;
     padding: 0;
 
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    flex-wrap: wrap;
 
     font-weight: bold;
     font-style: normal;
@@ -68,4 +72,41 @@ padding-inline-start: 0px;
     font-weight: 400;
     font-size: 13.3px;
     line-height: 15px;
+}
+
+.quick-registration {
+    margin: 200px auto;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.quick-registration-form {
+    display: flex;
+    justify-content: space-between;
+    max-width: 570px;
+    flex-wrap: wrap;
+}
+
+.quick-registration-form > .textfield {
+    box-sizing:border-box;
+    min-width: 270px;
+    min-height: 50px;
+    padding-left: 20px;
+    margin-bottom: 1.5rem;
+    border: 2px solid $base-text-color;
+    background: none;
+    color: $primary-text-color;
+    border-radius: 3px;
+}
+
+.quick-registration-form > .submit-button {
+    padding: 20px 30px;
+    border-radius: 5px;
+    background-color: $green-color;
+    width: 100%;
+    border: 0;
 }

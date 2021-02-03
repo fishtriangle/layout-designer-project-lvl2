@@ -9,23 +9,21 @@
     <link rel="stylesheet" href="src/scss/app.css">
 </head>	
 
-<body class="display-flex content-center">
-    <header class="header document-width align-center uppercase flex-wrap">
-        <div class="display-flex direction-row align-center flex-wrap">
-            <div class="display-flex direction-row align-center margin-right-88 flex-no-wrap">
-                <img src="src/images/logo.svg" class="logo-header-size margin-right-16" alt="logo">
-                <span>MUSIC BOX</span>
-            </div>
-            <nav class="nav">
-                <ul class="display-flex uppercase flex-wrap">
-                    <li><a href="#main">ГЛАВНАЯ</a></li>
-                    <li><a href="#catalogue">КАТАЛОГ</a></li>
-                    <li><a href="#artists">ИСПОЛНИТЕЛИ</a></li>
-                    <li><a href="#contacts">КОНТАКТЫ</a></li>
-                </ul>
-            </nav>
+<body class="">
+    <header class="header document-width">
+        <div class="display-flex direction-row align-center margin-right-88 flex-no-wrap logo-">
+            <img src="src/images/logo.svg" class="logo-header-size margin-right-16" alt="logo">
+            <span class="uppercase">MUSIC BOX</span>
         </div>
-        <div>
+        <nav class="nav display-flex direction-row align-center flex-no-wrap">
+            <ul class="display-flex uppercase flex-wrap">
+                <li><a href="#main">ГЛАВНАЯ</a></li>
+                <li><a href="#catalogue">КАТАЛОГ</a></li>
+                <li><a href="#artists">ИСПОЛНИТЕЛИ</a></li>
+                <li><a href="#contacts">КОНТАКТЫ</a></li>
+            </ul>
+        </nav>
+        <div class="nav display-flex direction-row align-center flex-no-wrap">
             <form>
                 <label for="search" class="sr-only">Поиск</label>
                 <input id="search" class="find-form" type="text" placeholder="ПОИСК...">
@@ -34,19 +32,17 @@
     </header>
 
 
-    <div class="height-min-300 backgr-big-picture">
-        <div class="container align-center text-white content-center direction-column">
-            <h1 class="font-bold lineheight-05 font-40 uppercase">ОНЛАЙН МУЗЫКА ГДЕ УГОДНО</h1>
-            <h2 class="font-bold lineheight-05 font-40 uppercase">БЕЗ ОГРАНИЧЕНИЙ</h2>
-            <span class="font-bold lineheight-05 margin-bottom-50">Получите доступ всего за несколько шагов. Заполните форму ниже и откройте мир музыки</span>
-            <form>
-                <label for="registration-name" class="sr-only">Ваше имя</label>
-                <input id="registration-name"  type="text" placeholder="Имя">
-                <label for="registration-mail" class="sr-only">Ваша почта</label>
-                <input id="registration-mail"  type="text" placeholder="Email">
-                <button class="font-bold lineheight-05 font-40 uppercase">ПОЛУЧИТЬ ДОСТУП</button>
-            </form>
-        </div>
+    <div id="page-description" class="height-min-300 backgr-big-picture quick-registration document-width container align-center text-white content-center direction-column">
+        <h1 class="no-margin">ОНЛАЙН МУЗЫКА ГДЕ УГОДНО</h1>
+        <h2 class="no-margin">БЕЗ ОГРАНИЧЕНИЙ</h2>
+        <span class="text-size-1">Получите доступ всего за несколько шагов. Заполните форму ниже и откройте мир музыки</span>
+        <form class="quick-registration-form">
+            <label for="registration-name" class="sr-only">Ваше имя</label>
+            <input id="registration-name"  type="text" placeholder="Имя" class="textfield">
+            <label for="registration-mail" class="sr-only">Ваша почта</label>
+            <input id="registration-mail"  type="text" placeholder="Email" class="textfield">
+            <button class="submit-button uppercase">ПОЛУЧИТЬ ДОСТУП</button>
+        </form>
     </div>
 </body>
 </html>
