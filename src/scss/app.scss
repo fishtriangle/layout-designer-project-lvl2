@@ -1,146 +1,73 @@
 @import "variables";
 @import "general";
+@import "header";
+@import "quick-registration-form";
 
-.header {
-    position: absolute;
-    top: 25px;
-    left: 0;
-    right: 0;
-    z-index: 100;
-    margin: 0 auto;
-    box-sizing: border-box;
-    
-    justify-content: space-between;
-    flex-wrap: wrap;
-
-    font-weight: bold;
-    font-style: normal;
-    font-size: 11px;
-    line-height: 13px;
-    color: $primary-text-color;   
-}
-
-.logo-block {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    align-items: center;
-    margin-right: 88px;
-}
-
-.logo-header-size {
-    width: 25px;
-    height: 25px;
-}
-
-.nav {
-    display: flex;
-    align-items: center;
-
-    .list {
-        padding-inline-start: 0px;
-        display: flex;
-        flex-direction: column;
-
-        .list-item {
-            list-style: none;
-            margin-right: 24px;
-
-            a {
-                text-decoration: none;
-                font-weight: bold;
-                font-style: normal;
-                font-size: 11px;
-                line-height: 13px;
-                color: $primary-text-color;
-
-                &:hover {
-                    color: blue;
-                }
-
-                &:visited {
-                    color: $primary-text-color;
-                }
-            }
-        }
-    }
-}
-
-.find-form {
-    width: 238px;
-    height: 25px;
-    background-color: $dark;
-    border: 0;
-    border-radius: 50px;
-    padding-left: 10px;
-    color: #757575;
-    font-family: Arial;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 13.3px;
-    line-height: 15px;
-}
-
-.quick-registration {
+.pricing {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
     align-items: center;
-    flex-wrap: wrap;
-    box-sizing: border-box;
+    margin-top: 100px;
 }
 
-.quick-registration-form {
+.pricing-cards {
     display: flex;
-    justify-content: space-between;
-    max-width: 570px;
-    flex-wrap: wrap;
-
-    .textfield {
-        box-sizing:border-box;
-        width: 100%;
-        min-width: 270px;
-        min-height: 50px;
-        padding-left: 20px;
-        margin-bottom: 1.5rem;
-        border: 2px solid $base-text-color;
-        background: none;
-        color: $primary-text-color;
-        border-radius: 3px;        
-    }
-
-    .submit-button {
-        padding: 20px 30px;
-        border-radius: 5px;
-        background-color: $green-color;
-        width: 100%;
-        border: 0;
-        color: $primary-text-color;
-    }
-}
-
-.backgr-big-picture {
-    background-image: url("../images/banner.png");
-    background-position: center;
-    background-size: cover;
-    
-    margin: 0;
-    padding: 200px 0;
+    flex-direction: row;
     width: 100%;
+    justify-content: space-between;
+    flex-wrap: wrap;
 }
 
-@media (min-width: 1240px) {
-    .nav {
-        .list {
-            flex-direction: row;
-        }
-    }
+.pricing-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 367px;
+    box-sizing: border-box;
+    border-radius: 1rem;
 
-    .quick-registration {
-        margin: 0 auto;
+    padding: 1.5rem;
+    margin: 25px 0;
+}
 
-        .textfield {
-            width: auto;
-        }
-    }
+.bg-free {
+    background-image: url("../images/subscribe_1.png");
+    
+    @include backgr-picture;
+}
+
+.bg-standart {
+    background-image: url("../images/subscribe_2.png");
+    
+    @include backgr-picture;
+}
+
+.bg-premium {
+    background-image: url("../images/subscribe_3.png");
+    
+    @include backgr-picture;
+}
+
+.pricing-value {
+    margin-top: 200px;
+    margin-bottom: 50px;
+}
+
+.money-value {
+    position: relative;
+    top: -20px;
+}
+
+.subscribe-button {
+    @include btn;
+
+    border: 2px solid $primary-text-color;
+    box-sizing: border-box;
+
+    text-decoration: none;
+    text-align: center;
+}
+
+.pricing-footer {
+    margin: 65px 0;
 }

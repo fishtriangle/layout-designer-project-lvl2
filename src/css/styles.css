@@ -98,12 +98,14 @@ h4 {
   padding: 0 20px;
   display: flex;
   flex-direction: column;
+  box-sizing: border-box;
 }
 
 @media (min-width: 1240px) {
   .document-width {
     width: 1200px;
     flex-direction: row;
+    margin: 0 auto;
   }
 
   h1 {
@@ -186,13 +188,16 @@ h4 {
   text-align: center;
 }
 
+.line-height-1 {
+  line-height: 1em;
+}
+
 .header {
   position: absolute;
   top: 25px;
   left: 0;
   right: 0;
   z-index: 100;
-  margin: 0 auto;
   box-sizing: border-box;
   justify-content: space-between;
   flex-wrap: wrap;
@@ -289,10 +294,14 @@ h4 {
 .quick-registration-form .submit-button {
   padding: 20px 30px;
   border-radius: 5px;
-  background-color: #34C176;
   width: 100%;
-  border: 0;
   color: #FFFFFF;
+  text-transform: uppercase;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 150%;
+  border: 0;
+  background-color: #34C176;
 }
 
 .backgr-big-picture {
@@ -315,6 +324,78 @@ h4 {
   .quick-registration .textfield {
     width: auto;
   }
+}
+.pricing {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 100px;
+}
+
+.pricing-cards {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.pricing-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 367px;
+  box-sizing: border-box;
+  border-radius: 1rem;
+  padding: 1.5rem;
+  margin: 25px 0;
+}
+
+.bg-free {
+  background-image: url("../images/subscribe_1.png");
+  background-position: center;
+  background-size: cover;
+}
+
+.bg-standart {
+  background-image: url("../images/subscribe_2.png");
+  background-position: center;
+  background-size: cover;
+}
+
+.bg-premium {
+  background-image: url("../images/subscribe_3.png");
+  background-position: center;
+  background-size: cover;
+}
+
+.pricing-value {
+  margin-top: 200px;
+  margin-bottom: 50px;
+}
+
+.money-value {
+  position: relative;
+  top: -20px;
+}
+
+.subscribe-button {
+  padding: 20px 30px;
+  border-radius: 5px;
+  width: 100%;
+  color: #FFFFFF;
+  text-transform: uppercase;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 150%;
+  border: 2px solid #FFFFFF;
+  box-sizing: border-box;
+  text-decoration: none;
+  text-align: center;
+}
+
+.pricing-footer {
+  margin: 65px 0;
 }
 
 /*# sourceMappingURL=styles.css.map */

@@ -1,0 +1,61 @@
+.quick-registration {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+}
+
+.quick-registration-form {
+    display: flex;
+    justify-content: space-between;
+    max-width: 570px;
+    flex-wrap: wrap;
+
+    .textfield {
+        box-sizing:border-box;
+        width: 100%;
+        min-width: 270px;
+        min-height: 50px;
+        padding-left: 20px;
+        margin-bottom: 1.5rem;
+        border: 2px solid $base-text-color;
+        background: none;
+        color: $primary-text-color;
+        border-radius: 3px;        
+    }
+
+    .submit-button {
+        @include btn;
+
+        border: 0;
+        background-color: $green-color;
+    }
+}
+
+.backgr-big-picture {
+    background-image: url("../images/banner.png");
+    
+    @include backgr-picture;
+    
+    margin: 0;
+    padding: 200px 0;
+    width: 100%;
+}
+
+@media (min-width: 1240px) {
+    .nav {
+        .list {
+            flex-direction: row;
+        }
+    }
+
+    .quick-registration {
+        margin: 0 auto;
+
+        .textfield {
+            width: auto;
+        }
+    }
+}
