@@ -5,7 +5,9 @@ body {
   font-style: normal;
   line-height: 1.5em;
   color: #cacaca;
-  background-color: #08020d; }
+  background-color: #08020d;
+  margin: 0;
+  padding: 0; }
 
 h1 {
   font-weight: bold;
@@ -77,9 +79,16 @@ h4 {
   line-height: 150%;
   text-transform: uppercase; }
 
+.document-width {
+  width: 100%;
+  padding: 0 20px;
+  display: flex;
+  flex-direction: column; }
+
 @media (min-width: 1240px) {
   .document-width {
-    width: 1200px; }
+    width: 1200px;
+    flex-direction: row; }
 
   h1 {
     font-weight: bold;
@@ -118,32 +127,11 @@ h4 {
     font-weight: bold;
     font-size: 18px;
     line-height: 27px; } }
-.display-flex {
-  display: flex; }
-
-.flex-wrap {
-  flex-wrap: wrap; }
-
-.flex-no-wrap {
-  flex-wrap: nowrap; }
-
-.content-center {
-  justify-content: center; }
-
 .uppercase {
   text-transform: uppercase; }
 
-.width100 {
-  width: 100px; }
-
-.align-center {
-  align-items: center; }
-
 .margin-right-16 {
   margin-right: 16px; }
-
-.margin-right-88 {
-  margin-right: 88px; }
 
 .sr-only {
   position: absolute;
@@ -157,5 +145,14 @@ h4 {
 
 .no-margin {
   margin: 0; }
+
+.margin-top-2 {
+  margin-top: 2em; }
+
+.margin-bottom-1 {
+  margin-bottom: 1em; }
+
+.text-center {
+  text-align: center; }
 
 /*# sourceMappingURL=general.css.map */

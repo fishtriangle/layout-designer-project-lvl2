@@ -9,10 +9,7 @@
     z-index: 100;
     margin: 0 auto;
     box-sizing: border-box;
-    padding: 0;
-
-    display: flex;
-    flex-direction: row;
+    
     justify-content: space-between;
     flex-wrap: wrap;
 
@@ -23,6 +20,14 @@
     color: $primary-text-color;   
 }
 
+.logo-block {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    margin-right: 88px;
+}
+
 .logo-header-size {
     width: 25px;
     height: 25px;
@@ -31,32 +36,34 @@
 .nav {
     display: flex;
     align-items: center;
-}
 
-.nav > ul {
-padding-inline-start: 0px;
-}
+    .list {
+        padding-inline-start: 0px;
+        display: flex;
+        flex-direction: column;
 
-.nav > ul > li {
-    list-style: none;
-    margin-right: 24px;
-}
+        .list-item {
+            list-style: none;
+            margin-right: 24px;
 
-.nav > ul > li > a {
-    text-decoration: none;
-    font-weight: bold;
-    font-style: normal;
-    font-size: 11px;
-    line-height: 13px;
-    color: $primary-text-color;
-}
+            a {
+                text-decoration: none;
+                font-weight: bold;
+                font-style: normal;
+                font-size: 11px;
+                line-height: 13px;
+                color: $primary-text-color;
 
-.nav > ul > li > a:hover {
-    color: blue;
-}
+                &:hover {
+                    color: blue;
+                }
 
-.nav > ul > li > a:visited {
-    color: $primary-text-color;
+                &:visited {
+                    color: $primary-text-color;
+                }
+            }
+        }
+    }
 }
 
 .find-form {
@@ -75,13 +82,12 @@ padding-inline-start: 0px;
 }
 
 .quick-registration {
-    margin: 200px auto;
-
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
+    box-sizing: border-box;
 }
 
 .quick-registration-form {
@@ -89,24 +95,52 @@ padding-inline-start: 0px;
     justify-content: space-between;
     max-width: 570px;
     flex-wrap: wrap;
+
+    .textfield {
+        box-sizing:border-box;
+        width: 100%;
+        min-width: 270px;
+        min-height: 50px;
+        padding-left: 20px;
+        margin-bottom: 1.5rem;
+        border: 2px solid $base-text-color;
+        background: none;
+        color: $primary-text-color;
+        border-radius: 3px;        
+    }
+
+    .submit-button {
+        padding: 20px 30px;
+        border-radius: 5px;
+        background-color: $green-color;
+        width: 100%;
+        border: 0;
+        color: $primary-text-color;
+    }
 }
 
-.quick-registration-form > .textfield {
-    box-sizing:border-box;
-    min-width: 270px;
-    min-height: 50px;
-    padding-left: 20px;
-    margin-bottom: 1.5rem;
-    border: 2px solid $base-text-color;
-    background: none;
-    color: $primary-text-color;
-    border-radius: 3px;
-}
-
-.quick-registration-form > .submit-button {
-    padding: 20px 30px;
-    border-radius: 5px;
-    background-color: $green-color;
+.backgr-big-picture {
+    background-image: url("../images/banner.png");
+    background-position: center;
+    background-size: cover;
+    
+    margin: 0;
+    padding: 200px 0;
     width: 100%;
-    border: 0;
+}
+
+@media (min-width: 1240px) {
+    .nav {
+        .list {
+            flex-direction: row;
+        }
+    }
+
+    .quick-registration {
+        margin: 0 auto;
+
+        .textfield {
+            width: auto;
+        }
+    }
 }
