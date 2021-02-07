@@ -4,3 +4,66 @@
 @import "quick-registration-form";
 @import "pricing-block";
 @import "news";
+
+.application {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 100px;
+    margin-bottom: 100px;
+
+    .appl-content {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row-reverse;
+        width: 100%;
+        justify-content: space-between;
+
+            .appl-column {
+            margin-top: 48px;
+        
+            display: flex;
+            flex: 1 1 600px;
+            flex-direction: column;
+
+            &:nth-child(2n-1) {
+                align-items: center;
+            }
+
+            .appl-img {
+                width: auto;
+                height: 100%;
+                max-width: 333px;
+            }
+
+            .download-button {
+                @include btn;
+            
+                border: 0;
+                box-sizing: border-box;
+                border-radius: 2rem;
+            
+                text-decoration: none;
+                text-align: center;
+                background-color: $orange;;
+                color: $primary-text-color;
+            }
+        }
+    }
+}
+
+@media (min-width: 1240px) {
+    .news {
+        .news-item {
+            .news-img {
+                max-width: 575px;
+            }
+
+            .news-body {
+                max-width: 575px;
+            }
+        }
+    }
+}
+
+
