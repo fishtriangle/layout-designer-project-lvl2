@@ -37,7 +37,7 @@
     .list {
         padding-inline-start: 0px;
         display: flex;
-        flex-direction: column;
+        flex-direction: row;
 
         .list-item {
             list-style: none;
@@ -91,5 +91,11 @@
 
     .find-input {
         width: 100%;
+    }
+
+    .nav {
+        .list {
+            flex-direction: column;
+        }
     }
 }

@@ -1,8 +1,10 @@
+@import "variables";
+@import "general";
+
 .news {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: 100px;
 
     .news-item {
         display: flex;
@@ -20,7 +22,7 @@
         }
 
         .news-img {
-            margin-top: 48px;
+            margin-top: 2rem;
         
             flex: 1 1 575px;
             width: auto;
@@ -29,8 +31,8 @@
         }
 
         .news-body {
-            margin-top: 48px;
-            margin-bottom: 48px;
+            margin-top: 2rem;
+            margin-bottom: 2rem;
         
             flex: 1 1 575px;
             flex-direction: column;
