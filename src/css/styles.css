@@ -195,12 +195,29 @@ h4 {
   text-align: center;
 }
 
+.text-white {
+  color: #FFFFFF;
+}
+
 .line-height-1 {
   line-height: 1em;
 }
 
 .color-orange {
   color: #F89202;
+}
+
+.flex-row {
+  display: flex;
+  flex-direction: row;
+}
+
+.flex-wrap {
+  flex-wrap: wrap;
+}
+
+.fill-white {
+  fill: #FFFFFF;
 }
 
 .header {
@@ -293,6 +310,228 @@ h4 {
     flex-direction: column;
   }
 }
+/* CSS Document */
+body {
+  font-family: Roboto, sans-serif;
+  font-size: 18px;
+  font-style: normal;
+  line-height: 1.5em;
+  color: #cacaca;
+  background-color: #08020d;
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  font-weight: bold;
+  font-size: 30px;
+  line-height: 45px;
+  text-transform: uppercase;
+}
+
+h2 {
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 27px;
+  text-transform: uppercase;
+}
+
+h3 {
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 24px;
+  text-transform: uppercase;
+}
+
+h4 {
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 24px;
+  text-transform: uppercase;
+}
+
+.text-size-7 {
+  font-weight: normal;
+  font-size: 64px;
+  line-height: 150%;
+}
+
+.text-size-6 {
+  font-weight: normal;
+  font-size: 56px;
+  line-height: 150%;
+}
+
+.text-size-5 {
+  font-weight: normal;
+  font-size: 48px;
+  line-height: 150%;
+}
+
+.text-size-4 {
+  font-weight: normal;
+  font-size: 40px;
+  line-height: 150%;
+}
+
+.text-size-3 {
+  font-weight: normal;
+  font-size: 32px;
+  line-height: 150%;
+}
+
+.text-size-2 {
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 150%;
+}
+
+.text-size-1 {
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 150%;
+}
+
+.text-small {
+  font-weight: normal;
+  font-size: 12.8px;
+  line-height: 150%;
+}
+
+.popular-track-small-bold {
+  font-weight: bold;
+  font-size: 12.8px;
+  line-height: 150%;
+  text-transform: uppercase;
+}
+
+.document-width {
+  width: 100%;
+  padding: 0 20px;
+  display: flex;
+  box-sizing: border-box;
+}
+
+@media (min-width: 1240px) {
+  .document-width {
+    width: 1200px;
+    margin: 0 auto;
+    padding: 0;
+  }
+
+  h1 {
+    font-weight: bold;
+    font-size: 60px;
+    text-transform: uppercase;
+    line-height: 90px;
+  }
+
+  h2 {
+    font-weight: bold;
+    font-size: 38px;
+    text-transform: uppercase;
+    line-height: 57px;
+  }
+
+  h3 {
+    font-weight: normal;
+    font-size: 24px;
+    text-transform: uppercase;
+    line-height: 45px;
+  }
+
+  .h3-capitalize {
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 45px;
+  }
+
+  .h3-capitalize-bold {
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 45px;
+  }
+
+  h4 {
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 27px;
+  }
+
+  .h4-capitalize-bold {
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 27px;
+  }
+}
+.uppercase {
+  text-transform: uppercase;
+}
+
+.margin-right-16 {
+  margin-right: 1em;
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
+}
+
+.no-margin {
+  margin: 0;
+}
+
+.margin-top-2 {
+  margin-top: 2em;
+}
+
+.margin-top-100 {
+  margin-top: 100px;
+}
+
+.margin-bottom-1 {
+  margin-bottom: 1em;
+}
+
+.margin-right-24 {
+  margin-right: 1.5em;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-white {
+  color: #FFFFFF;
+}
+
+.line-height-1 {
+  line-height: 1em;
+}
+
+.color-orange {
+  color: #F89202;
+}
+
+.flex-row {
+  display: flex;
+  flex-direction: row;
+}
+
+.flex-wrap {
+  flex-wrap: wrap;
+}
+
+.fill-white {
+  fill: #FFFFFF;
+}
+
 .quick-registration {
   display: flex;
   flex-direction: column;
@@ -547,12 +786,29 @@ h4 {
   text-align: center;
 }
 
+.text-white {
+  color: #FFFFFF;
+}
+
 .line-height-1 {
   line-height: 1em;
 }
 
 .color-orange {
   color: #F89202;
+}
+
+.flex-row {
+  display: flex;
+  flex-direction: row;
+}
+
+.flex-wrap {
+  flex-wrap: wrap;
+}
+
+.fill-white {
+  fill: #FFFFFF;
 }
 
 .pricing {
@@ -815,12 +1071,29 @@ h4 {
   text-align: center;
 }
 
+.text-white {
+  color: #FFFFFF;
+}
+
 .line-height-1 {
   line-height: 1em;
 }
 
 .color-orange {
   color: #F89202;
+}
+
+.flex-row {
+  display: flex;
+  flex-direction: row;
+}
+
+.flex-wrap {
+  flex-wrap: wrap;
+}
+
+.fill-white {
+  fill: #FFFFFF;
 }
 
 .news {
@@ -1083,12 +1356,29 @@ h4 {
   text-align: center;
 }
 
+.text-white {
+  color: #FFFFFF;
+}
+
 .line-height-1 {
   line-height: 1em;
 }
 
 .color-orange {
   color: #F89202;
+}
+
+.flex-row {
+  display: flex;
+  flex-direction: row;
+}
+
+.flex-wrap {
+  flex-wrap: wrap;
+}
+
+.fill-white {
+  fill: #FFFFFF;
 }
 
 .application {
@@ -1333,12 +1623,29 @@ h4 {
   text-align: center;
 }
 
+.text-white {
+  color: #FFFFFF;
+}
+
 .line-height-1 {
   line-height: 1em;
 }
 
 .color-orange {
   color: #F89202;
+}
+
+.flex-row {
+  display: flex;
+  flex-direction: row;
+}
+
+.flex-wrap {
+  flex-wrap: wrap;
+}
+
+.fill-white {
+  fill: #FFFFFF;
 }
 
 .footer {
@@ -1402,6 +1709,69 @@ h4 {
   .footer .double-footer .footer-nav .footer-list {
     flex-direction: column;
   }
+}
+.backgr-artist {
+  background-image: url("../images/Morten Harket.png");
+  background-position: center;
+  background-size: cover;
+  margin: 0;
+  padding: 200px 0;
+  width: 100%;
+}
+
+.artist-intro {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+
+.artist-fans {
+  margin-top: 1em;
+  margin-bottom: 3em;
+}
+
+.buttons-block {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.artist-intro-button {
+  padding: 20px 30px;
+  border-radius: 5px;
+  width: 100%;
+  color: #FFFFFF;
+  text-transform: uppercase;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 150%;
+  border: 0;
+  display: flex;
+  width: 200px;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  height: 62px;
+  box-sizing: border-box;
+}
+
+.button-icon {
+  display: inline-block;
+  background-repeat: no-repeat;
+  background-position: center center;
+  height: auto;
+  width: 20px;
+  filter: brightness 100;
+}
+
+.icon-play {
+  background-image: url("../images/play-button.svg");
+}
+
+.icon-like {
+  background-image: url("../images/heart.svg");
 }
 
 /*# sourceMappingURL=styles.css.map */

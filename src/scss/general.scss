@@ -198,12 +198,29 @@ h4 {
     text-align: center;
 }
 
+.text-white {
+    color: $primary-text-color;
+}
+
 .line-height-1 {
     line-height: 1em;
 }
 
 .color-orange {
     color: $orange;
+}
+
+.flex-row {
+    display: flex;
+    flex-direction: row;
+}
+
+.flex-wrap {
+    flex-wrap: wrap;
+}
+
+.fill-white {
+    fill: $primary-text-color;
 }
 
 @mixin btn {
