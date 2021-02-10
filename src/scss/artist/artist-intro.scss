@@ -1,0 +1,55 @@
+@import "../variables";
+@import "../general";
+
+.backgr-artist {
+    background-image: url("../images/Morten Harket.png");
+    
+    @include backgr-picture;
+    
+    margin: 0;
+    padding: 200px 0;
+    width: 100%;
+}
+
+.artist-intro {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+.artist-fans {
+    margin-top: 1em;
+    margin-bottom: 3em;
+}
+
+.buttons-block {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.artist-intro-button {
+    @include btn;
+
+    border: 0;
+
+    display: flex;
+    width: 200px;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    height: 62px;
+    box-sizing: border-box;
+
+    text-decoration: none;
+}
+
+.button-red {
+    background-color: $red;
+}
+
+.button-purple {
+    background-color: $purple;
+}
