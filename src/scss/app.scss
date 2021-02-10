@@ -7,115 +7,71 @@
 @import "application";
 @import "footer";
 @import "./artist/artist-intro.scss";
+@import "./artist/artist-popular-tracks.scss";
 
-.popular-tracks {
+.diskography {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
 
-    .popular-tracks-playlist {
+    .diskography-list {
         display: flex;
         flex-wrap: wrap;
         width: 100%;
-        justify-content: space-between;
-        margin-bottom: 20px;
+        justify-content: flex-start;
         flex-direction: row;
         
         margin-top: 23px;
-        margin-bottom: 100px;
-        }
+    }
         
-        .popular-tracks-item{
-            display: flex;
-            flex-wrap: nowrap;
-            flex-direction: row;
-            flex: 0 1 550px;
-            justify-content: space-between;
-            align-items: center;
-            
-            max-width: 550px;
-            width: auto;
-
-            margin-top: 25px;
-            margin-right: 0;
-        }
-
-        @media (min-width: 1240px) {
-            .popular-tracks-item{
-                margin-right: 50px;
-            }
-        }
-
-        .popular-tracks-item-img {
-            width: 55px;
-            height: 55px;
-
-            margin-right: 15px;
-        }
-
-        .popular-tracks-item-description {
-            display: flex;
-            flex-direction: column;
-            flex: 1;
-            justify-content: center;
-        }
-
-        .popular-tracks-item-name {
-            @extend .popular-track-small-bold;
-            @extend .no-margin;
-        }
-
-        .popular-tracks-item-album {
-            @extend .text-small;
-            @extend .no-margin;
-        }
-
-        .popular-tracks-item-time {
-            @extend .text-small;
-            @extend .no-margin;
-        }
-
-        .news-body {
-            margin-top: 2rem;
-            margin-bottom: 2rem;
+    .diskography-album {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
         
-            flex: 1 1 575px;
-            flex-direction: column;
-            justify-content: center;
+        max-width: 250px;
+        width: 250px;
 
-            .news-name {
-                margin-top: 0;
-                margin-bottom: 30px;
-            }
-            
-            .news-author {
-                margin-bottom: 65px;
-            }
-            
-            .to-album-button {
-                @include btn;
-            
-                border: 2px solid $base-text-color;
-                box-sizing: border-box;
-            
-                text-decoration: none;
-                text-align: center;
-                color: $base-text-color;
-            }
+        margin-top: 25px;
+        margin-right: 50px;
+    }    
+
+    .diskography-album-adaptive-img {
+        position: relative;
+        padding-top: 100%;
+        
+        display: flex;
+        width: 250px;
+        height: 0;
+
+        margin-bottom: 18px;
+    }
+
+    .diskography-album-img {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: auto;
+    }
+
+    @media (max-width: 660px) {
+        .diskography-album {
+            width: 137px;
+        }
+
+        .diskography-album-adaptive-img {
+            width: 137px;
         }
     }
 
+    .diskography-album-name {
+        @extend .h4-capitalize-bold;
+        @extend .no-margin;
+    }
 
-@media (min-width: 1240px) {
-    .news {
-        .news-item {
-            .news-img {
-                max-width: 575px;
-            }
-
-            .news-body {
-                max-width: 575px;
-            }
-        }
+    .diskography-album-year {
+        @extend .text-small;
+        @extend .no-margin;
     }
 }

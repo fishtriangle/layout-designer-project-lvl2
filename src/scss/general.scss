@@ -52,6 +52,12 @@ h4 {
     text-transform: uppercase;
 }
 
+.h4-capitalize-bold {
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 27px;
+}
+
 .text-size-7 {
     font-weight: normal;
     font-size: 64px;
@@ -155,12 +161,6 @@ h4 {
     }
 
     h4 {
-        font-weight: bold;
-        font-size: 18px;
-        line-height: 27px;
-    }
-
-    .h4-capitalize-bold {
         font-weight: bold;
         font-size: 18px;
         line-height: 27px;
