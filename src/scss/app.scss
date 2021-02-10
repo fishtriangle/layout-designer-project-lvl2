@@ -49,21 +49,13 @@
     height: 62px;
     box-sizing: border-box;
 
+    text-decoration: none;
 }
 
-.button-icon {
-    display: inline-block;
-    background-repeat: no-repeat;
-    background-position: center center;
-    height: auto;
-    width: 20px;
-    filter: brightness (100);
+.button-red {
+    background-color: $red;
 }
 
-.icon-play {
-    background-image: url("../images/play-button.svg");
-}
-
-.icon-like {
-    background-image: url("../images/heart.svg");
+.button-purple {
+    background-color: $purple;
 }
