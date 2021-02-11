@@ -1,0 +1,17 @@
+@mixin btn {
+    padding: 20px 30px;
+    border-radius: 5px;
+    
+    width: 100%;
+    
+    color: $primary-text-color;
+    text-transform: uppercase;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 150%;
+}
+
+@mixin backgr-picture {
+    background-position: center;
+    background-size: cover;
+}

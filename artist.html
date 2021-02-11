@@ -11,22 +11,22 @@
 
 <body>
     <header class="header document-width">
-        <div class="logo-block">
-            <img src="src/images/logo.svg" class="logo-header-size margin-right-16" alt="logo">
+        <div class="header-logo-block">
+            <img src="src/images/logo.svg" class="header-logo-img" alt="logo">
             <span class="uppercase">MUSIC BOX</span>
         </div>
-        <nav class="nav">
-            <ul class="uppercase list">
-                <li class="list-item"><a href="#main">ГЛАВНАЯ</a></li>
-                <li class="list-item"><a href="#catalogue">КАТАЛОГ</a></li>
-                <li class="list-item"><a href="#artists">ИСПОЛНИТЕЛИ</a></li>
-                <li class="list-item"><a href="#contacts">КОНТАКТЫ</a></li>
+        <nav class="header-nav">
+            <ul class="uppercase header-list">
+                <li class="header-list-item"><a href="#main">ГЛАВНАЯ</a></li>
+                <li class="header-list-item"><a href="#catalogue">КАТАЛОГ</a></li>
+                <li class="header-list-item"><a href="#artists">ИСПОЛНИТЕЛИ</a></li>
+                <li class="header-list-item"><a href="#contacts">КОНТАКТЫ</a></li>
             </ul>
         </nav>
-        <div class="find-form">
-            <form class="find-form">
+        <div>
+            <form>
                 <label for="search" class="sr-only">Поиск</label>
-                <input id="search" class="find-input" type="text" placeholder="ПОИСК...">
+                <input id="search" class="header-find-input" type="text" placeholder="ПОИСК...">
             </form>
         </div>
     </header>
@@ -52,7 +52,7 @@
                     <svg class="margin-right-16" viewBox="0 -28 512.001 512" xmlns="http://www.w3.org/2000/svg">
                         <path class="fill-white" d="m256 455.515625c-7.289062 0-14.316406-2.640625-19.792969-7.4375-20.683593-18.085937-40.625-35.082031-58.21875-50.074219l-.089843-.078125c-51.582032-43.957031-96.125-81.917969-127.117188-119.3125-34.644531-41.804687-50.78125-81.441406-50.78125-124.742187 0-42.070313 14.425781-80.882813 40.617188-109.292969 26.503906-28.746094 62.871093-44.578125 102.414062-44.578125 29.554688 0 56.621094 9.34375 80.445312 27.769531 12.023438 9.300781 22.921876 20.683594 32.523438 33.960938 9.605469-13.277344 20.5-24.660157 32.527344-33.960938 23.824218-18.425781 50.890625-27.769531 80.445312-27.769531 39.539063 0 75.910156 15.832031 102.414063 44.578125 26.191406 28.410156 40.613281 67.222656 40.613281 109.292969 0 43.300781-16.132812 82.9375-50.777344 124.738281-30.992187 37.398437-75.53125 75.355469-127.105468 119.308594-17.625 15.015625-37.597657 32.039062-58.328126 50.167969-5.472656 4.789062-12.503906 7.429687-19.789062 7.429687zm-112.96875-425.523437c-31.066406 0-59.605469 12.398437-80.367188 34.914062-21.070312 22.855469-32.675781 54.449219-32.675781 88.964844 0 36.417968 13.535157 68.988281 43.882813 105.605468 29.332031 35.394532 72.960937 72.574219 123.476562 115.625l.09375.078126c17.660156 15.050781 37.679688 32.113281 58.515625 50.332031 20.960938-18.253907 41.011719-35.34375 58.707031-50.417969 50.511719-43.050781 94.136719-80.222656 123.46875-115.617188 30.34375-36.617187 43.878907-69.1875 43.878907-105.605468 0-34.515625-11.605469-66.109375-32.675781-88.964844-20.757813-22.515625-49.300782-34.914062-80.363282-34.914062-22.757812 0-43.652344 7.234374-62.101562 21.5-16.441406 12.71875-27.894532 28.796874-34.609375 40.046874-3.453125 5.785157-9.53125 9.238282-16.261719 9.238282s-12.808594-3.453125-16.261719-9.238282c-6.710937-11.25-18.164062-27.328124-34.609375-40.046874-18.449218-14.265626-39.34375-21.5-62.097656-21.5zm0 0"/>
                     </svg>
-                    <span class="text-small uppercase">В избранное</span>
+                    <span class="text-small uppercase white-space-nowrap">В избранное</span>
                 </a> 
             </div>
         </div>
@@ -164,11 +164,124 @@
                 <p class="diskography-album-name">Poetenes Evangelium</p>
                 <p class="diskography-album-year">1993</p>
             </div>
-            
-
-            
-        
+        </div>
     </div>
 
+    <div class="simular-artists document-width" id="page-discography">
+        <h2 class="no-margin margin-top-100">Похожие исполнители</h2>
+        
+        <div class="simular-artists-list">
+            <div class="simular-artists-item">
+                <div class="simular-artists-adaptive-img">
+                    <img src="src/images/A-ha.png" alt="A-ha" class="simular-artists-img">
+                </div>
+                <p class="simular-artists-name">A-Ha</p>
+                <p class="simular-artists-fans">417 086 поклонников</p>
+            </div>
+            <div class="simular-artists-item">
+                <div class="simular-artists-adaptive-img">
+                    <img src="src/images/Tears for Fears.png" alt="Tears for Fears" class="simular-artists-img">
+                </div>
+                <p class="simular-artists-name">Tears For Fears</p>
+                <p class="simular-artists-fans">434 086 поклонников</p>
+            </div>
+            <div class="simular-artists-item">
+                <div class="simular-artists-adaptive-img">
+                    <img src="src/images/Duran Duran.png" alt="Duran Duran" class="simular-artists-img">
+                </div>
+                <p class="simular-artists-name">Duran Duran</p>
+                <p class="simular-artists-fans">631 071 поклонник</p>
+            </div>
+            <div class="simular-artists-item">
+                <div class="simular-artists-adaptive-img">
+                    <img src="src/images/Jack Savoretti.png" alt="Jack Savoretti" class="simular-artists-img">
+                </div>
+                <p class="simular-artists-name">Jack Savoretti</p>
+                <p class="simular-artists-fans">26 857 поклонников</p>
+            </div>
+            <div class="simular-artists-item">
+                <div class="simular-artists-adaptive-img">
+                    <img src="src/images/Keane.png" alt="Keane" class="simular-artists-img">
+                </div>
+                <p class="simular-artists-name">Keane</p>
+                <p class="simular-artists-fans">1 704 358 поклонников</p>
+            </div>
+            <div class="simular-artists-item">
+                <div class="simular-artists-adaptive-img">
+                    <img src="src/images/Frank Sinatra.png" alt="Frank Sinatra" class="simular-artists-img">
+                </div>
+                <p class="simular-artists-name">Frank Sinatra</p>
+                <p class="simular-artists-fans">1 653 882 поклонников</p>
+            </div>
+            <div class="simular-artists-item">
+                <div class="simular-artists-adaptive-img">
+                    <img src="src/images/Paul Young.png" alt="Paul Young" class="simular-artists-img">
+                </div>
+                <p class="simular-artists-name">Paul Young</p>
+                <p class="simular-artists-fans">50 329 поклонников</p>
+            </div>
+            <div class="simular-artists-item">
+                <div class="simular-artists-adaptive-img">
+                    <img src="src/images/Chris Rea.png" alt="Chris Rea" class="simular-artists-img">
+                </div>
+                <p class="simular-artists-name">Chris Rea</p>
+                <p class="simular-artists-fans">73 351 поклонников</p>
+            </div>
+        </div>
+    </div>
+    
+    <footer class="footer" id="footer">
+        <div class="document-width footer-columns text-size-1">
+            <div class="footer-columns-item">
+                <h4>О нас</h4>
+                <a href="#" class="footer-link">История компании</a>
+                <a href="#" class="footer-link">Карьера</a>
+                <a href="#" class="footer-link">Особенности</a>
+                <a href="#" class="footer-link">Пресса</a>
+            </div>
+            <div class="footer-columns-item">
+                <h4>Поддержка</h4>
+                <a href="#" class="footer-link">База знаний</a>
+                <a href="#" class="footer-link">Тарифы</a>
+                <a href="#" class="footer-link">Мобильное приложение</a>
+                <a href="#" class="footer-link">Условия использования</a>
+            </div>
+            <div class="footer-columns-item">
+                <h4>Контакты</h4>
+                <a href="#" class="footer-link">hello@music.box</a>
+                <span class="footer-link">Russia, Moscow. Music Box studio</span>
+                <span class="footer-link">+ 7 499 999 99 99</span>
+            </div>
+            <div class="footer-columns-item">
+                <h4>Подписывайтесь</h4>
+                <p class="no-margin">
+                    <a href="#" class="footer-link margin-right-24">
+                        <img src="src/images/Google+.png" alt="google plus">
+                    </a>
+                    <a href="#" class="footer-link margin-right-24">
+                        <img src="src/images/Twitter.png" alt="google plus">
+                    </a>
+                    <a href="#" class="footer-link margin-right-24">
+                        <img src="src/images/Facebook.png" alt="google plus">
+                    </a>
+                    <a href="#" class="footer-link">
+                        <img src="src/images/Instagram.png" alt="google plus">
+                    </a>
+                </p>
+            </div>
+        </div>
+
+        <div class="footer-below">
+            <nav class="text-size-1 document-width footer-nav">
+                    <ul class="footer-list">
+                        <li class="footer-list-item"><a href="#main">Магазин</a></li>
+                        <li class="footer-list-item"><a href="#catalogue">Обслуживание</a></li>
+                        <li class="footer-list-item"><a href="#artists">Блог</a></li>
+                        <li class="footer-list-item"><a href="#contacts">Поддержка</a></li>
+                        <li class="footer-list-item"><a href="#contacts">Контакты</a></li>
+                    </ul>
+            </nav>
+        </div>
+    </footer>
 </body>
 </html>

@@ -1,6 +1,3 @@
-@import "variables";
-@import "general";
-
 .application {
     display: flex;
     flex-direction: column;
@@ -12,8 +9,7 @@
         flex-direction: row-reverse;
         width: 100%;
         justify-content: space-between;
-        margin-bottom: 100px;
-
+        
             .appl-column {
             margin-top: 48px;
         

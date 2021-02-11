@@ -1,0 +1,66 @@
+.simular-artists {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+    .simular-artists-list {
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+        justify-content: flex-start;
+        flex-direction: row;
+        
+        margin-top: 23px;
+    }
+        
+    .simular-artists-item {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        
+        max-width: 250px;
+        width: 250px;
+
+        margin-top: 25px;
+        margin-right: 50px;
+    }    
+
+    .simular-artists-adaptive-img {
+        position: relative;
+        padding-top: 100%;
+        
+        display: flex;
+        width: 250px;
+        height: 0;
+
+        margin-bottom: 18px;
+    }
+
+    .simular-artists-img {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: auto;
+    }
+
+    @media (max-width: 660px) {
+        .simular-artists-item {
+            width: 137px;
+        }
+
+        .simular-artists-adaptive-img {
+            width: 137px;
+        }
+    }
+
+    .simular-artists-name {
+        @extend .h4-capitalize-bold;
+        @extend .no-margin;
+    }
+
+    .simular-artists-fans {
+        @extend .text-small;
+        @extend .no-margin;
+    }
+}
