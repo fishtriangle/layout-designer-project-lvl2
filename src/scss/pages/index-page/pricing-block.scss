@@ -1,7 +1,5 @@
 .pricing {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    @extend .container;
 }
 
 .pricing-cards {
@@ -33,10 +31,11 @@
         }
     }
 
-        .pricing-footer {
+    .pricing-footer {
         margin: 65px 0;
     }
 }
+
 .bg-free {
     background-image: url("../images/subscribe_1.png");
     

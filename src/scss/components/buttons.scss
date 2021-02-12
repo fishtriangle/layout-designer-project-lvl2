@@ -1,0 +1,32 @@
+.green-button {
+    @include btn;
+
+    border: 0;
+    background-color: $green-color;
+
+    @extend .uppercase;
+}
+
+.white-n-alpha-button {
+    @include btn;
+
+    border: 2px solid $primary-text-color;
+    box-sizing: border-box;
+
+    text-decoration: none;
+    text-align: center;
+    color: $base-text-color;
+}
+
+.red-button {
+    @include btn;
+
+    border: 0;
+    box-sizing: border-box;
+    border-radius: 2rem;
+
+    text-decoration: none;
+    text-align: center;
+    background-color: $red;
+    color: $primary-text-color;
+}

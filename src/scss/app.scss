@@ -1,14 +1,19 @@
-@import "variables";
-@import "general";
-@import "mixins";
-@import "buttons";
-@import "header";
-@import "footer";
-@import "./index-page/quick-registration-form";
-@import "./index-page/pricing-block";
-@import "./index-page/news";
-@import "./index-page/application";
-@import "./artist-page/artist-intro";
-@import "./artist-page/artist-popular-tracks";
-@import "./artist-page/artist-diskography";
-@import "./artist-page/artist-similar-artists";
+@import "./abstracts/variables";
+@import "./abstracts/mixins";
+
+@import "./base/typography";
+@import "./base/general";
+
+@import "./components/buttons";
+
+@import "./layout/header";
+@import "./layout/footer";
+
+@import "./pages/index-page/quick-registration-form";
+@import "./pages/index-page/pricing-block";
+@import "./pages/index-page/news";
+@import "./pages/index-page/application";
+@import "./pages/artist-page/artist-intro";
+@import "./pages/artist-page/artist-popular-tracks";
+@import "./pages/artist-page/artist-diskography";
+@import "./pages/artist-page/artist-similar-artists";

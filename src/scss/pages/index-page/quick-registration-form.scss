@@ -1,10 +1,9 @@
 .quick-registration {
-    display: flex;
-    flex-direction: column;
+    @extend .container;
+    
     justify-content: space-between;
-    align-items: center;
-    flex-wrap: wrap;
     box-sizing: border-box;
+    margin-top: 0;
 
     @extend .text-white;
 
@@ -39,7 +38,7 @@
     }
 }
 
-.backgr-big-picture {
+.quick-registration-backgr-picture {
     background-image: url("../images/banner.png");
     
     @include backgr-picture;
@@ -50,7 +49,7 @@
 }
 
 @media (min-width: 1240px) {
-    .quick-registration {
+    .quick-registration-form {
         margin: 0 auto;
 
         .textfield {
