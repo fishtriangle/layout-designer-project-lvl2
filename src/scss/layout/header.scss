@@ -14,7 +14,9 @@
     font-style: normal;
     font-size: 11px;
     line-height: 13px;
-    color: $primary-text-color;   
+    color: $primary-text-color;
+    
+    @extend .document-width;
 }
 
 .header-logo-block {
@@ -42,9 +44,12 @@
         display: flex;
         flex-direction: row;
 
+        @extend .uppercase;
+
         .header-list-item {
             list-style: none;
             margin-right: 24px;
+            margin-bottom: 3px;
 
             a {
                 text-decoration: none;

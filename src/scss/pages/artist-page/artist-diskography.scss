@@ -1,58 +1,23 @@
 .diskography {
-    display: flex;
-    flex-direction: column;
+    @extend .container;
+
     align-items: flex-start;
 }
 
 .diskography-list {
-    display: flex;
-    flex-wrap: wrap;
-    width: 100%;
-    justify-content: flex-start;
-    flex-direction: row;
-    
-    margin-top: 23px;
+    @extend .horizontal-list;
 }
     
 .diskography-album {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    
-    max-width: 250px;
-    width: 250px;
-
-    margin-top: 25px;
-    margin-right: 50px;
+    @extend .horizontal-list-item;
 }    
 
 .diskography-album-adaptive-img {
-    position: relative;
-    padding-top: 100%;
-    
-    display: flex;
-    width: 250px;
-    height: 0;
-
-    margin-bottom: 18px;
+    @extend .horizontal-list-adaptive-img;
 }
 
 .diskography-album-img {
-    position: absolute;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: auto;
-}
-
-@media (max-width: 660px) {
-    .diskography-album {
-        width: 137px;
-    }
-
-    .diskography-album-adaptive-img {
-        width: 137px;
-    }
+    @extend .horizontal-list-img;
 }
 
 .diskography-album-name {

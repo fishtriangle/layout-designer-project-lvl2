@@ -25,14 +25,25 @@
         margin-top: 200px;
         margin-bottom: 50px;
 
-        .money-value {
+        .pricing-number {
+            @extend .text-size-7;
+            @extend .line-height-1;
+        }
+
+        .pricing-roubles {
             position: relative;
             top: -20px;
+
+            @extend .text-size-3;
+            @extend .uppercase;
         }
     }
 
     .pricing-footer {
         margin: 65px 0;
+
+        @extend .text-small;
+        @extend .text-center;
     }
 }
 

@@ -1,4 +1,4 @@
-.backgr-artist {
+.intro-backgr {
     background-image: url("../images/Morten Harket.png");
     
     @include backgr-picture;
@@ -8,27 +8,32 @@
     width: 100%;
 }
 
-.artist-intro {
+.intro {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: flex-start;
     flex-wrap: wrap;
+
+    @extend .text-white;
+    @extend .document-width;
 }
 
-.artist-fans {
+.intro-fans {
     margin-top: 1em;
     margin-bottom: 3em;
+
+    @extend .text-size-1;
 }
 
-.buttons-block {
+.intro-buttons-block {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     width: 100%;
 }
 
-.artist-intro-button {
+.intro-button {
     @include btn;
 
     border: 0;
@@ -42,6 +47,11 @@
     min-width: 200px;
 
     text-decoration: none;
+
+    span {
+        @extend .text-small;
+        @extend .uppercase;
+    }
 }
 
 .button-red {

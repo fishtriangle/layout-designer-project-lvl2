@@ -1,6 +1,6 @@
 .popular-tracks {
-    display: flex;
-    flex-direction: column;
+    @extend .container;
+
     align-items: flex-start;
 }
 

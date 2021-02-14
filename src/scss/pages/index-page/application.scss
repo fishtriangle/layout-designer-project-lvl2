@@ -1,7 +1,5 @@
 .application {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    @extend .container;
 }
 
 .application-content {
