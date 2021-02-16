@@ -8,10 +8,6 @@
     flex-direction: row-reverse;
     width: 100%;
     justify-content: space-between;
-
-    &:nth-child(2n-1) {
-        align-items: center;
-    }
 }
 
 .application-column {
@@ -21,9 +17,13 @@
     flex: 1 1 600px;
     flex-direction: column;
 
-    .application-img {
-        width: auto;
-        height: 100%;
-        max-width: 333px;
+    &:nth-child(2n-1) {
+        align-items: center;
     }
+}
+
+.application-img {
+    width: auto;
+    height: 100%;
+    max-width: 333px;
 }

@@ -3,8 +3,10 @@
 
 @import "./base/typography";
 @import "./base/general";
+@import "./base/atomic";
 
 @import "./components/buttons";
+@import "./components/structure";
 
 @import "./layout/header";
 @import "./layout/footer";
@@ -13,7 +15,7 @@
 @import "./pages/index-page/pricing-block";
 @import "./pages/index-page/news";
 @import "./pages/index-page/application";
-@import "./pages/artist-page/artist-intro";
-@import "./pages/artist-page/artist-popular-tracks";
-@import "./pages/artist-page/artist-diskography";
-@import "./pages/artist-page/artist-similar-artists";
+@import "./pages/artist-page/intro";
+@import "./pages/artist-page/popular-tracks";
+@import "./pages/artist-page/diskography";
+@import "./pages/artist-page/similar-artists";

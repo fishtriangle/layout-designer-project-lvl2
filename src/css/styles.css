@@ -42,7 +42,7 @@ h4 {
   line-height: 27px;
 }
 
-.text-size-7, .pricing-item .pricing-value .pricing-number {
+.text-size-7, .pricing-number {
   font-weight: normal;
   font-size: 64px;
   line-height: 150%;
@@ -66,7 +66,7 @@ h4 {
   line-height: 150%;
 }
 
-.text-size-3, .pricing-item .pricing-value .pricing-roubles {
+.text-size-3, .pricing-roubles {
   font-weight: normal;
   font-size: 32px;
   line-height: 150%;
@@ -78,13 +78,13 @@ h4 {
   line-height: 150%;
 }
 
-.text-size-1, .intro-fans, .quick-registration span, .footer-nav, .footer-columns {
+.text-size-1, .intro-fans, .quick-registration-span, .footer-nav, .footer-columns {
   font-weight: normal;
   font-size: 16px;
   line-height: 150%;
 }
 
-.text-small, .simular-artists-fans, .diskography-album-year, .popular-tracks-item-time, .popular-tracks-item-album, .intro-button span, .pricing-item .pricing-footer {
+.text-small, .simular-artists-fans, .diskography-album-year, .popular-tracks-item-time, .popular-tracks-item-album, .intro-button span, .pricing-footer {
   font-weight: normal;
   font-size: 12.8px;
   line-height: 150%;
@@ -119,7 +119,7 @@ h4 {
     line-height: 45px;
   }
 
-  .h3-capitalize, .news-body .news-name {
+  .h3-capitalize, .news-name {
     font-weight: normal;
     font-size: 24px;
     line-height: 45px;
@@ -162,62 +162,6 @@ body {
     padding: 0;
   }
 }
-.container, .simular-artists, .diskography, .popular-tracks, .application, .news, .pricing, .quick-registration {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin-top: 100px;
-}
-
-.horizontal-list, .simular-artists-list, .diskography-list {
-  display: flex;
-  flex-wrap: wrap;
-  width: 100%;
-  justify-content: flex-start;
-  flex-direction: row;
-  margin-top: 23px;
-}
-
-.horizontal-list-item, .simular-artists-item, .diskography-album {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  max-width: 250px;
-  width: 250px;
-  margin-top: 25px;
-  margin-right: 50px;
-}
-
-.horizontal-list-adaptive-img, .simular-artists-adaptive-img, .diskography-album-adaptive-img {
-  position: relative;
-  padding-top: 100%;
-  display: flex;
-  width: 250px;
-  height: 0;
-  margin-bottom: 18px;
-}
-
-.horizontal-list-img, .simular-artists-img, .diskography-album-img {
-  position: absolute;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: auto;
-}
-
-@media (max-width: 660px) {
-  .horizontal-list-item, .simular-artists-item, .diskography-album {
-    width: 137px;
-  }
-
-  .horizontal-list-adaptive-img, .simular-artists-adaptive-img, .diskography-album-adaptive-img {
-    width: 137px;
-  }
-}
-.uppercase, .intro-button span, .news-body .news-author, .pricing-item .pricing-value .pricing-roubles, .header-nav .header-list, .green-button {
-  text-transform: uppercase;
-}
-
 .sr-only {
   position: absolute;
   width: 1px;
@@ -229,11 +173,15 @@ body {
   border: 0;
 }
 
+.uppercase, .intro-button span, .news-author, .pricing-roubles, .header-nav .header-list, .green-button {
+  text-transform: uppercase;
+}
+
 .margin-right-16 {
   margin-right: 16px;
 }
 
-.no-margin, .simular-artists-fans, .simular-artists-name, .diskography-album-year, .diskography-album-name, .popular-tracks-item-time, .popular-tracks-item-album, .popular-tracks-item-name, .quick-registration h1, .quick-registration h2 {
+.no-margin, .simular-artists-fans, .simular-artists-name, .diskography-album-year, .diskography-album-name, .popular-tracks-item-time, .popular-tracks-item-album, .popular-tracks-item-name, .quick-registration-h1, .quick-registration-h2 {
   margin: 0;
 }
 
@@ -257,7 +205,7 @@ body {
   margin-right: 1.5em;
 }
 
-.text-center, .pricing-item .pricing-footer, .quick-registration span, .quick-registration h1, .quick-registration h2 {
+.text-center, .pricing-footer, .quick-registration-span, .quick-registration-h1, .quick-registration-h2 {
   text-align: center;
 }
 
@@ -265,7 +213,7 @@ body {
   color: #FFFFFF;
 }
 
-.line-height-1, .pricing-item .pricing-value .pricing-number {
+.line-height-1, .pricing-number {
   line-height: 1em;
 }
 
@@ -328,6 +276,58 @@ body {
   color: #FFFFFF;
 }
 
+.container, .simular-artists, .diskography, .popular-tracks, .application, .news, .pricing, .quick-registration {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 100px;
+}
+
+.horizontal-list, .simular-artists-list, .diskography-list {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  justify-content: flex-start;
+  flex-direction: row;
+  margin-top: 23px;
+}
+
+.horizontal-list-item, .simular-artists-item, .diskography-album {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  max-width: 250px;
+  width: 250px;
+  margin-top: 25px;
+  margin-right: 50px;
+}
+
+.horizontal-list-adaptive-img, .simular-artists-adaptive-img, .diskography-album-adaptive-img {
+  position: relative;
+  padding-top: 100%;
+  display: flex;
+  width: 250px;
+  height: 0;
+  margin-bottom: 18px;
+}
+
+.horizontal-list-img, .simular-artists-img, .diskography-album-img {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: auto;
+}
+
+@media (max-width: 660px) {
+  .horizontal-list-item, .simular-artists-item, .diskography-album {
+    width: 137px;
+  }
+
+  .horizontal-list-adaptive-img, .simular-artists-adaptive-img, .diskography-album-adaptive-img {
+    width: 137px;
+  }
+}
 .header {
   position: absolute;
   top: 25px;
@@ -437,25 +437,34 @@ body {
   align-items: flex-start;
   box-sizing: border-box;
 }
-.footer-columns-item h2 {
+
+.footer-h2 {
   font-weight: bold;
   font-size: 18px;
   line-height: 24px;
   text-transform: uppercase;
   margin: 30px 0 16px 0;
 }
+
 @media (min-width: 1240px) {
-  .footer-columns-item h2 {
+  .footer-h2 {
     font-weight: bold;
     font-size: 18px;
     line-height: 27px;
   }
 }
-
 .footer-link {
   text-decoration: none;
   text-align: left;
   color: #E0E0E0;
+  text-decoration: none;
+  color: #FFFFFF;
+}
+.footer-link:hover {
+  color: #FFFFFF;
+}
+.footer-link:visited {
+  color: #FFFFFF;
 }
 
 .footer-below {
@@ -481,16 +490,6 @@ body {
   margin-right: 24px;
   margin-bottom: 16px;
 }
-.footer-list-item a {
-  text-decoration: none;
-  color: #FFFFFF;
-}
-.footer-list-item a:hover {
-  color: #FFFFFF;
-}
-.footer-list-item a:visited {
-  color: #FFFFFF;
-}
 
 @media (max-width: 1239px) {
   .footer-columns {
@@ -506,13 +505,15 @@ body {
   box-sizing: border-box;
   margin-top: 0;
 }
+
 .quick-registration-form {
   display: flex;
   justify-content: space-between;
   max-width: 570px;
   flex-wrap: wrap;
 }
-.quick-registration-form .textfield {
+
+.quick-registration-textfield {
   box-sizing: border-box;
   width: 100%;
   min-width: 270px;
@@ -538,7 +539,8 @@ body {
   .quick-registration-form {
     margin: 0 auto;
   }
-  .quick-registration-form .textfield {
+
+  .quick-registration-textfield {
     width: auto;
   }
 }
@@ -560,15 +562,18 @@ body {
   padding: 1.5rem;
   margin: 2rem 0;
 }
-.pricing-item .pricing-value {
+
+.pricing-value {
   margin-top: 200px;
   margin-bottom: 50px;
 }
-.pricing-item .pricing-value .pricing-roubles {
+
+.pricing-roubles {
   position: relative;
   top: -20px;
 }
-.pricing-item .pricing-footer {
+
+.pricing-footer {
   margin: 65px 0;
 }
 
@@ -619,11 +624,13 @@ body {
   flex-direction: column;
   justify-content: center;
 }
-.news-body .news-name {
+
+.news-name {
   margin-top: 0;
   margin-bottom: 30px;
 }
-.news-body .news-author {
+
+.news-author {
   margin-bottom: 65px;
 }
 
@@ -643,9 +650,6 @@ body {
   width: 100%;
   justify-content: space-between;
 }
-.application-content:nth-child(2n-1) {
-  align-items: center;
-}
 
 .application-column {
   margin-top: 48px;
@@ -653,7 +657,11 @@ body {
   flex: 1 1 600px;
   flex-direction: column;
 }
-.application-column .application-img {
+.application-column:nth-child(2n-1) {
+  align-items: center;
+}
+
+.application-img {
   width: auto;
   height: 100%;
   max-width: 333px;

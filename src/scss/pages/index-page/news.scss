@@ -34,19 +34,19 @@
     flex: 1 1 575px;
     flex-direction: column;
     justify-content: center;
+}
 
-    .news-name {
-        margin-top: 0;
-        margin-bottom: 30px;
+.news-name {
+    margin-top: 0;
+    margin-bottom: 30px;
 
-        @extend .h3-capitalize;
-    }
-    
-    .news-author {
-        margin-bottom: 65px;
+    @extend .h3-capitalize;
+}
 
-        @extend .uppercase;
-    }
+.news-author {
+    margin-bottom: 65px;
+
+    @extend .uppercase;
 }
 
 @media (min-width: 1240px) {

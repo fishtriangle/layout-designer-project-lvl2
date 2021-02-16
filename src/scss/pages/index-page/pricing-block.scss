@@ -19,32 +19,32 @@
     border-radius: 1rem;
 
     padding: 1.5rem;
-    margin: 2rem 0;
+    margin: 2rem 0;    
+}
 
-    .pricing-value {
-        margin-top: 200px;
-        margin-bottom: 50px;
+.pricing-value {
+    margin-top: 200px;
+    margin-bottom: 50px;
+}
 
-        .pricing-number {
-            @extend .text-size-7;
-            @extend .line-height-1;
-        }
+.pricing-number {
+    @extend .text-size-7;
+    @extend .line-height-1;
+}
 
-        .pricing-roubles {
-            position: relative;
-            top: -20px;
+.pricing-roubles {
+    position: relative;
+    top: -20px;
 
-            @extend .text-size-3;
-            @extend .uppercase;
-        }
-    }
+    @extend .text-size-3;
+    @extend .uppercase;
+}
 
-    .pricing-footer {
-        margin: 65px 0;
+.pricing-footer {
+    margin: 65px 0;
 
-        @extend .text-small;
-        @extend .text-center;
-    }
+    @extend .text-small;
+    @extend .text-center;
 }
 
 .bg-free {
