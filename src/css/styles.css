@@ -354,8 +354,8 @@ body {
   margin-right: 88px;
 }
 .header-logo-block .header-logo-img {
-  width: 25px;
-  height: 25px;
+  width: 24px;
+  height: 24px;
   margin-right: 16px;
 }
 
@@ -428,7 +428,7 @@ body {
   }
 
   .header-list-item {
-    margin-bottom: 3px;
+    padding-bottom: 3px;
   }
 
   .header-logo-block {
@@ -536,6 +536,8 @@ body {
 .quick-registration-span {
   width: 100%;
   text-align: center;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
 }
 
 .quick-registration-form {
@@ -563,7 +565,7 @@ body {
   background-position: center;
   background-size: cover;
   margin: 0;
-  padding: 200px 0;
+  padding: 250px 0 200px 0;
   width: 100%;
 }
 
@@ -577,7 +579,11 @@ body {
   }
 
   .quick-registration-backgr-picture {
-    padding: 250px 0;
+    padding: 200px 0 200px 0;
+  }
+
+  .quick-registration-span {
+    margin-top: 2em;
   }
 }
 .pricing-cards {
