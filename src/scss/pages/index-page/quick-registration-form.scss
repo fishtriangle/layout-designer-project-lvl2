@@ -11,11 +11,17 @@
 .quick-registration-h1, .quick-registration-h2 {
     @extend .no-margin;
     @extend .text-center;
+
+    width: 100%;
+    text-align: center;
 }
 
 .quick-registration-span {
     @extend .text-size-1;
     @extend .text-center;
+
+    width: 100%;
+    text-align: center;
 }
 
 .quick-registration-form {

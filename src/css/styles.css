@@ -230,7 +230,7 @@ body {
 }
 
 .green-button {
-  padding: 20px 30px;
+  padding: 21px 30px;
   border-radius: 5px;
   width: 100%;
   color: #FFFFFF;
@@ -240,10 +240,12 @@ body {
   line-height: 150%;
   border: 0;
   background-color: #34C176;
+  font-size: 13.3px;
+  line-height: 15px;
 }
 
 .white-n-alpha-button {
-  padding: 20px 30px;
+  padding: 21px 30px;
   border-radius: 5px;
   width: 100%;
   color: #FFFFFF;
@@ -259,7 +261,7 @@ body {
 }
 
 .red-button {
-  padding: 20px 30px;
+  padding: 21px 30px;
   border-radius: 5px;
   width: 100%;
   color: #FFFFFF;
@@ -366,11 +368,15 @@ body {
   padding-inline-start: 0px;
   display: flex;
   flex-direction: row;
+  margin-top: 0;
+  margin-bottom: 0;
 }
 .header-nav .header-list .header-list-item {
   list-style: none;
   margin-right: 24px;
   margin-bottom: 3px;
+  margin-top: 0;
+  margin-bottom: 0;
 }
 .header-nav .header-list .header-list-item a {
   text-decoration: none;
@@ -504,6 +510,16 @@ body {
   justify-content: space-between;
   box-sizing: border-box;
   margin-top: 0;
+}
+
+.quick-registration-h1, .quick-registration-h2 {
+  width: 100%;
+  text-align: center;
+}
+
+.quick-registration-span {
+  width: 100%;
+  text-align: center;
 }
 
 .quick-registration-form {
@@ -697,7 +713,7 @@ body {
 }
 
 .intro-button {
-  padding: 20px 30px;
+  padding: 21px 30px;
   border-radius: 5px;
   width: 100%;
   color: #FFFFFF;
