@@ -173,7 +173,7 @@ body {
   border: 0;
 }
 
-.uppercase, .intro-button span, .news-author, .pricing-roubles, .header-nav .header-list, .green-button {
+.uppercase, .intro-button span, .news-author, .pricing-roubles, .header-list, .green-button {
   text-transform: uppercase;
 }
 
@@ -364,21 +364,23 @@ body {
   align-items: center;
   flex: 1;
 }
-.header-nav .header-list {
+
+.header-list {
   padding-inline-start: 0px;
   display: flex;
   flex-direction: row;
   margin-top: 0;
   margin-bottom: 0;
 }
-.header-nav .header-list .header-list-item {
+
+.header-list-item {
   list-style: none;
   margin-right: 24px;
   margin-bottom: 3px;
   margin-top: 0;
   margin-bottom: 0;
 }
-.header-nav .header-list .header-list-item a {
+.header-list-item a {
   text-decoration: none;
   font-weight: bold;
   font-style: normal;
@@ -386,10 +388,10 @@ body {
   line-height: 13px;
   color: #FFFFFF;
 }
-.header-nav .header-list .header-list-item a:hover {
+.header-list-item a:hover {
   color: blue;
 }
-.header-nav .header-list .header-list-item a:visited {
+.header-list-item a:visited {
   color: #FFFFFF;
 }
 
@@ -416,8 +418,22 @@ body {
     flex-direction: column;
   }
 
-  .header-nav .header-list {
+  .header-nav {
+    margin-top: 15px;
+    margin-bottom: 15px;
+  }
+
+  .header-list {
     flex-direction: column;
+  }
+
+  .header-list-item {
+    margin-bottom: 3px;
+  }
+
+  .header-logo-block {
+    margin-top: 2px;
+    margin-bottom: 2px;
   }
 }
 .footer {
@@ -558,6 +574,10 @@ body {
 
   .quick-registration-textfield {
     width: auto;
+  }
+
+  .quick-registration-backgr-picture {
+    padding: 250px 0;
   }
 }
 .pricing-cards {

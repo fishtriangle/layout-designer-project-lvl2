@@ -22,6 +22,8 @@
 
     width: 100%;
     text-align: center;
+    margin-top: 1em;
+    margin-bottom: 1em;
 }
 
 .quick-registration-form {
@@ -50,7 +52,7 @@
     @include backgr-picture;
     
     margin: 0;
-    padding: 200px 0;
+    padding: 250px 0;
     width: 100%;
 }
 
@@ -61,5 +63,13 @@
 
     .quick-registration-textfield {
         width: auto;
+    }
+
+    .quick-registration-backgr-picture {
+        padding: 200px 0;
+    }
+
+    .quick-registration-span {
+        margin-top: 2em;
     }
 }
