@@ -458,6 +458,8 @@ body {
   flex-direction: column;
   align-items: flex-start;
   box-sizing: border-box;
+  flex-grow: 1;
+  margin-right: 50px;
 }
 
 .footer-h2 {
@@ -466,6 +468,8 @@ body {
   line-height: 24px;
   text-transform: uppercase;
   margin: 30px 0 16px 0;
+  width: 100%;
+  text-align: start;
 }
 
 @media (min-width: 1240px) {
@@ -475,12 +479,14 @@ body {
     line-height: 27px;
   }
 }
+.footer-text-span {
+  width: 100%;
+  text-align: left;
+}
+
 .footer-link {
   text-decoration: none;
-  text-align: left;
   color: #E0E0E0;
-  text-decoration: none;
-  color: #FFFFFF;
 }
 .footer-link:hover {
   color: #FFFFFF;
