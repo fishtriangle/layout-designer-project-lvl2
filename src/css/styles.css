@@ -85,7 +85,7 @@ h4 {
   line-height: 150%;
 }
 
-.text-small, .simular-artists-fans, .popular-tracks-item-time, .popular-tracks-item-album, .intro-button span, .pricing-footer {
+.text-small, .simular-artists-fans, .popular-tracks-item-time, .popular-tracks-item-album, .intro-button p, .pricing-footer {
   font-weight: normal;
   font-size: 12.8px;
   line-height: 150%;
@@ -174,15 +174,15 @@ body {
   border: 0;
 }
 
-.uppercase, .intro-button span, .news-author, .pricing-roubles, .header-list, .green-button {
+.uppercase, .intro-button p, .news-author, .pricing-roubles, .header-list, .green-button {
   text-transform: uppercase;
 }
 
-.margin-right-16 {
+.margin-right-16, .intro-button-icon {
   margin-right: 16px;
 }
 
-.no-margin, .simular-artists-fans, .simular-artists-name, .diskography-album-year, .diskography-album-name, .diskography-h2, .popular-tracks-item-time, .popular-tracks-item-album, .popular-tracks-item-name, .quick-registration-h1, .quick-registration-h2 {
+.no-margin, .simular-artists-fans, .simular-artists-name, .diskography-album-year, .diskography-album-name, .diskography-h2, .popular-tracks-item-time, .popular-tracks-item-album, .popular-tracks-item-name, .intro-button p, .quick-registration-h1, .quick-registration-h2 {
   margin: 0;
 }
 
@@ -733,9 +733,15 @@ body {
   flex-wrap: wrap;
 }
 
+.intro-h1 {
+  width: 100%;
+  margin: 50px 0 0 0;
+}
+
 .intro-fans {
   margin-top: 1em;
   margin-bottom: 3em;
+  width: 100%;
 }
 
 .intro-buttons-block {
@@ -764,6 +770,10 @@ body {
   min-width: 200px;
   text-decoration: none;
 }
+.intro-button-icon {
+  width: 20px;
+}
+
 .button-red {
   background-color: #95390C;
 }
