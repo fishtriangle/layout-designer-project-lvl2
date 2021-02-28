@@ -14,14 +14,13 @@ body {
     width: 100%;
     padding: 0 20px;
     display: flex;
-    box-sizing: border-box;
+    box-sizing: content-box;
 }
 
 @media (min-width: 1240px) {
     .document-width {
         width: 1200px;
         margin: 0 auto;
-        padding: 0;
     }
 }
 

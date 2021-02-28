@@ -152,14 +152,13 @@ body {
   width: 100%;
   padding: 0 20px;
   display: flex;
-  box-sizing: border-box;
+  box-sizing: content-box;
 }
 
 @media (min-width: 1240px) {
   .document-width, .intro, .footer-nav, .footer-columns, .header, .container, .simular-artists, .diskography, .popular-tracks, .application, .news, .pricing, .quick-registration {
     width: 1200px;
     margin: 0 auto;
-    padding: 0;
   }
 }
 .sr-only {
