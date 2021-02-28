@@ -25,6 +25,10 @@
     box-sizing: border-box;
     flex: 1 1 270px;
     margin-right: 40px;
+
+    &:nth-child(4) {
+        margin-right: 0;
+    }
 }
 
 .footer-h2 {
