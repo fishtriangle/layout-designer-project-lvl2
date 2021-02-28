@@ -4,6 +4,12 @@
     align-items: flex-start;
 }
 
+.popular-tracks-h2 {
+    width: 100%;
+
+    @extend .no-margin;
+}
+
 .popular-tracks-playlist {
     display: flex;
     flex-wrap: wrap;
@@ -27,6 +33,8 @@
 
     margin-top: 25px;
     margin-right: 0;
+
+    @extend .text-small;
 }    
 
 @media (min-width: 1240px) {
@@ -45,8 +53,12 @@
 .popular-tracks-item-description {
     display: flex;
     flex-direction: column;
-    flex: 1;
     justify-content: center;
+}
+
+.popular-tracks-item-head {
+    display: flex;
+    flex-direction: row;
 }
 
 .popular-tracks-item-name {
@@ -55,11 +67,6 @@
 }
 
 .popular-tracks-item-album {
-    @extend .text-small;
-    @extend .no-margin;
-}
-
-.popular-tracks-item-time {
     @extend .text-small;
     @extend .no-margin;
 }

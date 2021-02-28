@@ -85,7 +85,7 @@ h4 {
   line-height: 150%;
 }
 
-.text-small, .simular-artists-fans, .popular-tracks-item-time, .popular-tracks-item-album, .intro-button p, .pricing-footer {
+.text-small, .simular-artists-fans, .popular-tracks-item-album, .popular-tracks-item, .intro-button p, .pricing-footer {
   font-weight: normal;
   font-size: 12.8px;
   line-height: 150%;
@@ -182,7 +182,7 @@ body {
   margin-right: 16px;
 }
 
-.no-margin, .simular-artists-fans, .simular-artists-name, .diskography-album-year, .diskography-album-name, .diskography-h2, .popular-tracks-item-time, .popular-tracks-item-album, .popular-tracks-item-name, .intro-button p, .quick-registration-h1, .quick-registration-h2 {
+.no-margin, .simular-artists-fans, .simular-artists-name, .diskography-album-year, .diskography-album-name, .diskography-h2, .popular-tracks-item-album, .popular-tracks-item-name, .popular-tracks-h2, .intro-button p, .quick-registration-h1, .quick-registration-h2 {
   margin: 0;
 }
 
@@ -792,6 +792,10 @@ body {
   align-items: flex-start;
 }
 
+.popular-tracks-h2 {
+  width: 100%;
+}
+
 .popular-tracks-playlist {
   display: flex;
   flex-wrap: wrap;
@@ -828,8 +832,12 @@ body {
 .popular-tracks-item-description {
   display: flex;
   flex-direction: column;
-  flex: 1;
   justify-content: center;
+}
+
+.popular-tracks-item-head {
+  display: flex;
+  flex-direction: row;
 }
 
 .diskography {
