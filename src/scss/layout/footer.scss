@@ -54,6 +54,12 @@
     text-align: left;
 }
 
+.footer-lineheight-1 {
+    line-height: 100%;
+    margin-top: 4px;
+    margin-bottom: 4px;
+}
+
 .footer-logoes {
     display: flex;
     flex-direction: row;
@@ -62,7 +68,10 @@
 .footer-link {
     text-decoration: none;
     color: $gray;
-    margin-right: 15px;
+    margin-right: 24px;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
     
     &:hover {
         color: $primary-text-color;
@@ -74,10 +83,7 @@
 }
 
 .footer-link-logoes {
-    display: flex;
-    height: 27px;
-    align-content: center;
-    align-items: center;
+    margin-bottom: 2px;
 }
 
 .footer-below {
