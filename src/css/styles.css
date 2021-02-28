@@ -489,8 +489,10 @@ body {
 
 .footer-lineheight-1 {
   line-height: 100%;
-  margin-top: 4px;
-  margin-bottom: 4px;
+  padding-top: 2px;
+  padding-bottom: 2px;
+  margin-top: 2px;
+  margin-bottom: 2px;
 }
 
 .footer-logoes {
@@ -502,15 +504,19 @@ body {
   text-decoration: none;
   color: #E0E0E0;
   margin-right: 24px;
-  display: flex;
-  flex-direction: row;
-  align-items: flex-end;
 }
 .footer-link:hover {
   color: #FFFFFF;
 }
 .footer-link:visited {
   color: #FFFFFF;
+}
+
+.footer-link-logoes-cont {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  height: 24px;
 }
 
 .footer-link-logoes {
