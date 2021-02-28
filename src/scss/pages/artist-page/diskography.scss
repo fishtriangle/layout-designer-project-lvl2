@@ -4,6 +4,12 @@
     align-items: flex-start;
 }
 
+.diskography-h2 {
+    @extend .no-margin;
+
+    width: 100%;
+}
+
 .diskography-list {
     @extend .horizontal-list;
 }
@@ -23,9 +29,13 @@
 .diskography-album-name {
     @extend .h4-capitalize-bold;
     @extend .no-margin;
+
+    width: 100%;
 }
 
 .diskography-album-year {
-    @extend .text-small;
+    @extend .text-size-1;
     @extend .no-margin;
+
+    width: 100%;
 }
