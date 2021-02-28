@@ -30,7 +30,7 @@
     @extend .h4-capitalize-bold;
     @extend .no-margin;
 
-    width: 100%;
+    width: 138px;
 }
 
 .diskography-album-year {
@@ -38,4 +38,10 @@
     @extend .no-margin;
 
     width: 100%;
+}
+
+@media (min-width: 1240px) {
+    .diskography-album-name {
+        width: 100%;
+    }
 }
