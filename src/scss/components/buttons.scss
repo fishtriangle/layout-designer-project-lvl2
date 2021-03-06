@@ -14,13 +14,20 @@
     @include btn;
 
     border: 1px solid $primary-text-color;
-    box-sizing: border-box;
+    box-sizing: border-box ;
     padding-top: 20px;
     padding-bottom: 20px;
 
     text-decoration: none;
     text-align: center;
     color: $base-text-color;
+}
+
+.white-n-alpha-button-small {
+    @extend .white-n-alpha-button;
+
+    padding-top: 16px;
+    padding-bottom: 16px;
 }
 
 .red-button {
