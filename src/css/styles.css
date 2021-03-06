@@ -79,7 +79,7 @@ h4 {
   line-height: 150%;
 }
 
-.text-size-1, .diskography-album-year, .intro-fans, .quick-registration-span, .footer-nav, .footer-columns {
+.text-size-1, .diskography-album-year, .intro-fans, .pricing-ps, .quick-registration-span, .footer-nav, .footer-columns {
   font-weight: normal;
   font-size: 16px;
   line-height: 150%;
@@ -182,7 +182,7 @@ body {
   margin-right: 16px;
 }
 
-.no-margin, .simular-artists-fans, .simular-artists-name, .diskography-album-year, .diskography-album-name, .diskography-h2, .popular-tracks-item-album, .popular-tracks-item-name, .popular-tracks-h2, .intro-button p, .quick-registration-h1, .quick-registration-h2 {
+.no-margin, .simular-artists-fans, .simular-artists-name, .diskography-album-year, .diskography-album-name, .diskography-h2, .popular-tracks-item-album, .popular-tracks-item-name, .popular-tracks-h2, .intro-button p, .pricing-ps, .quick-registration-h1, .quick-registration-h2 {
   margin: 0;
 }
 
@@ -206,7 +206,7 @@ body {
   margin-right: 1.5em;
 }
 
-.text-center, .pricing-footer, .quick-registration-span, .quick-registration-h1, .quick-registration-h2 {
+.text-center, .pricing-ps, .pricing-footer, .quick-registration-span, .quick-registration-h1, .quick-registration-h2 {
   text-align: center;
 }
 
@@ -657,18 +657,28 @@ body {
   max-width: 367px;
   box-sizing: border-box;
   border-radius: 1rem;
-  padding: 21px 1.5rem 66px 1.5rem;
-  margin: 46px 0 39px 0;
+  padding: 18px 1.5rem 66px 1.5rem;
+  margin: 46px 0 0 0;
 }
 
+@media (min-width: 1240px) {
+  .pricing-item {
+    padding: 21px 1.5rem 66px 1.5rem;
+  }
+}
 .pricing-value {
   display: flex;
   margin-top: 200px;
-  margin-bottom: 36px;
+  margin-bottom: 40px;
   width: 100%;
   justify-content: center;
 }
 
+@media (min-width: 1240px) {
+  .pricing-value {
+    margin-bottom: 36px;
+  }
+}
 .pricing-number {
   height: 64px;
   margin: 0 16px 0 0;
@@ -684,22 +694,26 @@ body {
   margin: 64px 0 0 0;
 }
 
-.bg-free {
+.pricing-bg-free {
   background-image: url("../images/subscribe_1.png");
   background-position: center;
   background-size: cover;
 }
 
-.bg-standart {
+.pricing-bg-standart {
   background-image: url("../images/subscribe_2.png");
   background-position: center;
   background-size: cover;
 }
 
-.bg-premium {
+.pricing-bg-premium {
   background-image: url("../images/subscribe_3.png");
   background-position: center;
   background-size: cover;
+}
+
+.pricing-ps {
+  margin-top: 39px;
 }
 
 .news-item {

@@ -30,16 +30,28 @@
     box-sizing: border-box;
     border-radius: 1rem;
 
-    padding: 21px 1.5rem 66px 1.5rem;
-    margin: 46px 0 39px 0;    
+    padding: 18px 1.5rem 66px 1.5rem;
+    margin: 46px 0 0 0;    
+}
+
+@media (min-width: 1240px) {
+    .pricing-item {
+        padding: 21px 1.5rem 66px 1.5rem;
+    }
 }
 
 .pricing-value {
     display: flex;
     margin-top: 200px;
-    margin-bottom: 36px;
+    margin-bottom: 40px;
     width: 100%;
     justify-content: center;
+}
+
+@media (min-width: 1240px) {
+    .pricing-value {
+        margin-bottom: 36px;
+    }
 }
 
 .pricing-number {
@@ -66,20 +78,28 @@
     @extend .text-center;
 }
 
-.bg-free {
+.pricing-bg-free {
     background-image: url("../images/subscribe_1.png");
     
     @include backgr-picture;
 }
 
-.bg-standart {
+.pricing-bg-standart {
     background-image: url("../images/subscribe_2.png");
     
     @include backgr-picture;
 }
 
-.bg-premium {
+.pricing-bg-premium {
     background-image: url("../images/subscribe_3.png");
     
     @include backgr-picture;
+}
+
+.pricing-ps {
+    @extend .text-size-1;
+    @extend .text-center;
+    @extend .no-margin;
+
+    margin-top: 39px;
 }
