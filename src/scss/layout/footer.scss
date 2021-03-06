@@ -1,9 +1,15 @@
 .footer {
     background: linear-gradient(89.75deg, #5328a1 32.83%, #95390c 81.56%);
-    padding-top: 45px;
+    padding-top: 46px;
     width: 100%;
 
     color: $primary-text-color;
+}
+
+@media (min-width: 1240px) {
+    .footer {
+        padding-top: 45px;
+    }
 }
 
 .footer-columns {
@@ -68,11 +74,21 @@
 }
 
 .footer-lineheight-1 {
-    line-height: 100%;
-    padding-top: 2px;
-    padding-bottom: 2px;
-    margin-top: 2px;
-    margin-bottom: 2px;
+    line-height: 150%;
+    padding-top: 0;
+    padding-bottom: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+@media (min-width: 1240px) {
+    .footer-lineheight-1 {
+        line-height: 100%;
+        padding-top: 2px;
+        padding-bottom: 2px;
+        margin-top: 2px;
+        margin-bottom: 2px;
+    }
 }
 
 .footer-logoes {
@@ -84,6 +100,7 @@
     text-decoration: none;
     color: $gray;
     margin-right: 24px;
+    width: 100%;
     
     &:hover {
         color: $primary-text-color;
@@ -91,6 +108,12 @@
 
     &:visited {
         color: $primary-text-color;
+    }
+}
+
+@media (min-width: 1240px) {
+    .footer-link {
+        width: auto;
     }
 }
 
