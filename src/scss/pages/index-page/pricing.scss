@@ -2,6 +2,18 @@
     @extend .container;
 }
 
+.pricing-h2 {
+    width: 100%;
+    text-align: center;
+    margin: 0;
+}
+
+.pricing-h3 {
+    width: 100%;
+    text-align: center;
+    margin: 0;
+}
+
 .pricing-cards {
     display: flex;
     flex-direction: row;
@@ -18,30 +30,37 @@
     box-sizing: border-box;
     border-radius: 1rem;
 
-    padding: 1.5rem;
-    margin: 2rem 0;    
+    padding: 21px 1.5rem 66px 1.5rem;
+    margin: 46px 0 39px 0;    
 }
 
 .pricing-value {
+    display: flex;
     margin-top: 200px;
-    margin-bottom: 50px;
+    margin-bottom: 36px;
+    width: 100%;
+    justify-content: center;
 }
 
 .pricing-number {
     @extend .text-size-7;
     @extend .line-height-1;
+
+    height: 64px;
+    margin: 0 16px 0 0;
+    padding: 0;
 }
 
 .pricing-roubles {
     position: relative;
-    top: -20px;
+    top: 0;
 
     @extend .text-size-3;
     @extend .uppercase;
 }
 
 .pricing-footer {
-    margin: 65px 0;
+    margin: 64px 0 0 0;
 
     @extend .text-small;
     @extend .text-center;

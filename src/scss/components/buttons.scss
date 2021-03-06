@@ -13,8 +13,10 @@
 .white-n-alpha-button {
     @include btn;
 
-    border: 2px solid $primary-text-color;
+    border: 1px solid $primary-text-color;
     box-sizing: border-box;
+    padding-top: 20px;
+    padding-bottom: 20px;
 
     text-decoration: none;
     text-align: center;
