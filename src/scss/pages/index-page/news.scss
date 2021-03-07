@@ -45,12 +45,11 @@
 }
 
 .news-name {
+    @extend .h3-capitalize;
+
     margin-top: 0;
     margin-bottom: 16px;
     width: 100%;
-
-    @extend .h3-capitalize;
-
     line-height: 26px;
 }
 
@@ -86,7 +85,9 @@
     }
 
     .news-name {
-    margin-bottom: 30px;
+        margin-bottom: 30px;
+        line-height: 45px;
+        font-size: 30px;
     }
 }
 
