@@ -14,7 +14,7 @@
     flex-direction: row-reverse;
     width: 100%;
     justify-content: space-between;
-    align-items: center;
+    margin-top: 48px;
 }
 
 .application-column {
@@ -24,7 +24,6 @@
 
     &:nth-of-type(2n-1) {
         align-items: center;
-        margin-top: 48px;
     }
 
     &:nth-of-type(2n) {
