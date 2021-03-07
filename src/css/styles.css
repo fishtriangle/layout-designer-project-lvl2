@@ -786,10 +786,12 @@ body {
   line-height: 26px;
 }
 
-.news-footer:nth-child(0) {
+.news-footer {
   margin-top: 23px;
+  margin-bottom: 12px;
 }
-.news-footer:nth-child(0) {
+
+.news-footer-special {
   margin-top: 16px;
 }
 
@@ -823,6 +825,11 @@ body {
   }
 
   .news-footer {
+    margin-top: 24px;
+    margin-bottom: 0;
+  }
+
+  .news-footer-special {
     margin-top: 24px;
   }
 }
