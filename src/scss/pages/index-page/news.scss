@@ -29,7 +29,7 @@
 }
 
 .news-img {
-    margin-top: 3rem;
+    margin-top: 49px;
 
     flex: 1 1 575px;
     width: auto;
@@ -38,7 +38,7 @@
 }
 
 .news-body {
-    margin-top: 3rem;
+    margin-top: 49px;
     flex: 1 1 575px;
     flex-direction: column;
     justify-content: center;
@@ -46,10 +46,12 @@
 
 .news-name {
     margin-top: 0;
-    margin-bottom: 30px;
+    margin-bottom: 16px;
     width: 100%;
 
     @extend .h3-capitalize;
+
+    line-height: 26px;
 }
 
 .news-footer {
@@ -76,10 +78,15 @@
 @media (min-width: 1240px) {
     .news-img {
         max-width: 575px;
+        margin-top: 3rem;
     }
 
     .news-body {
         max-width: 575px;
+    }
+
+    .news-name {
+    margin-bottom: 30px;
     }
 }
 
