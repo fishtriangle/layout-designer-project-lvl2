@@ -79,7 +79,7 @@ h4 {
   line-height: 150%;
 }
 
-.text-size-1, .diskography-album-year, .intro-fans, .pricing-ps, .quick-registration-span, .footer-nav, .footer-columns {
+.text-size-1, .diskography-album-year, .intro-fans, .application-column-text, .pricing-ps, .quick-registration-span, .footer-nav, .footer-columns {
   font-weight: normal;
   font-size: 16px;
   line-height: 150%;
@@ -287,13 +287,19 @@ body {
   font-weight: normal;
   font-size: 16px;
   line-height: 150%;
+  width: fit-content;
   border: 0;
   box-sizing: border-box;
   border-radius: 2rem;
+  padding: 17px 40px 17px 40px;
   text-decoration: none;
   text-align: center;
   background-color: #95390C;
   color: #FFFFFF;
+  text-transform: none;
+  font-weight: normal;
+  font-size: 12.8px;
+  line-height: 150%;
 }
 
 .container, .simular-artists, .diskography, .popular-tracks, .application, .news, .pricing, .quick-registration {
@@ -838,12 +844,19 @@ body {
     height: 186px;
   }
 }
+.application-h2 {
+  width: 100%;
+  text-align: center;
+  margin: 0;
+}
+
 .application-content {
   display: flex;
   flex-wrap: wrap;
   flex-direction: row-reverse;
   width: 100%;
   justify-content: space-between;
+  margin-bottom: 100px;
 }
 
 .application-column {
@@ -856,7 +869,20 @@ body {
   align-items: center;
 }
 
+.application-column-text {
+  margin-top: 8px;
+  margin-bottom: 8px;
+}
+.application-column-text:first-of-type {
+  margin-top: 16px;
+}
+.application-column-text:last-of-type {
+  margin-bottom: 16px;
+}
+
 .application-img {
+  position: relative;
+  left: 12px;
   width: auto;
   height: 100%;
   max-width: 333px;
