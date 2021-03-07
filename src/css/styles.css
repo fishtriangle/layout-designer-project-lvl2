@@ -804,6 +804,11 @@ body {
     max-width: 575px;
   }
 }
+@media (width: 414px) {
+  .news-img {
+    height: 186px;
+  }
+}
 .application-content {
   display: flex;
   flex-wrap: wrap;
