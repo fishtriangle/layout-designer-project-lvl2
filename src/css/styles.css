@@ -794,7 +794,7 @@ body {
 
 .news-footer {
   margin-top: 23px;
-  margin-bottom: 12px;
+  margin-bottom: 13px;
 }
 
 .news-footer-special {
@@ -856,16 +856,20 @@ body {
   flex-direction: row-reverse;
   width: 100%;
   justify-content: space-between;
+  align-items: center;
 }
 
 .application-column {
-  margin-top: 48px;
   display: flex;
   flex: 1 1 600px;
   flex-direction: column;
 }
-.application-column:nth-child(2n-1) {
+.application-column:nth-of-type(2n-1) {
   align-items: center;
+  margin-top: 48px;
+}
+.application-column:nth-of-type(2n) {
+  margin-top: 0;
 }
 
 .application-column-text {
@@ -881,12 +885,17 @@ body {
 
 .application-img {
   position: relative;
-  left: 20px;
+  left: 0;
   width: auto;
   height: 100%;
   max-width: 333px;
 }
 
+@media (min-width: 1240px) {
+  .application-img {
+    left: 20px;
+  }
+}
 .intro-backgr {
   background-image: url("../images/Morten Harket.png");
   background-position: center;

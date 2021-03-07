@@ -14,17 +14,21 @@
     flex-direction: row-reverse;
     width: 100%;
     justify-content: space-between;
+    align-items: center;
 }
 
 .application-column {
-    margin-top: 48px;
-
     display: flex;
     flex: 1 1 600px;
     flex-direction: column;
 
-    &:nth-child(2n-1) {
+    &:nth-of-type(2n-1) {
         align-items: center;
+        margin-top: 48px;
+    }
+
+    &:nth-of-type(2n) {
+        margin-top: 0;
     }
 }
 
@@ -45,8 +49,14 @@
 
 .application-img {
     position: relative;
-    left: 20px;
+    left: 0;
     width: auto;
     height: 100%;
     max-width: 333px;
+}
+
+@media (min-width: 1240px) {
+    .application-img {
+        left: 20px;
+    }
 }
