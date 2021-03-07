@@ -507,11 +507,6 @@ body {
     font-size: 18px;
   }
 }
-.footer-text-span {
-  width: 100%;
-  text-align: left;
-}
-
 .footer-logoes {
   display: flex;
   flex-direction: row;
@@ -571,6 +566,7 @@ body {
   display: flex;
   padding-right: 15px;
   box-sizing: border-box;
+  margin-right: 0;
 }
 
 .footer-lineheight-1 {
@@ -580,6 +576,11 @@ body {
   margin-top: 2px;
   margin-bottom: 2px;
   width: auto;
+}
+
+.footer-text-span {
+  width: 100%;
+  text-align: left;
 }
 
 .quick-registration {
