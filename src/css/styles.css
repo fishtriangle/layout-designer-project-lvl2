@@ -601,6 +601,7 @@ body {
   justify-content: space-between;
   box-sizing: border-box;
   margin-top: 0;
+  padding-top: 0;
 }
 
 .quick-registration-h1, .quick-registration-h2 {
