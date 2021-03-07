@@ -29,7 +29,7 @@
 }
 
 .news-img {
-    margin-top: 49px;
+    margin-top: 3rem;
 
     flex: 1 1 575px;
     width: auto;
@@ -54,8 +54,12 @@
 }
 
 .news-footer {
-    margin-top: 24px;
-}  
+    margin-top: 23px;
+}
+
+.news-footer-special {
+    margin-top: 16px;
+}
 
 .news-author {
     display: flex;
@@ -77,7 +81,6 @@
 @media (min-width: 1240px) {
     .news-img {
         max-width: 575px;
-        margin-top: 3rem;
     }
 
     .news-body {
@@ -88,6 +91,14 @@
         margin-bottom: 30px;
         line-height: 45px;
         font-size: 30px;
+    }
+
+    .news-footer {
+        margin-top: 24px;
+    }
+
+    .news-footer-special {
+        margin-top: 24px;
     }
 }
 
