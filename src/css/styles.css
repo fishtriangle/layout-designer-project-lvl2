@@ -176,7 +176,7 @@ body {
   border: 0;
 }
 
-.uppercase, .intro-button p, .news-author, .pricing-roubles, .header-list, .white-n-alpha-button, .white-n-alpha-button-small, .green-button {
+.uppercase, .intro-button p, .news-author, .pricing-roubles, .header-list, .green-button {
   text-transform: uppercase;
 }
 
@@ -232,10 +232,6 @@ body {
   white-space: nowrap;
 }
 
-.width-full {
-  width: 100%;
-}
-
 .green-button {
   padding: 21px 30px;
   border-radius: 5px;
@@ -264,13 +260,9 @@ body {
   box-sizing: border-box;
   padding-top: 20px;
   padding-bottom: 20px;
-  background: none;
   text-decoration: none;
   text-align: center;
   color: #cacaca;
-  font-family: Roboto;
-  font-size: 16px;
-  width: 100%;
 }
 
 .white-n-alpha-button-small {
@@ -682,12 +674,6 @@ body {
   margin: 0;
 }
 
-@media (min-width: 1240px) {
-  .pricing-h3 {
-    padding-top: 5px;
-    padding-bottom: 4px;
-  }
-}
 .pricing-cards {
   display: flex;
   flex-direction: row;

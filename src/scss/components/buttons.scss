@@ -13,22 +13,14 @@
 .white-n-alpha-button {
     @include btn;
 
-    @extend .uppercase;
-
     border: 1px solid $primary-text-color;
     box-sizing: border-box ;
     padding-top: 20px;
     padding-bottom: 20px;
 
-    background: none;
-
     text-decoration: none;
     text-align: center;
     color: $base-text-color;
-    font-family: Roboto;
-    font-size: 16px;
-
-    width: 100%;
 }
 
 .white-n-alpha-button-small {
