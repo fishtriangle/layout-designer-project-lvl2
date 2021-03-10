@@ -809,7 +809,7 @@ body {
   padding-top: 1px;
   padding-bottom: 1px;
   font-weight: 400;
-  text-transform: uppercase;
+  text-transform: capitalize;
 }
 
 .news-footer {
