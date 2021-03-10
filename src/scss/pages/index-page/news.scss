@@ -7,7 +7,7 @@
     flex-wrap: wrap;
     width: 100%;
     justify-content: space-between;
-    margin-bottom: 17px;
+    margin-bottom: 16px;
 
     &:nth-child(2n) {
         flex-direction: row;
@@ -56,7 +56,7 @@
 
 .news-footer {
     margin-top: 23px;
-    margin-bottom: 13px;
+    margin-bottom: 0;
 }
 
 .news-footer-special {
