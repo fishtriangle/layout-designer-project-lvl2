@@ -809,6 +809,7 @@ body {
   padding-top: 1px;
   padding-bottom: 1px;
   font-weight: 400;
+  text-transform: uppercase;
 }
 
 .news-footer {
@@ -1064,6 +1065,7 @@ body {
 .simular-artists-fans {
   width: 100%;
   text-align: center;
+  font-size: 16px;
 }
 
 .simular-artists-fans-span {
@@ -1072,6 +1074,10 @@ body {
 }
 
 @media (min-width: 1240px) {
+  .simular-artists-fans {
+    font-size: 12.8px;
+  }
+
   .simular-artists-fans-span {
     width: fit-content;
     display: inline;
