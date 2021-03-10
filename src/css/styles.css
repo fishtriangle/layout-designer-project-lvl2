@@ -277,7 +277,6 @@ body {
   font-size: 12.8px;
   padding-top: 18px;
   padding-bottom: 18px;
-  width: fit-content;
 }
 
 @media (max-width: 1239px) {
@@ -687,7 +686,6 @@ body {
   .pricing-h3 {
     padding-top: 5px;
     padding-bottom: 4px;
-    font-weight: 400;
   }
 }
 .pricing-cards {
@@ -807,7 +805,6 @@ body {
   margin-bottom: 16px;
   width: 100%;
   line-height: 26px;
-  text-transform: capitalize;
 }
 
 .news-footer {
@@ -823,7 +820,7 @@ body {
   display: flex;
   align-content: center;
   width: 100%;
-  margin-bottom: 48px;
+  margin-bottom: 60px;
   box-sizing: border-box;
 }
 
