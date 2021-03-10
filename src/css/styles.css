@@ -117,7 +117,7 @@ h4 {
     font-weight: normal;
     font-size: 24px;
     text-transform: uppercase;
-    line-height: 45px;
+    line-height: 36px;
   }
 
   .h3-capitalize, .news-name {
@@ -611,7 +611,7 @@ body {
   justify-content: space-between;
   box-sizing: border-box;
   margin-top: 0;
-  padding-top: 0;
+  padding-top: 50px;
 }
 
 .quick-registration-h1, .quick-registration-h2 {
@@ -656,16 +656,16 @@ body {
 }
 
 @media (min-width: 1240px) {
+  .quick-registration {
+    padding-top: 0;
+  }
+
   .quick-registration-form {
     margin: 0 auto;
   }
 
   .quick-registration-textfield {
     width: auto;
-  }
-
-  .quick-registration-backgr-picture {
-    padding: 200px 0 200px 0;
   }
 
   .quick-registration-span {
