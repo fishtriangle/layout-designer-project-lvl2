@@ -85,7 +85,7 @@ h4 {
   line-height: 150%;
 }
 
-.text-small, .simular-artists-fans, .popular-tracks-item-album, .popular-tracks-item, .intro-button p, .news-author, .pricing-footer {
+.text-small, .simular-artists-fans, .popular-tracks-item-album, .popular-tracks-item, .news-author, .pricing-footer, .intro-button p {
   font-weight: normal;
   font-size: 12.8px;
   line-height: 150%;
@@ -176,7 +176,7 @@ body {
   border: 0;
 }
 
-.uppercase, .intro-button p, .news-author, .pricing-roubles, .header-list, .green-button {
+.uppercase, .news-author, .pricing-roubles, .header-list, .intro-button p, .green-button {
   text-transform: uppercase;
 }
 
@@ -184,7 +184,7 @@ body {
   margin-right: 16px;
 }
 
-.no-margin, .simular-artists-fans, .simular-artists-name, .diskography-album-year, .diskography-album-name, .diskography-h2, .popular-tracks-item-album, .popular-tracks-item-name, .popular-tracks-h2, .intro-button p, .pricing-ps, .quick-registration-h1, .quick-registration-h2 {
+.no-margin, .simular-artists-fans, .simular-artists-name, .diskography-album-year, .diskography-album-name, .diskography-h2, .popular-tracks-item-album, .popular-tracks-item-name, .popular-tracks-h2, .pricing-ps, .quick-registration-h1, .quick-registration-h2, .intro-button p {
   margin: 0;
 }
 
@@ -232,7 +232,7 @@ body {
   white-space: nowrap;
 }
 
-.green-button {
+.btn {
   padding: 21px 30px;
   border-radius: 5px;
   width: 100%;
@@ -241,6 +241,9 @@ body {
   font-weight: normal;
   font-size: 16px;
   line-height: 150%;
+}
+
+.green-button {
   border: 0;
   background-color: #34C176;
   font-size: 13.3px;
@@ -248,14 +251,6 @@ body {
 }
 
 .white-n-alpha-button, .white-n-alpha-button-small {
-  padding: 21px 30px;
-  border-radius: 5px;
-  width: 100%;
-  color: #FFFFFF;
-  text-transform: uppercase;
-  font-weight: normal;
-  font-size: 16px;
-  line-height: 150%;
   border: 1px solid #FFFFFF;
   box-sizing: border-box;
   padding-top: 20px;
@@ -279,14 +274,6 @@ body {
   }
 }
 .red-button {
-  padding: 21px 30px;
-  border-radius: 5px;
-  width: 100%;
-  color: #FFFFFF;
-  text-transform: uppercase;
-  font-weight: normal;
-  font-size: 16px;
-  line-height: 150%;
   width: fit-content;
   border: 0;
   box-sizing: border-box;
@@ -302,6 +289,20 @@ body {
   line-height: 150%;
 }
 
+.intro-button {
+  border: 0;
+  display: flex;
+  width: 200px;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  height: 62px;
+  box-sizing: border-box;
+  min-width: 200px;
+  margin-bottom: 24px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  text-decoration: none;
+}
 .container, .simular-artists, .diskography, .popular-tracks, .application, .news, .pricing, .quick-registration {
   display: flex;
   flex-direction: column;
@@ -465,6 +466,7 @@ body {
   padding-top: 46px;
   width: 100%;
   color: #FFFFFF;
+  margin-top: 100px;
 }
 
 @media (min-width: 1240px) {
@@ -672,8 +674,16 @@ body {
   width: 100%;
   text-align: center;
   margin: 0;
+  padding-top: 5px;
+  padding-bottom: 4px;
+  font-weight: 400;
 }
 
+@media (min-width: 1240px) {
+  .pricing-h3 {
+    font-weight: 700;
+  }
+}
 .pricing-cards {
   display: flex;
   flex-direction: row;
@@ -790,7 +800,9 @@ body {
   margin-top: 0;
   margin-bottom: 16px;
   width: 100%;
-  line-height: 26px;
+  line-height: 24px;
+  padding-top: 1px;
+  padding-bottom: 1px;
 }
 
 .news-footer {
@@ -829,6 +841,9 @@ body {
     margin-bottom: 30px;
     line-height: 45px;
     font-size: 30px;
+    text-transform: capitalize;
+    padding-top: 0;
+    padding-bottom: 0;
   }
 
   .news-footer {
@@ -936,26 +951,6 @@ body {
   width: 100%;
 }
 
-.intro-button {
-  padding: 21px 30px;
-  border-radius: 5px;
-  width: 100%;
-  color: #FFFFFF;
-  text-transform: uppercase;
-  font-weight: normal;
-  font-size: 16px;
-  line-height: 150%;
-  border: 0;
-  display: flex;
-  width: 200px;
-  flex-direction: row;
-  flex-wrap: nowrap;
-  height: 62px;
-  box-sizing: border-box;
-  min-width: 200px;
-  margin-bottom: 24px;
-  text-decoration: none;
-}
 .intro-button-icon {
   width: 20px;
 }
@@ -1030,6 +1025,7 @@ body {
 
 .diskography-album-name {
   width: 138px;
+  text-transform: capitalize;
 }
 
 .diskography-album-year {
@@ -1043,6 +1039,10 @@ body {
 }
 .simular-artists {
   align-items: flex-start;
+}
+
+.simular-artists-item {
+  align-items: center;
 }
 
 /*# sourceMappingURL=styles.css.map */
