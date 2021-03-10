@@ -474,7 +474,6 @@ body {
   padding-top: 46px;
   width: 100%;
   color: #FFFFFF;
-  margin-top: 100px;
 }
 
 @media (min-width: 1240px) {
@@ -682,7 +681,6 @@ body {
   width: 100%;
   text-align: center;
   margin: 0;
-  font-weight: 400;
 }
 
 @media (min-width: 1240px) {
@@ -808,10 +806,8 @@ body {
   margin-top: 0;
   margin-bottom: 16px;
   width: 100%;
-  line-height: 24px;
+  line-height: 26px;
   text-transform: capitalize;
-  padding-top: 1px;
-  padding-bottom: 1px;
 }
 
 .news-footer {
@@ -976,7 +972,6 @@ body {
   min-width: 200px;
   margin-bottom: 24px;
   text-decoration: none;
-  padding-top: 20px;
 }
 .intro-button-icon {
   width: 20px;
@@ -1052,7 +1047,6 @@ body {
 
 .diskography-album-name {
   width: 138px;
-  text-transform: capitalize;
 }
 
 .diskography-album-year {
@@ -1066,10 +1060,6 @@ body {
 }
 .simular-artists {
   align-items: flex-start;
-}
-
-.simular-artists-item {
-  align-items: center;
 }
 
 /*# sourceMappingURL=styles.css.map */
