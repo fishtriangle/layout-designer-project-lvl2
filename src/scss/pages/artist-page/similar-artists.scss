@@ -44,3 +44,15 @@
     width: 100%;
     text-align: center;
 }
+
+.simular-artists-fans-span {
+    width: 100%;
+    display: block;
+}
+
+@media (min-width: 1240px) {
+    .simular-artists-fans-span {
+        width: fit-content;
+        display: inline;
+    }
+}

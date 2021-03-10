@@ -677,15 +677,16 @@ body {
   width: 100%;
   text-align: center;
   margin: 0;
-  padding-top: 5px;
-  padding-bottom: 4px;
+  padding-top: 0;
+  padding-bottom: 0;
   font-weight: 400;
 }
 
 @media (min-width: 1240px) {
   .pricing-h3 {
-    padding-top: 0;
-    padding-bottom: 0;
+    padding-top: 5px;
+    padding-bottom: 4px;
+    font-weight: 400;
   }
 }
 .pricing-cards {
@@ -1063,6 +1064,18 @@ body {
 .simular-artists-fans {
   width: 100%;
   text-align: center;
+}
+
+.simular-artists-fans-span {
+  width: 100%;
+  display: block;
+}
+
+@media (min-width: 1240px) {
+  .simular-artists-fans-span {
+    width: fit-content;
+    display: inline;
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */
