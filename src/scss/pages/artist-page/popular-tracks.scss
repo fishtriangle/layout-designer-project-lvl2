@@ -21,6 +21,7 @@
 }
 
 .popular-tracks-item {
+  display: flex;
   flex: 0 1 550px;
   flex-direction: row;
   flex-wrap: nowrap;
