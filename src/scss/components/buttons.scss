@@ -1,94 +1,97 @@
 .btn {
-	padding: 21px 30px;
+  width: 100%;
+  padding: 21px 30px;
 
-	width: 100%;
-	border-radius: 5px;
+  color: $primary-text-color;
+  border-radius: 5px;
 
-	color: $primary-text-color;
   font-weight: normal;
-	text-transform: uppercase;
-	font-size: 16px;
-	line-height: 150%;
+  font-size: 16px;
+  line-height: 150%;
+  text-transform: uppercase;
 }
 
 .green-button {
   font-size: 13.3px;
-  background-color: $green-color;
-  border: 0;
-	line-height: 15px;
 
-	@extend .uppercase;
+  background-color: $green-color;
+
+  line-height: 15px;
+  border: 0;
+
+  @extend .uppercase;
 }
 
 .white-n-alpha-button {
   box-sizing: border-box;
-  border: 1px solid $primary-text-color;
-	padding-top: 20px;
-	padding-bottom: 20px;
+  padding-top: 20px;
+  padding-bottom: 20px;
 
-	color: $base-text-color;
+  border: 1px solid $primary-text-color;
+
+  color: $base-text-color;
   text-align: center;
   text-decoration: none;
 }
 
 .white-n-alpha-button-small {
-	@extend .white-n-alpha-button;
+  @extend .white-n-alpha-button;
 
   padding-top: 16px;
-	padding-bottom: 16px;
+  padding-bottom: 16px;
 
   font-size: 12.8px;
 }
 
 @media (max-width: 1239px) {
-	.white-n-alpha-button-small {
-		font-weight: normal;
-		font-size: 12.8px;
-		line-height: 150%;
-	}
+  .white-n-alpha-button-small {
+    font-weight: normal;
+    font-size: 12.8px;
+    line-height: 150%;
+  }
 }
 
 .red-button {
-	width: fit-content;
-
   box-sizing: border-box;
-  border: 0;
+  width: fit-content;
+  padding: 16px 40px 16px 40px;
 
-	padding: 16px 40px 16px 40px;
+  border: 0;
   border-radius: 2rem;
 
-	text-align: center;
+  color: $primary-text-color;
+  font-weight: normal;
+  font-size: 12.8px;
+  line-height: 150%;
+  text-transform: none;
+  text-align: center;
   text-decoration: none;
 
-	color: $primary-text-color;
   background-color: $red;
-  font-weight: normal;
-	font-size: 12.8px;
-	line-height: 150%;
-	text-transform: none;
 }
 
 .intro-button {
-	display: flex;
+  display: flex;
   flex-direction: row;
-	flex-wrap: nowrap;
-	box-sizing: border-box;
+  flex-wrap: nowrap;
+  box-sizing: border-box;
   width: 200px;
-	height: 62px;
-	border: 0;
-	min-width: 200px;
-	margin-bottom: 24px;
-	padding-top: 20px;
-	padding-bottom: 20px;
+  height: 62px;
+  min-width: 200px;
+  margin-bottom: 24px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+
+  border: 0;
 
   font-weight: normal;
-	font-size: 12.8px;
-	line-height: 150%;
-	text-decoration: none;
+  font-size: 12.8px;
+  line-height: 150%;
+  text-decoration: none;
 
-	p {
-		@extend .text-small;
-		@extend .uppercase;
-		@extend .no-margin;
-	}
+  p {
+    @extend .text-small;
+    @extend .uppercase;
+    @extend .no-margin;
+  }
 }

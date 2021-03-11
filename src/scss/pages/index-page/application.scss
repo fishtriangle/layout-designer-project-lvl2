@@ -1,61 +1,64 @@
 .application {
-    @extend .container;
+  @extend .container;
 }
 
 .application-h2 {
-    width: 100%;
-    text-align: center;
-    margin: 0;
+  width: 100%;
+  margin: 0;
+
+  text-align: center;
 }
 
 .application-content {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row-reverse;
-    width: 100%;
-    justify-content: space-between;
-    margin-top: 48px;
+  display: flex;
+  flex-direction: row-reverse;
+  flex-wrap: wrap;
+  justify-content: space-between;
+
+  width: 100%;
+  margin-top: 48px;
 }
 
 .application-column {
-    display: flex;
-    flex: 1 1 600px;
-    flex-direction: column;
+  display: flex;
+  flex: 1 1 600px;
+  flex-direction: column;
 
-    &:nth-of-type(2n-1) {
-        align-items: center;
-    }
+  &:nth-of-type(2n-1) {
+    align-items: center;
+  }
 
-    &:nth-of-type(2n) {
-        margin-top: 0;
-    }
+  &:nth-of-type(2n) {
+    margin-top: 0;
+  }
 }
 
 .application-column-text {
-    @extend .text-size-1;
+  @extend .text-size-1;
 
-    margin-top: 8px;
-    margin-bottom: 8px;
+  margin-top: 8px;
+  margin-bottom: 8px;
 
-    &:first-of-type {
-        margin-top: 16px;
-    }
+  &:first-of-type {
+    margin-top: 16px;
+  }
 
-    &:last-of-type {
-        margin-bottom: 16px;
-    }
+  &:last-of-type {
+    margin-bottom: 16px;
+  }
 }
 
 .application-img {
-    position: relative;
-    left: 0;
-    width: auto;
-    height: 100%;
-    max-width: 333px;
+  position: relative;
+  left: 0;
+
+  width: auto;
+  max-width: 333px;
+  height: 100%;
 }
 
 @media (min-width: 1240px) {
-    .application-img {
-        left: 20px;
-    }
+  .application-img {
+    left: 20px;
+  }
 }

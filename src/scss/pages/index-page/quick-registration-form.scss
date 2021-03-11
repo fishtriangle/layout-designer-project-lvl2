@@ -1,76 +1,82 @@
 .quick-registration {
-    @extend .container;
-    
-    justify-content: space-between;
-    box-sizing: border-box;
-    margin-top: 0;
-    padding-top: 50px;
+  @extend .container;
 
-    @extend .text-white;
+  justify-content: space-between;
+  box-sizing: border-box;
+  margin-top: 0;
+  padding-top: 50px;
+
+  @extend .text-white;
 }
 
-.quick-registration-h1, .quick-registration-h2 {
-    @extend .no-margin;
-    @extend .text-center;
+.quick-registration-h1,
+.quick-registration-h2 {
+  @extend .no-margin;
+  @extend .text-center;
 
-    width: 100%;
-    text-align: center;
+  width: 100%;
+
+  text-align: center;
 }
 
 .quick-registration-span {
-    @extend .text-size-1;
-    @extend .text-center;
+  @extend .text-size-1;
+  @extend .text-center;
 
-    width: 100%;
-    text-align: center;
-    margin-top: 1rem;
-    margin-bottom: 1rem;
+  width: 100%;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+
+  text-align: center;
 }
 
 .quick-registration-form {
-    display: flex;
-    justify-content: space-between;
-    max-width: 570px;
-    flex-wrap: wrap;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+
+  max-width: 570px;
 }
 
 .quick-registration-textfield {
-    box-sizing:border-box;
-    width: 100%;
-    min-width: 270px;
-    min-height: 50px;
-    padding-left: 20px;
-    margin-bottom: 1.5rem;
-    border: 2px solid $base-text-color;
-    background: none;
-    color: $primary-text-color;
-    border-radius: 3px;        
+  box-sizing: border-box;
+  width: 100%;
+  min-width: 270px;
+  min-height: 50px;
+  margin-bottom: 1.5rem;
+  padding-left: 20px;
+
+  color: $primary-text-color;
+
+  background: none;
+  border: 2px solid $base-text-color;
+  border-radius: 3px;
 }
 
 .quick-registration-backgr-picture {
-    background-image: url("../images/banner.png");
-    
-    @include backgr-picture;
-    
-    margin: 0;
-    padding: 200px 0 200px 0;
-    width: 100%;
+  @include backgr-picture;
+
+  width: 100%;
+  margin: 0;
+  padding: 200px 0 200px 0;
+
+  background-image: url("../images/banner.png");
 }
 
 @media (min-width: 1240px) {
-    .quick-registration {
-        padding-top: 0;
-    }
+  .quick-registration {
+    padding-top: 0;
+  }
 
-    .quick-registration-form {
-        margin: 0 auto;
-    }
+  .quick-registration-form {
+    margin: 0 auto;
+  }
 
-    .quick-registration-textfield {
-        width: auto;
-    }
+  .quick-registration-textfield {
+    width: auto;
+  }
 
-    .quick-registration-span {
-        margin-top: 2em;
-    }
+  .quick-registration-span {
+    margin-top: 2em;
+  }
 }

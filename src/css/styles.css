@@ -8,6 +8,11 @@
   font-family: "Roboto";
   src: url("../fonts/Roboto/Roboto-Bold.ttf");
 }
+@font-face {
+  font-weight: normal;
+  font-family: "Arial";
+  src: url("../fonts/Arial/arial.ttf");
+}
 h1 {
   font-weight: bold;
   font-size: 30px;
@@ -102,22 +107,22 @@ h4 {
   h1 {
     font-weight: bold;
     font-size: 60px;
-    text-transform: uppercase;
     line-height: 90px;
+    text-transform: uppercase;
   }
 
   h2 {
     font-weight: bold;
     font-size: 38px;
-    text-transform: uppercase;
     line-height: 57px;
+    text-transform: uppercase;
   }
 
   h3 {
     font-weight: normal;
     font-size: 24px;
-    text-transform: uppercase;
     line-height: 36px;
+    text-transform: uppercase;
   }
 
   .h3-capitalize, .news-name {
@@ -141,39 +146,39 @@ h4 {
   }
 }
 body {
-  font-family: Roboto, sans-serif;
   font-size: 18px;
-  font-style: normal;
-  line-height: 1.5em;
+  font-family: Roboto, sans-serif;
   color: #cacaca;
-  background-color: #08020d;
+  font-style: normal;
   margin: 0;
   padding: 0;
+  line-height: 1.5em;
+  background-color: #08020d;
 }
 
 .document-width, .intro, .footer-nav, .footer-columns, .header, .container, .simular-artists, .diskography, .popular-tracks, .application, .news, .pricing, .quick-registration {
-  width: 100%;
-  padding: 0 20px;
   display: flex;
   box-sizing: border-box;
+  width: 100%;
+  padding: 0 20px;
 }
 
 @media (min-width: 1240px) {
   .document-width, .intro, .footer-nav, .footer-columns, .header, .container, .simular-artists, .diskography, .popular-tracks, .application, .news, .pricing, .quick-registration {
+    box-sizing: content-box;
     width: 1200px;
     margin: 0 auto;
-    box-sizing: content-box;
   }
 }
 .sr-only {
   position: absolute;
   width: 1px;
   height: 1px;
-  padding: 0;
   margin: -1px;
+  padding: 0;
   overflow: hidden;
-  clip: rect(0, 0, 0, 0);
   border: 0;
+  clip: rect(0, 0, 0, 0);
 }
 
 .uppercase, .news-author, .pricing-roubles, .header-list, .intro-button p, .green-button {
@@ -184,7 +189,8 @@ body {
   margin-right: 16px;
 }
 
-.no-margin, .simular-artists-fans, .simular-artists-name, .simular-artists-h2, .diskography-album-year, .diskography-album-name, .diskography-h2, .popular-tracks-item-album, .popular-tracks-item-name, .popular-tracks-h2, .pricing-ps, .quick-registration-h1, .quick-registration-h2, .intro-button p {
+.no-margin, .simular-artists-fans, .simular-artists-name, .simular-artists-h2, .diskography-album-year, .diskography-album-name, .diskography-h2, .popular-tracks-item-album, .popular-tracks-item-name, .popular-tracks-h2, .pricing-ps, .quick-registration-h1,
+.quick-registration-h2, .intro-button p {
   margin: 0;
 }
 
@@ -208,12 +214,13 @@ body {
   margin-right: 1.5em;
 }
 
-.text-center, .pricing-ps, .pricing-footer, .quick-registration-span, .quick-registration-h1, .quick-registration-h2 {
+.text-center, .pricing-ps, .pricing-footer, .quick-registration-span, .quick-registration-h1,
+.quick-registration-h2 {
   text-align: center;
 }
 
 .text-white, .intro, .quick-registration {
-  color: #FFFFFF;
+  color: #fff;
 }
 
 .line-height-1, .pricing-number {
@@ -221,11 +228,11 @@ body {
 }
 
 .color-orange {
-  color: #F89202;
+  color: #f89202;
 }
 
 .fill-white {
-  fill: #FFFFFF;
+  fill: #fff;
 }
 
 .white-space-nowrap {
@@ -233,37 +240,37 @@ body {
 }
 
 .btn {
-  padding: 21px 30px;
-  border-radius: 5px;
   width: 100%;
-  color: #FFFFFF;
-  text-transform: uppercase;
+  padding: 21px 30px;
+  color: #fff;
+  border-radius: 5px;
   font-weight: normal;
   font-size: 16px;
   line-height: 150%;
+  text-transform: uppercase;
 }
 
 .green-button {
-  border: 0;
-  background-color: #34C176;
   font-size: 13.3px;
+  background-color: #34c176;
   line-height: 15px;
+  border: 0;
 }
 
 .white-n-alpha-button, .white-n-alpha-button-small {
-  border: 1px solid #FFFFFF;
   box-sizing: border-box;
   padding-top: 20px;
   padding-bottom: 20px;
-  text-decoration: none;
-  text-align: center;
+  border: 1px solid #fff;
   color: #cacaca;
+  text-align: center;
+  text-decoration: none;
 }
 
 .white-n-alpha-button-small {
-  font-size: 12.8px;
   padding-top: 16px;
   padding-bottom: 16px;
+  font-size: 12.8px;
 }
 
 @media (max-width: 1239px) {
@@ -274,37 +281,37 @@ body {
   }
 }
 .red-button {
-  width: fit-content;
-  border: 0;
   box-sizing: border-box;
-  border-radius: 2rem;
+  width: fit-content;
   padding: 16px 40px 16px 40px;
-  text-decoration: none;
-  text-align: center;
-  background-color: #95390C;
-  color: #FFFFFF;
-  text-transform: none;
+  border: 0;
+  border-radius: 2rem;
+  color: #fff;
   font-weight: normal;
   font-size: 12.8px;
   line-height: 150%;
+  text-transform: none;
+  text-align: center;
+  text-decoration: none;
+  background-color: #95390c;
 }
 
 .intro-button {
-  border: 0;
   display: flex;
-  width: 200px;
   flex-direction: row;
   flex-wrap: nowrap;
-  height: 62px;
   box-sizing: border-box;
+  width: 200px;
+  height: 62px;
   min-width: 200px;
   margin-bottom: 24px;
   padding-top: 20px;
   padding-bottom: 20px;
-  text-decoration: none;
+  border: 0;
   font-weight: normal;
   font-size: 12.8px;
   line-height: 150%;
+  text-decoration: none;
 }
 .container, .simular-artists, .diskography, .popular-tracks, .application, .news, .pricing, .quick-registration {
   display: flex;
@@ -315,10 +322,10 @@ body {
 
 .horizontal-list, .simular-artists-list, .diskography-list {
   display: flex;
-  flex-wrap: wrap;
-  width: 100%;
-  justify-content: flex-start;
   flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  width: 100%;
   margin-top: 23px;
 }
 
@@ -326,25 +333,25 @@ body {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  max-width: 250px;
   width: 250px;
+  max-width: 250px;
   margin-top: 25px;
   margin-right: 50px;
 }
 
 .horizontal-list-adaptive-img, .simular-artists-adaptive-img, .diskography-album-adaptive-img {
   position: relative;
-  padding-top: 100%;
   display: flex;
   width: 250px;
   height: 0;
   margin-bottom: 18px;
+  padding-top: 100%;
 }
 
 .horizontal-list-img, .simular-artists-img, .diskography-album-img {
   position: absolute;
-  left: 0;
   top: 0;
+  left: 0;
   width: 100%;
   height: auto;
 }
@@ -361,17 +368,18 @@ body {
 .header {
   position: absolute;
   top: 25px;
-  left: 0;
   right: 0;
+  left: 0;
   z-index: 100;
-  box-sizing: border-box;
-  justify-content: space-between;
+  display: flex;
   flex-wrap: wrap;
+  justify-content: space-between;
+  box-sizing: border-box;
+  color: #fff;
   font-weight: bold;
-  font-style: normal;
   font-size: 11px;
+  font-style: normal;
   line-height: 13px;
-  color: #FFFFFF;
 }
 
 .header-logo-block {
@@ -388,13 +396,12 @@ body {
 }
 
 .header-nav {
-  display: flex;
-  align-items: center;
   flex: 1;
+  align-items: center;
 }
 
 .header-list {
-  padding-inline-start: 0px;
+  padding-inline-start: 0;
   display: flex;
   flex-direction: row;
   margin-top: 0;
@@ -402,43 +409,42 @@ body {
 }
 
 .header-list-item {
-  list-style: none;
-  margin-right: 24px;
-  margin-bottom: 3px;
   margin-top: 0;
+  margin-right: 24px;
   margin-bottom: 0;
+  list-style: none;
 }
 .header-list-item a {
-  text-decoration: none;
+  color: #fff;
   font-weight: bold;
-  font-style: normal;
   font-size: 11px;
+  font-style: normal;
   line-height: 13px;
-  color: #FFFFFF;
+  text-decoration: none;
 }
 .header-list-item a:hover {
   color: blue;
 }
 .header-list-item a:visited {
-  color: #FFFFFF;
+  color: #fff;
 }
 
 .header-find-input {
+  box-sizing: border-box;
   width: 100%;
   height: 25px;
-  max-width: 400px;
   min-width: 250px;
-  box-sizing: border-box;
+  max-width: 400px;
+  padding: 0 10px;
+  color: #757575;
+  font-weight: normal;
+  font-family: Arial, sans-serif;
+  font-size: 13.3px;
+  font-style: normal;
+  line-height: 15px;
   border: 0;
   border-radius: 50px;
-  padding: 0 10px;
-  background-color: #3C3B3D;
-  color: #757575;
-  font-family: Arial;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 13.3px;
-  line-height: 15px;
+  background-color: #3c3b3d;
 }
 
 @media (max-width: 1239px) {
@@ -465,11 +471,11 @@ body {
   }
 }
 .footer {
-  background: linear-gradient(89.75deg, #5328a1 32.83%, #95390c 81.56%);
-  padding-top: 46px;
   width: 100%;
-  color: #FFFFFF;
   margin-top: 100px;
+  padding-top: 46px;
+  color: #fff;
+  background: linear-gradient(89.75deg, #5328a1 32.83%, #95390c 81.56%);
 }
 
 @media (min-width: 1240px) {
@@ -480,8 +486,8 @@ body {
 .footer-columns {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
   flex-wrap: wrap;
+  justify-content: space-between;
   padding-top: 0;
   padding-bottom: 59px;
 }
@@ -492,11 +498,10 @@ body {
   }
 }
 .footer-columns-item {
-  display: flex;
+  flex: 1 1 270px;
   flex-direction: column;
   align-items: flex-start;
   box-sizing: border-box;
-  flex: 1 1 270px;
   margin-right: 0;
   margin-bottom: 14px;
 }
@@ -511,13 +516,13 @@ body {
   }
 }
 .footer-h2 {
+  width: 100%;
+  margin: 16px 0 16px 0;
   font-weight: bold;
   font-size: 18px;
   line-height: 27px;
-  text-transform: uppercase;
-  margin: 16px 0 16px 0;
-  width: 100%;
   text-align: start;
+  text-transform: uppercase;
 }
 
 @media (min-width: 1240px) {
@@ -532,16 +537,16 @@ body {
 }
 
 .footer-link, .footer-below-link, .footer-link-logoes-cont {
-  text-decoration: none;
-  color: #E0E0E0;
-  margin-right: 24px;
   width: 100%;
+  margin-right: 24px;
+  color: #e0e0e0;
+  text-decoration: none;
 }
 .footer-link:hover, .footer-below-link:hover, .footer-link-logoes-cont:hover {
-  color: #FFFFFF;
+  color: #fff;
 }
 .footer-link:visited, .footer-below-link:visited, .footer-link-logoes-cont:visited {
-  color: #FFFFFF;
+  color: #fff;
 }
 
 @media (min-width: 1240px) {
@@ -551,11 +556,11 @@ body {
   }
 }
 .footer-link-logoes-cont {
-  margin-right: 24px;
   display: flex;
   flex-direction: row;
   align-items: flex-end;
   height: 24px;
+  margin-right: 24px;
 }
 
 .footer-link-logoes {
@@ -566,13 +571,13 @@ body {
   margin: 0;
   padding-top: 40px;
   padding-bottom: 32px;
-  border-top: 1px solid #E0E0E0;
+  border-top: 1px solid #e0e0e0;
 }
 
 .footer-nav {
   display: flex;
-  align-items: flex-start;
   flex-direction: row;
+  align-items: flex-start;
   box-sizing: border-box;
 }
 
@@ -583,18 +588,18 @@ body {
 }
 .footer-below-link {
   display: flex;
-  padding-right: 15px;
   box-sizing: border-box;
   margin-right: 0;
+  padding-right: 15px;
 }
 
 .footer-lineheight-1 {
-  line-height: 100%;
-  padding-top: 2px;
-  padding-bottom: 2px;
-  margin-top: 2px;
-  margin-bottom: 2px;
   width: auto;
+  margin-top: 2px;
+  padding-top: 2px;
+  margin-bottom: 2px;
+  padding-bottom: 2px;
+  line-height: 100%;
 }
 
 .footer-text-span {
@@ -609,23 +614,24 @@ body {
   padding-top: 50px;
 }
 
-.quick-registration-h1, .quick-registration-h2 {
+.quick-registration-h1,
+.quick-registration-h2 {
   width: 100%;
   text-align: center;
 }
 
 .quick-registration-span {
   width: 100%;
-  text-align: center;
   margin-top: 1rem;
   margin-bottom: 1rem;
+  text-align: center;
 }
 
 .quick-registration-form {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   max-width: 570px;
-  flex-wrap: wrap;
 }
 
 .quick-registration-textfield {
@@ -633,21 +639,21 @@ body {
   width: 100%;
   min-width: 270px;
   min-height: 50px;
-  padding-left: 20px;
   margin-bottom: 1.5rem;
-  border: 2px solid #cacaca;
+  padding-left: 20px;
+  color: #fff;
   background: none;
-  color: #FFFFFF;
+  border: 2px solid #cacaca;
   border-radius: 3px;
 }
 
 .quick-registration-backgr-picture {
-  background-image: url("../images/banner.png");
   background-position: center;
   background-size: cover;
+  width: 100%;
   margin: 0;
   padding: 200px 0 200px 0;
-  width: 100%;
+  background-image: url("../images/banner.png");
 }
 
 @media (min-width: 1240px) {
@@ -669,17 +675,17 @@ body {
 }
 .pricing-h2 {
   width: 100%;
-  text-align: center;
   margin: 0;
+  text-align: center;
 }
 
 .pricing-h3 {
   width: 100%;
-  text-align: center;
   margin: 0;
   padding-top: 0;
   padding-bottom: 0;
   font-weight: 400;
+  text-align: center;
 }
 
 @media (min-width: 1240px) {
@@ -692,20 +698,20 @@ body {
 .pricing-cards {
   display: flex;
   flex-direction: row;
-  width: 100%;
-  justify-content: space-between;
   flex-wrap: wrap;
+  justify-content: space-between;
+  width: 100%;
 }
 
 .pricing-item {
   display: flex;
   flex-direction: column;
   align-items: center;
-  max-width: 367px;
   box-sizing: border-box;
-  border-radius: 1rem;
-  padding: 18px 1.5rem 66px 1.5rem;
+  max-width: 367px;
   margin: 46px 0 0 0;
+  padding: 18px 1.5rem 66px 1.5rem;
+  border-radius: 1rem;
 }
 
 @media (min-width: 1240px) {
@@ -715,10 +721,10 @@ body {
 }
 .pricing-value {
   display: flex;
+  justify-content: center;
+  width: 100%;
   margin-top: 200px;
   margin-bottom: 40px;
-  width: 100%;
-  justify-content: center;
 }
 
 @media (min-width: 1240px) {
@@ -766,8 +772,8 @@ body {
 .news-item {
   display: flex;
   flex-wrap: wrap;
-  width: 100%;
   justify-content: space-between;
+  width: 100%;
   margin-bottom: 17px;
 }
 .news-item:nth-child(2n) {
@@ -782,33 +788,33 @@ body {
 
 .news-h2 {
   width: 100%;
-  text-align: center;
   margin: 0;
+  text-align: center;
 }
 
 .news-img {
-  margin-top: 3rem;
   flex: 1 1 575px;
   width: auto;
-  height: 100%;
   max-width: 100%;
+  height: 100%;
+  margin-top: 3rem;
 }
 
 .news-body {
-  margin-top: 49px;
   flex: 1 1 575px;
   flex-direction: column;
   justify-content: center;
+  margin-top: 49px;
 }
 
 .news-name {
+  width: 100%;
   margin-top: 0;
   margin-bottom: 16px;
-  width: 100%;
-  line-height: 24px;
   padding-top: 1px;
   padding-bottom: 1px;
   font-weight: 400;
+  line-height: 24px;
   text-transform: capitalize;
 }
 
@@ -824,14 +830,14 @@ body {
 .news-author {
   display: flex;
   align-content: center;
+  box-sizing: border-box;
   width: 100%;
   margin-bottom: 60px;
-  box-sizing: border-box;
 }
 
 .news-avatar {
-  height: 19px;
   width: auto;
+  height: 19px;
   margin-right: 16px;
 }
 
@@ -846,11 +852,11 @@ body {
 
   .news-name {
     margin-bottom: 30px;
-    line-height: 45px;
-    font-size: 30px;
-    text-transform: capitalize;
     padding-top: 0;
     padding-bottom: 0;
+    font-size: 30px;
+    line-height: 45px;
+    text-transform: capitalize;
   }
 
   .news-footer {
@@ -869,16 +875,16 @@ body {
 }
 .application-h2 {
   width: 100%;
-  text-align: center;
   margin: 0;
+  text-align: center;
 }
 
 .application-content {
   display: flex;
-  flex-wrap: wrap;
   flex-direction: row-reverse;
-  width: 100%;
+  flex-wrap: wrap;
   justify-content: space-between;
+  width: 100%;
   margin-top: 48px;
 }
 
@@ -909,8 +915,8 @@ body {
   position: relative;
   left: 0;
   width: auto;
-  height: 100%;
   max-width: 333px;
+  height: 100%;
 }
 
 @media (min-width: 1240px) {
@@ -919,20 +925,20 @@ body {
   }
 }
 .intro-backgr {
+  width: 100%;
+  margin: 0;
+  padding: 200px 0;
   background-image: url("../images/Morten Harket.png");
   background-position: center;
   background-size: cover;
-  margin: 0;
-  padding: 200px 0;
-  width: 100%;
 }
 
 .intro {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
-  align-items: flex-start;
   flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: space-between;
 }
 
 .intro-h1 {
@@ -946,9 +952,9 @@ body {
   }
 }
 .intro-fans {
+  width: 100%;
   margin-top: 1em;
   margin-bottom: 3em;
-  width: 100%;
 }
 
 .intro-buttons-block {
@@ -963,11 +969,11 @@ body {
 }
 
 .button-red {
-  background-color: #95390C;
+  background-color: #95390c;
 }
 
 .button-purple {
-  background-color: #5328A1;
+  background-color: #5328a1;
 }
 
 .popular-tracks {
@@ -980,22 +986,21 @@ body {
 
 .popular-tracks-playlist {
   display: flex;
-  flex-wrap: wrap;
-  width: 100%;
-  justify-content: space-between;
   flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 100%;
   margin-top: 23px;
 }
 
 .popular-tracks-item {
-  display: flex;
-  flex-wrap: nowrap;
-  flex-direction: row;
   flex: 0 1 550px;
-  justify-content: space-between;
+  flex-direction: row;
+  flex-wrap: nowrap;
   align-items: center;
-  max-width: 550px;
+  justify-content: space-between;
   width: auto;
+  max-width: 550px;
   margin-top: 25px;
   margin-right: 0;
 }
@@ -1064,13 +1069,13 @@ body {
 
 .simular-artists-fans {
   width: 100%;
-  text-align: center;
   font-size: 16px;
+  text-align: center;
 }
 
 .simular-artists-fans-span {
-  width: 100%;
   display: block;
+  width: 100%;
 }
 
 @media (min-width: 1240px) {
@@ -1079,8 +1084,8 @@ body {
   }
 
   .simular-artists-fans-span {
-    width: fit-content;
     display: inline;
+    width: fit-content;
   }
 }
 

@@ -2,29 +2,28 @@
 body {
   font-size: 18px;
   font-family: Roboto, sans-serif;
-  font-style: normal;
   color: $base-text-color;
-  line-height: 1.5em;
-
+  font-style: normal;
   margin: 0;
   padding: 0;
+  line-height: 1.5em;
 
   background-color: $base-back-color;
 }
 
 .document-width {
-  width: 100%;
   display: flex;
-  padding: 0 20px;
   box-sizing: border-box;
+  width: 100%;
+  padding: 0 20px;
 }
 
 @media (min-width: 1240px) {
   .document-width {
-    width: 1200px;
     box-sizing: content-box;
+    width: 1200px;
     margin: 0 auto;
-}
+  }
 }
 
 .sr-only {
@@ -37,5 +36,6 @@ body {
   overflow: hidden;
 
   border: 0;
+  
   clip: rect(0, 0, 0, 0);
 }

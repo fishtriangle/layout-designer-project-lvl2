@@ -1,64 +1,65 @@
 .simular-artists {
-    @extend .container;
+  @extend .container;
 
-    align-items: flex-start;
+  align-items: flex-start;
 }
 
 .simular-artists-h2 {
-    width: 100%;
+  width: 100%;
 
-    @extend .no-margin;
+  @extend .no-margin;
 }
 
 .simular-artists-list {
-    @extend .horizontal-list;
+  @extend .horizontal-list;
 }
-    
-.simular-artists-item {
-    @extend .horizontal-list-item;
 
-    align-items: center;
-}    
+.simular-artists-item {
+  @extend .horizontal-list-item;
+
+  align-items: center;
+}
 
 .simular-artists-adaptive-img {
-    @extend .horizontal-list-adaptive-img;
+  @extend .horizontal-list-adaptive-img;
 }
 
 .simular-artists-img {
-    @extend .horizontal-list-img;
+  @extend .horizontal-list-img;
 }
 
 .simular-artists-name {
-    @extend .h4-capitalize-bold;
-    @extend .no-margin;
+  @extend .h4-capitalize-bold;
+  @extend .no-margin;
 
-    width: 100%;
-    text-align: center;
-    text-transform: capitalize;
+  width: 100%;
+
+  text-align: center;
+  text-transform: capitalize;
 }
 
 .simular-artists-fans {
-    @extend .text-small;
-    @extend .no-margin;
+  @extend .text-small;
+  @extend .no-margin;
 
-    width: 100%;
-    text-align: center;
+  width: 100%;
 
-    font-size: 16px;
+  font-size: 16px;
+  text-align: center;
 }
 
 .simular-artists-fans-span {
-    width: 100%;
-    display: block;
+  display: block;
+  width: 100%;
 }
 
 @media (min-width: 1240px) {
-    .simular-artists-fans {
-        font-size: 12.8px;
-    }
-    
-    .simular-artists-fans-span {
-        width: fit-content;
-        display: inline;
-    }
+  .simular-artists-fans {
+    font-size: 12.8px;
+  }
+  
+  .simular-artists-fans-span {
+    display: inline;
+    width: fit-content;
+  }
 }
