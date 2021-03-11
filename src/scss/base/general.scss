@@ -1,11 +1,11 @@
-
 body {
-  font-size: 18px;
-  font-family: Roboto, sans-serif;
-  color: $base-text-color;
-  font-style: normal;
   margin: 0;
   padding: 0;
+
+  color: $base-text-color;
+  font-size: 18px;
+  font-family: Roboto, sans-serif;
+  font-style: normal;
   line-height: 1.5em;
 
   background-color: $base-back-color;
@@ -36,6 +36,6 @@ body {
   overflow: hidden;
 
   border: 0;
-  
+
   clip: rect(0, 0, 0, 0);
 }

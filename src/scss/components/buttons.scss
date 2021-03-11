@@ -3,20 +3,19 @@
   padding: 21px 30px;
 
   color: $primary-text-color;
-  border-radius: 5px;
-
   font-weight: normal;
   font-size: 16px;
   line-height: 150%;
   text-transform: uppercase;
+
+  border-radius: 5px;
 }
 
 .green-button {
   font-size: 13.3px;
+  line-height: 15px;
 
   background-color: $green-color;
-
-  line-height: 15px;
   border: 0;
 
   @extend .uppercase;
@@ -27,11 +26,11 @@
   padding-top: 20px;
   padding-bottom: 20px;
 
-  border: 1px solid $primary-text-color;
-
   color: $base-text-color;
   text-align: center;
   text-decoration: none;
+  
+  border: 1px solid $primary-text-color;
 }
 
 .white-n-alpha-button-small {
@@ -56,17 +55,16 @@
   width: fit-content;
   padding: 16px 40px 16px 40px;
 
-  border: 0;
-  border-radius: 2rem;
-
   color: $primary-text-color;
   font-weight: normal;
   font-size: 12.8px;
   line-height: 150%;
-  text-transform: none;
   text-align: center;
+  text-transform: none;
   text-decoration: none;
 
+  border: 0;
+  border-radius: 2rem;
   background-color: $red;
 }
 
@@ -76,18 +74,18 @@
   flex-wrap: nowrap;
   box-sizing: border-box;
   width: 200px;
-  height: 62px;
   min-width: 200px;
+  height: 62px;
   margin-bottom: 24px;
   padding-top: 20px;
   padding-bottom: 20px;
-
-  border: 0;
 
   font-weight: normal;
   font-size: 12.8px;
   line-height: 150%;
   text-decoration: none;
+  
+  border: 0;
 
   p {
     @extend .text-small;
