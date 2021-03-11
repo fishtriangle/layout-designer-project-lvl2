@@ -5,9 +5,7 @@
 }
 
 .popular-tracks-h2 {
-  width: 100%;
-
-  @extend .no-margin;
+  @include h2-base;
 }
 
 .popular-tracks-playlist {

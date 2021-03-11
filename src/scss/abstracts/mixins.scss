@@ -2,3 +2,8 @@
   background-position: center;
   background-size: cover;
 }
+
+@mixin h2-base {
+  width: 100%;
+  margin: 0;
+}

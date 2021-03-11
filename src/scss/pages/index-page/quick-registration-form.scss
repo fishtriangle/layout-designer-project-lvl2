@@ -11,10 +11,9 @@
 
 .quick-registration-h1,
 .quick-registration-h2 {
-  @extend .no-margin;
-  @extend .text-center;
+  @include h2-base;
 
-  width: 100%;
+  @extend .text-center;
 
   text-align: center;
 }

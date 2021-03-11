@@ -5,9 +5,7 @@
 }
 
 .simular-artists-h2 {
-  width: 100%;
-
-  @extend .no-margin;
+  @include h2-base;
 }
 
 .simular-artists-list {

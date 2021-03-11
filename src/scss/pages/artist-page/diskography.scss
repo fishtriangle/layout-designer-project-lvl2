@@ -5,9 +5,7 @@
 }
 
 .diskography-h2 {
-  @extend .no-margin;
-
-  width: 100%;
+  @include h2-base;
 }
 
 .diskography-list {

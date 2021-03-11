@@ -23,8 +23,7 @@
 }
 
 .news-h2 {
-  width: 100%;
-  margin: 0;
+  @include h2-base;
 
   text-align: center;
 }

@@ -55,7 +55,8 @@
 }
 
 .footer-h2 {
-  width: 100%;
+  @include h2-base;
+  
   margin: 16px 0 16px 0;
 
   font-weight: bold;
