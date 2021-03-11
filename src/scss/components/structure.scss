@@ -1,59 +1,59 @@
 .container {
-    @extend .document-width;
+  @extend .document-width;
 
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding-top: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 100px;
 }
 
 .horizontal-list {
-    display: flex;
-    flex-wrap: wrap;
-    width: 100%;
-    justify-content: flex-start;
-    flex-direction: row;
-    
-    margin-top: 23px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: flex-start;
+  width: 100%;
+
+  margin-top: 23px;
 }
 
 .horizontal-list-item {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    
-    max-width: 250px;
-    width: 250px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
 
-    margin-top: 25px;
-    margin-right: 50px;
+  max-width: 250px;
+  width: 250px;
+
+  margin-top: 25px;
+  margin-right: 50px;
 }
 
 .horizontal-list-adaptive-img {
-    position: relative;
-    padding-top: 100%;
-    
-    display: flex;
-    width: 250px;
-    height: 0;
+  position: relative;
 
-    margin-bottom: 18px;
+  display: flex;
+  width: 250px;
+  height: 0;
+  margin-bottom: 18px;
+  padding-top: 100%;
 }
 
 .horizontal-list-img {
-    position: absolute;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: auto;
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  width: 100%;
+  height: auto;
 }
 
 @media (max-width: 660px) {
-    .horizontal-list-item {
-        width: 137px;
-    }
+  .horizontal-list-item {
+    width: 137px;
+  }
 
-    .horizontal-list-adaptive-img {
-        width: 137px;
-    }
+  .horizontal-list-adaptive-img {
+    width: 137px;
+  }
 }

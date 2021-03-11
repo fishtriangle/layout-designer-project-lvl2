@@ -1,95 +1,94 @@
 .btn {
-    padding: 21px 30px;
-    border-radius: 5px;
-    
-    width: 100%;
-    
-    color: $primary-text-color;
-    text-transform: uppercase;
-    font-weight: normal;
-    font-size: 16px;
-    line-height: 150%;
+	padding: 21px 30px;
+
+	width: 100%;
+	border-radius: 5px;
+
+	color: $primary-text-color;
+  font-weight: normal;
+	text-transform: uppercase;
+	font-size: 16px;
+	line-height: 150%;
 }
 
 .green-button {
-    border: 0;
-    background-color: $green-color;
+  font-size: 13.3px;
+  background-color: $green-color;
+  border: 0;
+	line-height: 15px;
 
-    font-size: 13.3px;
-    line-height: 15px;
-
-    @extend .uppercase;
+	@extend .uppercase;
 }
 
 .white-n-alpha-button {
-    border: 1px solid $primary-text-color;
-    box-sizing: border-box ;
-    padding-top: 20px;
-    padding-bottom: 20px;
+  box-sizing: border-box;
+  border: 1px solid $primary-text-color;
+	padding-top: 20px;
+	padding-bottom: 20px;
 
-    text-decoration: none;
-    text-align: center;
-    color: $base-text-color;
+	color: $base-text-color;
+  text-align: center;
+  text-decoration: none;
 }
 
 .white-n-alpha-button-small {
-    @extend .white-n-alpha-button;
+	@extend .white-n-alpha-button;
 
-    font-size: 12.8px;
-    padding-top: 16px;
-    padding-bottom: 16px;
+  padding-top: 16px;
+	padding-bottom: 16px;
+
+  font-size: 12.8px;
 }
 
 @media (max-width: 1239px) {
-    .white-n-alpha-button-small {
-        font-weight: normal;
-        font-size: 12.8px;
-        line-height: 150%;
-    }
+	.white-n-alpha-button-small {
+		font-weight: normal;
+		font-size: 12.8px;
+		line-height: 150%;
+	}
 }
 
 .red-button {
-    width: fit-content;
+	width: fit-content;
 
-    border: 0;
-    box-sizing: border-box;
-    border-radius: 2rem;
-    padding: 16px 40px 16px 40px;
+  box-sizing: border-box;
+  border: 0;
 
-    text-decoration: none;
-    text-align: center;
-    background-color: $red;
-    color: $primary-text-color;
-    text-transform: none;
+	padding: 16px 40px 16px 40px;
+  border-radius: 2rem;
 
-    font-weight: normal;
-    font-size: 12.8px;
-    line-height: 150%;
+	text-align: center;
+  text-decoration: none;
+
+	color: $primary-text-color;
+  background-color: $red;
+  font-weight: normal;
+	font-size: 12.8px;
+	line-height: 150%;
+	text-transform: none;
 }
 
 .intro-button {
-    border: 0;
+	display: flex;
+  flex-direction: row;
+	flex-wrap: nowrap;
+	box-sizing: border-box;
+  width: 200px;
+	height: 62px;
+	border: 0;
+	min-width: 200px;
+	margin-bottom: 24px;
+	padding-top: 20px;
+	padding-bottom: 20px;
 
-    display: flex;
-    width: 200px;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    height: 62px;
-    box-sizing: border-box;
-    min-width: 200px;
-    margin-bottom: 24px;
-    padding-top: 20px;
-    padding-bottom: 20px;
+  font-weight: normal;
+	font-size: 12.8px;
+	line-height: 150%;
+	text-decoration: none;
 
-    text-decoration: none;
-
-    font-weight: normal;
-    font-size: 12.8px;
-    line-height: 150%;
-
-    p {
-        @extend .text-small;
-        @extend .uppercase;
-        @extend .no-margin;
-    }
+	p {
+		@extend .text-small;
+		@extend .uppercase;
+		@extend .no-margin;
+	}
 }

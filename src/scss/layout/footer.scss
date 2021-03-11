@@ -1,158 +1,163 @@
 .footer {
-    background: linear-gradient(89.75deg, #5328a1 32.83%, #95390c 81.56%);
-    padding-top: 46px;
-    width: 100%;
+  padding-top: 46px;
+  margin-top: 100px;
+  width: 100%;
+  background: linear-gradient(89.75deg, #5328a1 32.83%, #95390c 81.56%);
 
-    color: $primary-text-color;
-
-    margin-top: 100px;
+  color: $primary-text-color;
 }
 
 @media (min-width: 1240px) {
-    .footer {
-        padding-top: 45px;
-    }
+  .footer {
+    padding-top: 45px;
+  }
 }
 
 .footer-columns {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    padding-top: 0;
-    padding-bottom: 59px;
-    
-    @extend .document-width;
-    @extend .text-size-1;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+
+  padding-top: 0;
+  padding-bottom: 59px;
+
+  @extend .document-width;
+  @extend .text-size-1;
 }
 
 @media (min-width: 1240px) {
-    .footer-columns {
-        padding-bottom: 75px;
-    }
+  .footer-columns {
+    padding-bottom: 75px;
+  }
 }
 
 .footer-columns-item {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    box-sizing: border-box;
-    flex: 1 1 270px;
-    margin-right: 0;
-    margin-bottom: 14px;
+  flex: 1 1 270px;
+  flex-direction: column;
+  align-items: flex-start;
+  box-sizing: border-box;
+  margin-right: 0;
+  margin-bottom: 14px;
 
-    &:nth-child(4) {
-        margin-right: 0;
-    }
+  &:nth-child(4) {
+    margin-right: 0;
+  }
 }
 
 @media (min-width: 1240px) {
-    .footer-columns-item {
-        margin-right: 40px;
-        margin-bottom: 0;
-    }
+  .footer-columns-item {
+    margin-right: 40px;
+    margin-bottom: 0;
+  }
 }
 
 .footer-h2 {
-    font-weight: bold;
-    font-size: 18px;
-    line-height: 27px;
-    text-transform: uppercase;
-    margin: 16px 0 16px 0;
-    width: 100%;
-    text-align: start;
+  width: 100%;
+  margin: 16px 0 16px 0;
+
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 27px;
+
+  text-align: start;
+  text-transform: uppercase;
 }
 
 @media (min-width: 1240px) {
-    .footer-h2 {
-        font-weight: bold;
-        font-size: 18px;
-    }
+  .footer-h2 {
+    font-weight: bold;
+    font-size: 18px;
+  }
 }
 
 .footer-logoes {
-    display: flex;
-    flex-direction: row;
+  display: flex;
+  flex-direction: row;
 }
 
 .footer-link {
-    text-decoration: none;
-    color: $gray;
-    margin-right: 24px;
-    width: 100%;
-    
-    &:hover {
-        color: $primary-text-color;
-    }
+  width: 100%;
+  margin-right: 24px;
 
-    &:visited {
-        color: $primary-text-color;
-    }
+  color: $gray;
+  text-decoration: none;
+
+  &:hover {
+    color: $primary-text-color;
+  }
+
+  &:visited {
+    color: $primary-text-color;
+  }
 }
 
 @media (min-width: 1240px) {
-    .footer-link {
-        width: auto;
-        margin-right: 44px;
-    }
+  .footer-link {
+    width: auto;
+    margin-right: 44px;
+  }
 }
 
 .footer-link-logoes-cont {
-    @extend .footer-link;
+  @extend .footer-link;
 
-    margin-right: 24px;
-    display: flex;
-    flex-direction: row;
-    align-items: flex-end;
-    height: 24px;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  height: 24px;
+  margin-right: 24px;
 }
 
 .footer-link-logoes {
-    margin-bottom: 2px;
+  margin-bottom: 2px;
 }
 
 .footer-below {
-    margin: 0;
-    padding-top: 40px;
-    padding-bottom: 32px;
-    border-top: 1px solid $gray;
+  margin: 0;
+  padding-top: 40px;
+  padding-bottom: 32px;
+
+  border-top: 1px solid $gray;
 }
 
 .footer-nav {
-    display: flex;
-    align-items: flex-start;
-    flex-direction: row;
-    box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  box-sizing: border-box;
 
-    @extend .text-size-1;
-    @extend .document-width;
+  @extend .text-size-1;
+  @extend .document-width;
 }
 
 @media (max-width: 1239px) {
-    .footer-nav {
-        flex-direction: column;
-    }
+  .footer-nav {
+    flex-direction: column;
+  }
 }
 
 .footer-below-link {
-    @extend .footer-link;
-    
-    display: flex;
-    padding-right: 15px;
-    box-sizing: border-box;
-    margin-right: 0;
+  @extend .footer-link;
+
+  display: flex;
+  box-sizing: border-box;
+  padding-right: 15px;
+  margin-right: 0;
 }
 
 .footer-lineheight-1 {
-    line-height: 100%;
-    padding-top: 2px;
-    padding-bottom: 2px;
-    margin-top: 2px;
-    margin-bottom: 2px;
-    width: auto;
+  width: auto;
+  padding-top: 2px;
+  margin-top: 2px;
+  padding-bottom: 2px;
+  margin-bottom: 2px;
+
+  line-height: 100%;
 }
 
 .footer-text-span {
-    width: 100%;
-    text-align: left;
+  width: 100%;
+
+  text-align: left;
 }

@@ -1,37 +1,41 @@
 
 body {
-    font-family: Roboto, sans-serif;
-    font-size: 18px;
-    font-style: normal;
-    line-height: 1.5em;
-    color: $base-text-color;
-    background-color: $base-back-color;
-    margin: 0;
-    padding: 0;
+  font-size: 18px;
+  font-family: Roboto, sans-serif;
+  font-style: normal;
+  color: $base-text-color;
+  line-height: 1.5em;
+
+  margin: 0;
+  padding: 0;
+
+  background-color: $base-back-color;
 }
 
 .document-width {
-    width: 100%;
-    padding: 0 20px;
-    display: flex;
-    box-sizing: border-box;
+  width: 100%;
+  display: flex;
+  padding: 0 20px;
+  box-sizing: border-box;
 }
 
 @media (min-width: 1240px) {
-    .document-width {
-        width: 1200px;
-        margin: 0 auto;
-        box-sizing: content-box;
-    }
+  .document-width {
+    width: 1200px;
+    box-sizing: content-box;
+    margin: 0 auto;
+}
 }
 
 .sr-only {
-    position: absolute;
-    width: 1px;
-    height: 1px;
-    padding: 0;
-    margin: -1px;
-    overflow: hidden;
-    clip: rect(0,0,0,0);
-    border: 0;
+  position: absolute;
+
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+
+  border: 0;
+  clip: rect(0, 0, 0, 0);
 }

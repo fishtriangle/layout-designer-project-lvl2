@@ -1,16 +1,12 @@
 @import "./abstracts/variables";
 @import "./abstracts/mixins";
-
 @import "./base/typography";
 @import "./base/general";
 @import "./base/atomic";
-
 @import "./components/buttons";
 @import "./components/structure";
-
 @import "./layout/header";
 @import "./layout/footer";
-
 @import "./pages/index-page/quick-registration-form";
 @import "./pages/index-page/pricing";
 @import "./pages/index-page/news";
