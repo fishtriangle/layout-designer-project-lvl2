@@ -4,7 +4,7 @@
   align-items: flex-start;
 }
 
-.simular-artists-h2 {
+.simular-artists-main-title {
   @include h2-base;
 }
 
@@ -28,9 +28,9 @@
 
 .simular-artists-name {
   @extend .h4-capitalize-bold;
-  @extend .no-margin;
 
   width: 100%;
+  margin: 0;
 
   text-align: center;
   text-transform: capitalize;
@@ -38,15 +38,15 @@
 
 .simular-artists-fans {
   @extend .text-small;
-  @extend .no-margin;
 
   width: 100%;
+  margin: 0;
 
   font-size: 16px;
   text-align: center;
 }
 
-.simular-artists-fans-span {
+.simular-artists-fans-description {
   display: block;
   width: 100%;
 }
@@ -56,7 +56,7 @@
     font-size: 12.8px;
   }
 
-  .simular-artists-fans-span {
+  .simular-artists-fans-description {
     display: inline;
     width: fit-content;
   }

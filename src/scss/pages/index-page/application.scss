@@ -2,7 +2,7 @@
   @extend .container;
 }
 
-.application-h2 {
+.application-main-title {
   width: 100%;
   margin: 0;
 
@@ -33,7 +33,7 @@
   }
 }
 
-.application-column-text {
+.application-column-description {
   @extend .text-size-1;
 
   margin-top: 8px;

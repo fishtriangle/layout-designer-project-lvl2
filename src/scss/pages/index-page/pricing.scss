@@ -2,13 +2,13 @@
   @extend .container;
 }
 
-.pricing-h2 {
+.pricing-main-title {
   @include h2-base;
 
   text-align: center;
 }
 
-.pricing-h3 {
+.pricing-secondary-title {
   width: 100%;
   margin: 0;
   padding-top: 0;
@@ -19,7 +19,7 @@
 }
 
 @media (min-width: 1240px) {
-  .pricing-h3 {
+  .pricing-secondary-title {
     padding-top: 5px;
     padding-bottom: 4px;
 
@@ -72,26 +72,29 @@
 
 .pricing-number {
   @extend .text-size-7;
-  @extend .line-height-1;
 
   height: 64px;
   margin: 0 16px 0 0;
   padding: 0;
+
+  line-height: 1em;
 }
 
 .pricing-roubles {
   position: relative;
   top: 0;
 
+  text-transform: uppercase;
+
   @extend .text-size-3;
-  @extend .uppercase;
 }
 
 .pricing-footer {
   margin: 64px 0 0 0;
 
+  text-align: center;
+
   @extend .text-small;
-  @extend .text-center;
 }
 
 .pricing-bg-free {
@@ -114,8 +117,8 @@
 
 .pricing-ps {
   @extend .text-size-1;
-  @extend .text-center;
-  @extend .no-margin;
 
-  margin-top: 39px;
+  margin: 39px 0 0 0;
+
+  text-align: center;
 }

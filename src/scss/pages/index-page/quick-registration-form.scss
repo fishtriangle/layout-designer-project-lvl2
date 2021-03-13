@@ -6,21 +6,18 @@
   margin-top: 0;
   padding-top: 50px;
 
-  @extend .text-white;
+  color: $primary-text-color;
 }
 
-.quick-registration-h1,
-.quick-registration-h2 {
+.quick-registration-page-name,
+.quick-registration-main-title {
   @include h2-base;
-
-  @extend .text-center;
 
   text-align: center;
 }
 
-.quick-registration-span {
+.quick-registration-description {
   @extend .text-size-1;
-  @extend .text-center;
 
   width: 100%;
   margin-top: 1rem;
@@ -75,7 +72,7 @@
     width: auto;
   }
 
-  .quick-registration-span {
+  .quick-registration-description {
     margin-top: 2em;
   }
 }

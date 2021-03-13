@@ -18,7 +18,7 @@
   background-color: $green-color;
   border: 0;
 
-  @extend .uppercase;
+  text-transform: uppercase;
 }
 
 .white-n-alpha-button {
@@ -76,6 +76,7 @@
   width: 200px;
   min-width: 200px;
   height: 62px;
+  margin-right: 1.5em;
   margin-bottom: 24px;
   padding-top: 20px;
   padding-bottom: 20px;
@@ -89,7 +90,17 @@
 
   p {
     @extend .text-small;
-    @extend .uppercase;
-    @extend .no-margin;
+
+    margin: 0;
+
+    text-transform: uppercase;
   }
+}
+
+.button-red {
+  background-color: $red;
+}
+
+.button-purple {
+  background-color: $purple;
 }

@@ -4,7 +4,7 @@
   align-items: flex-start;
 }
 
-.popular-tracks-h2 {
+.popular-tracks-main-title {
   @include h2-base;
 }
 
@@ -60,10 +60,12 @@
 
 .popular-tracks-item-name {
   @extend .popular-track-small-bold;
-  @extend .no-margin;
+
+  margin: 0;
 }
 
 .popular-tracks-item-album {
   @extend .text-small;
-  @extend .no-margin;
+
+  margin: 0;
 }

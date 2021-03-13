@@ -2,7 +2,6 @@
 @import "./abstracts/mixins";
 @import "./base/typography";
 @import "./base/general";
-@import "./base/atomic";
 @import "./components/buttons";
 @import "./components/structure";
 @import "./layout/header";
@@ -15,3 +14,4 @@
 @import "./pages/artist-page/popular-tracks";
 @import "./pages/artist-page/diskography";
 @import "./pages/artist-page/similar-artists";
+@import "./base/atomic";

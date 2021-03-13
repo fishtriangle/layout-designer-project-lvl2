@@ -4,7 +4,7 @@
   align-items: flex-start;
 }
 
-.diskography-h2 {
+.diskography-main-title {
   @include h2-base;
 }
 
@@ -26,18 +26,18 @@
 
 .diskography-album-name {
   @extend .h4-capitalize-bold;
-  @extend .no-margin;
 
   width: 138px;
+  margin: 0;
 
   text-transform: capitalize;
 }
 
 .diskography-album-year {
   @extend .text-size-1;
-  @extend .no-margin;
 
   width: 100%;
+  margin: 0;
 }
 
 @media (min-width: 1240px) {

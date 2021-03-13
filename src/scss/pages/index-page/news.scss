@@ -22,7 +22,7 @@
   }
 }
 
-.news-h2 {
+.news-main-title {
   @include h2-base;
 
   text-align: center;
@@ -76,8 +76,9 @@
   width: 100%;
   margin-bottom: 60px;
 
+  text-transform: uppercase;
+
   @extend .text-small;
-  @extend .uppercase;
 }
 
 .news-avatar {

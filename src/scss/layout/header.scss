@@ -33,6 +33,10 @@
 
     margin-right: 16px;
   }
+
+  span {
+    text-transform: uppercase;
+  }
 }
 
 .header-nav {
@@ -49,7 +53,7 @@
   margin-top: 0;
   margin-bottom: 0;
 
-  @extend .uppercase;
+  text-transform: uppercase;
 }
 
 .header-list-item {
@@ -69,7 +73,7 @@
     text-decoration: none;
 
     &:hover {
-      color: blue;
+      color: $primary-text-color;
     }
 
     &:visited {

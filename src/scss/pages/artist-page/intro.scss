@@ -15,17 +15,18 @@
   align-items: flex-start;
   justify-content: space-between;
 
-  @extend .text-white;
+  color: $primary-text-color;
+  
   @extend .document-width;
 }
 
-.intro-h1 {
+.intro-page-name {
   width: 100%;
   margin: 25px 0 0 0;
 }
 
 @media (min-width: 1240px) {
-  .intro-h1 {
+  .intro-page-name {
     margin: 50px 0 0 0;
   }
 }
@@ -47,14 +48,5 @@
 
 .intro-button-icon {
   width: 20px;
-
-  @extend .margin-right-16;
-}
-
-.button-red {
-  background-color: $red;
-}
-
-.button-purple {
-  background-color: $purple;
+  margin-right: 16px;
 }

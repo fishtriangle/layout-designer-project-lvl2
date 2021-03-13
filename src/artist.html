@@ -1,297 +1,299 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Портал «Music Box» Hexlet: fish-triangle</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Портал «Music Box» Hexlet: fish-triangle</title>
 
-    <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/styles.css">
 </head>	
 
 <body>
-    <header class="header">
-        <div class="header-logo-block">
-            <img src="images/logo.svg" class="header-logo-img" alt="logo">
-            <span class="uppercase">MUSIC BOX</span>
-        </div>
-        <nav class="header-nav">
-            <ul class="header-list">
-                <li class="header-list-item"><a href="index.html">ГЛАВНАЯ</a></li>
-                <li class="header-list-item"><a href="#catalogue">КАТАЛОГ</a></li>
-                <li class="header-list-item"><a href="artist.html">ИСПОЛНИТЕЛИ</a></li>
-                <li class="header-list-item"><a href="#contacts">КОНТАКТЫ</a></li>
-            </ul>
-        </nav>
-        <div>
-            <form>
-                <label for="search" class="sr-only">Поиск</label>
-                <input id="search" class="header-find-input" type="text" placeholder="ПОИСК...">
-            </form>
-        </div>
-    </header>
+  <header class="header">
+    <div class="header-logo-block">
+      <img src="images/logo.svg" class="header-logo-img" alt="logo">
+      <span class="uppercase">MUSIC BOX</span>
+    </div>
+    <nav class="header-nav">
+      <ul class="header-list">
+        <li class="header-list-item"><a href="index.html">ГЛАВНАЯ</a></li>
+        <li class="header-list-item"><a href="#catalogue">КАТАЛОГ</a></li>
+        <li class="header-list-item"><a href="artist.html">ИСПОЛНИТЕЛИ</a></li>
+        <li class="header-list-item"><a href="#contacts">КОНТАКТЫ</a></li>
+      </ul>
+    </nav>
+    <div>
+      <form>
+        <label for="search" class="sr-only">Поиск</label>
+        <input id="search" class="header-find-input" type="text" placeholder="ПОИСК...">
+      </form>
+    </div>
+  </header>
 
-    <div id="page-description" class="intro-backgr">
-        <div class="intro">
-            <h1 class="intro-h1">Morten Harket</h1>
-            <p class="intro-fans">24 875 поклонников</p>
-            <form class="intro-buttons-block">
-                <button class="btn intro-button button-purple margin-right-24">
-                    <svg class="intro-button-icon" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-                    viewbox="0 0 512 512" style="enable-background: new 0 0 512 512;" xml:space="preserve">
-                        <path class="fill-white" d="M256,0C114.833,0,0,114.844,0,256s114.833,256,256,256s256-114.844,256-256S397.167,0,256,0z M256,490.667
-                                        C126.604,490.667,21.333,385.396,21.333,256S126.604,21.333,256,21.333S490.667,126.604,490.667,256S385.396,490.667,256,490.667
-                                        z"/>
-                        <path class="fill-white" d="M357.771,247.031l-149.333-96c-3.271-2.135-7.5-2.25-10.875-0.396C194.125,152.51,192,156.094,192,160v192
-                                        c0,3.906,2.125,7.49,5.563,9.365c1.583,0.865,3.354,1.302,5.104,1.302c2,0,4.021-0.563,5.771-1.698l149.333-96
-                                        c3.042-1.958,4.896-5.344,4.896-8.969S360.813,248.99,357.771,247.031z M213.333,332.458V179.542L332.271,256L213.333,332.458z"/>
-                    </svg>
-                    <p>Микс</p>
-                </button>
-                <button class="btn intro-button button-red">
-                    <svg class="intro-button-icon" viewbox="0 -28 512.001 512" xmlns="http://www.w3.org/2000/svg">
-                        <path class="fill-white" d="m256 455.515625c-7.289062 0-14.316406-2.640625-19.792969-7.4375-20.683593-18.085937-40.625-35.082031-58.21875-50.074219l-.089843-.078125c-51.582032-43.957031-96.125-81.917969-127.117188-119.3125-34.644531-41.804687-50.78125-81.441406-50.78125-124.742187 0-42.070313 14.425781-80.882813 40.617188-109.292969 26.503906-28.746094 62.871093-44.578125 102.414062-44.578125 29.554688 0 56.621094 9.34375 80.445312 27.769531 12.023438 9.300781 22.921876 20.683594 32.523438 33.960938 9.605469-13.277344 20.5-24.660157 32.527344-33.960938 23.824218-18.425781 50.890625-27.769531 80.445312-27.769531 39.539063 0 75.910156 15.832031 102.414063 44.578125 26.191406 28.410156 40.613281 67.222656 40.613281 109.292969 0 43.300781-16.132812 82.9375-50.777344 124.738281-30.992187 37.398437-75.53125 75.355469-127.105468 119.308594-17.625 15.015625-37.597657 32.039062-58.328126 50.167969-5.472656 4.789062-12.503906 7.429687-19.789062 7.429687zm-112.96875-425.523437c-31.066406 0-59.605469 12.398437-80.367188 34.914062-21.070312 22.855469-32.675781 54.449219-32.675781 88.964844 0 36.417968 13.535157 68.988281 43.882813 105.605468 29.332031 35.394532 72.960937 72.574219 123.476562 115.625l.09375.078126c17.660156 15.050781 37.679688 32.113281 58.515625 50.332031 20.960938-18.253907 41.011719-35.34375 58.707031-50.417969 50.511719-43.050781 94.136719-80.222656 123.46875-115.617188 30.34375-36.617187 43.878907-69.1875 43.878907-105.605468 0-34.515625-11.605469-66.109375-32.675781-88.964844-20.757813-22.515625-49.300782-34.914062-80.363282-34.914062-22.757812 0-43.652344 7.234374-62.101562 21.5-16.441406 12.71875-27.894532 28.796874-34.609375 40.046874-3.453125 5.785157-9.53125 9.238282-16.261719 9.238282s-12.808594-3.453125-16.261719-9.238282c-6.710937-11.25-18.164062-27.328124-34.609375-40.046874-18.449218-14.265626-39.34375-21.5-62.097656-21.5zm0 0"/>
-                    </svg>
-                    <p class="white-space-nowrap">В избранное</p>
-                </button> 
-            </form>
+  <main>
+    <section id="page-description" class="intro-backgr">
+      <div class="intro">
+        <h1 class="intro-page-name">Morten Harket</h1>
+        <p class="intro-fans">24 875 поклонников</p>
+        <form class="intro-buttons-block">
+          <button class="btn intro-button button-purple">
+            <svg class="intro-button-icon" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+            viewbox="0 0 512 512" style="enable-background: new 0 0 512 512;" xml:space="preserve">
+              <path class="fill-white" d="M256,0C114.833,0,0,114.844,0,256s114.833,256,256,256s256-114.844,256-256S397.167,0,256,0z M256,490.667
+                      C126.604,490.667,21.333,385.396,21.333,256S126.604,21.333,256,21.333S490.667,126.604,490.667,256S385.396,490.667,256,490.667
+                      z"/>
+              <path class="fill-white" d="M357.771,247.031l-149.333-96c-3.271-2.135-7.5-2.25-10.875-0.396C194.125,152.51,192,156.094,192,160v192
+                      c0,3.906,2.125,7.49,5.563,9.365c1.583,0.865,3.354,1.302,5.104,1.302c2,0,4.021-0.563,5.771-1.698l149.333-96
+                      c3.042-1.958,4.896-5.344,4.896-8.969S360.813,248.99,357.771,247.031z M213.333,332.458V179.542L332.271,256L213.333,332.458z"/>
+            </svg>
+            <p>Микс</p>
+          </button>
+          <button class="btn intro-button button-red">
+            <svg class="intro-button-icon" viewbox="0 -28 512.001 512" xmlns="http://www.w3.org/2000/svg">
+              <path class="fill-white" d="m256 455.515625c-7.289062 0-14.316406-2.640625-19.792969-7.4375-20.683593-18.085937-40.625-35.082031-58.21875-50.074219l-.089843-.078125c-51.582032-43.957031-96.125-81.917969-127.117188-119.3125-34.644531-41.804687-50.78125-81.441406-50.78125-124.742187 0-42.070313 14.425781-80.882813 40.617188-109.292969 26.503906-28.746094 62.871093-44.578125 102.414062-44.578125 29.554688 0 56.621094 9.34375 80.445312 27.769531 12.023438 9.300781 22.921876 20.683594 32.523438 33.960938 9.605469-13.277344 20.5-24.660157 32.527344-33.960938 23.824218-18.425781 50.890625-27.769531 80.445312-27.769531 39.539063 0 75.910156 15.832031 102.414063 44.578125 26.191406 28.410156 40.613281 67.222656 40.613281 109.292969 0 43.300781-16.132812 82.9375-50.777344 124.738281-30.992187 37.398437-75.53125 75.355469-127.105468 119.308594-17.625 15.015625-37.597657 32.039062-58.328126 50.167969-5.472656 4.789062-12.503906 7.429687-19.789062 7.429687zm-112.96875-425.523437c-31.066406 0-59.605469 12.398437-80.367188 34.914062-21.070312 22.855469-32.675781 54.449219-32.675781 88.964844 0 36.417968 13.535157 68.988281 43.882813 105.605468 29.332031 35.394532 72.960937 72.574219 123.476562 115.625l.09375.078126c17.660156 15.050781 37.679688 32.113281 58.515625 50.332031 20.960938-18.253907 41.011719-35.34375 58.707031-50.417969 50.511719-43.050781 94.136719-80.222656 123.46875-115.617188 30.34375-36.617187 43.878907-69.1875 43.878907-105.605468 0-34.515625-11.605469-66.109375-32.675781-88.964844-20.757813-22.515625-49.300782-34.914062-80.363282-34.914062-22.757812 0-43.652344 7.234374-62.101562 21.5-16.441406 12.71875-27.894532 28.796874-34.609375 40.046874-3.453125 5.785157-9.53125 9.238282-16.261719 9.238282s-12.808594-3.453125-16.261719-9.238282c-6.710937-11.25-18.164062-27.328124-34.609375-40.046874-18.449218-14.265626-39.34375-21.5-62.097656-21.5zm0 0"/>
+            </svg>
+            <p class="white-space-nowrap">В избранное</p>
+          </button> 
+        </form>
+      </div>
+    </section>
+
+    <section class="popular-tracks" id="page-popular-track">
+      <h2 class="popular-tracks-main-title">Популярные треки</h2>
+      
+      <div class="popular-tracks-playlist">
+        <div class="popular-tracks-item">
+          <div class="popular-tracks-item-head">
+            <img src="images/Wild Seed.png" alt="Wild Seed" class="popular-tracks-item-img">
+            <div class="popular-tracks-item-description">
+              <h3 class="popular-tracks-item-name">Spanish Step</h3>
+              <p class="popular-tracks-item-album">Morten Harket</p>
+            </div>
+          </div>
+          4:07
         </div>
+
+        <div class="popular-tracks-item">
+          <div class="popular-tracks-item-head">
+            <img src="images/Letter from Egypt.png" alt="Letter from Egypt" class="popular-tracks-item-img">
+            <div class="popular-tracks-item-description">
+              <h3 class="popular-tracks-item-name">With You - With Me</h3>
+              <p class="popular-tracks-item-album">Morten Harket</p>
+            </div>
+          </div>
+          3:48
+        </div>
+
+        <div class="popular-tracks-item">
+          <div class="popular-tracks-item-head">
+            <img src="images/Brother.png" alt="Brother" class="popular-tracks-item-img">
+            <div class="popular-tracks-item-description">
+              <h3 class="popular-tracks-item-name">Brother</h3>
+              <p class="popular-tracks-item-album">Morten Harket</p>
+            </div>
+          </div>
+          5:05
+        </div>
+
+        <div class="popular-tracks-item">
+          <div class="popular-tracks-item-head">
+            <img src="images/Wild Seed.png" alt="Wild Seed" class="popular-tracks-item-img">
+            <div class="popular-tracks-item-description">
+              <h3 class="popular-tracks-item-name">Brodsky Tune</h3>
+              <p class="popular-tracks-item-album">Morten Harket</p>
+            </div>
+          </div>
+          4:24
+        </div>
+
+        <div class="popular-tracks-item">
+          <div class="popular-tracks-item-head">
+            <img src="images/Letter from Egypt.png" alt="Letter from Egypt" class="popular-tracks-item-img">
+            <div class="popular-tracks-item-description">
+              <h3 class="popular-tracks-item-name">Darkspace</h3>
+              <p class="popular-tracks-item-album">Morten Harket</p>
+            </div>
+          </div>
+          3:45
+        </div>
+
+        <div class="popular-tracks-item">
+          <div class="popular-tracks-item-head">
+            <img src="images/Out of My Hands.png" alt="Out of My Hands" class="popular-tracks-item-img">
+            <div class="popular-tracks-item-description">
+              <h3 class="popular-tracks-item-name">Burn Money Burn</h3>
+              <p class="popular-tracks-item-album">Morten Harket</p>
+            </div>
+          </div>
+          3:52
+        </div>
+      </div>
+    </section>
+
+    <section class="diskography" id="page-discography">
+      <h2 class="diskography-main-title">Дискография</h2>
+      
+      <div class="diskography-list">
+        <div class="diskography-album">
+          <div class="diskography-album-adaptive-img">
+            <img src="images/Brother.png" alt="Brother" class="diskography-album-img">
+          </div>
+          <h3 class="diskography-album-name">Brother</h3>
+          <p class="diskography-album-year">2014</p>
+        </div>
+        <div class="diskography-album">
+          <div class="diskography-album-adaptive-img">
+            <img src="images/Out of My Hands.png" alt="Out of My Hands" class="diskography-album-img">
+          </div>
+          <h3 class="diskography-album-name">Out Of My Hands</h3>
+          <p class="diskography-album-year">2012</p>
+        </div>
+        <div class="diskography-album">
+          <div class="diskography-album-adaptive-img">
+            <img src="images/Letter from Egypt.png" alt="Letter from Egypt" class="diskography-album-img">
+          </div>
+          <h3 class="diskography-album-name">Letter From Egypt</h3>
+          <p class="diskography-album-year">2008</p>
+        </div>
+        <div class="diskography-album">
+          <div class="diskography-album-adaptive-img">
+            <img src="images/Vogts Villa.png" alt="Vogts Vills" class="diskography-album-img">
+          </div>
+          <h3 class="diskography-album-name">Vogts Vills</h3>
+          <p class="diskography-album-year">1996</p>
+        </div>
+        <div class="diskography-album">
+          <div class="diskography-album-adaptive-img">
+            <img src="images/Wild Seed.png" alt="Wild Seed" class="diskography-album-img">
+          </div>
+          <h3 class="diskography-album-name">Wild Seed</h3>
+          <p class="diskography-album-year">1995</p>
+        </div>
+        <div class="diskography-album">
+          <div class="diskography-album-adaptive-img">
+            <img src="images/Poetenes Evangelium.png" alt="Brother" class="diskography-album-img">
+          </div>
+          <h3 class="diskography-album-name">Poetenes Evangelium</h3>
+          <p class="diskography-album-year">1993</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="simular-artists" id="page-similar">
+      <h2 class="simular-artists-main-title-main-title">Похожие исполнители</h2>
+      
+      <div class="simular-artists-list">
+        <div class="simular-artists-item">
+          <div class="simular-artists-adaptive-img">
+            <img src="images/A-ha.png" alt="A-ha" class="simular-artists-img">
+          </div>
+          <h3 class="simular-artists-name">A-Ha</h3>
+          <p class="simular-artists-fans"><span class="simular-artists-fans-description">417 086</span><span class="simular-artists-fans-description"> поклонников</span></p>
+        </div>
+        <div class="simular-artists-item">
+          <div class="simular-artists-adaptive-img">
+            <img src="images/Tears for Fears.png" alt="Tears for Fears" class="simular-artists-img">
+          </div>
+          <h3 class="simular-artists-name">Tears For Fears</h3>
+          <p class="simular-artists-fans"><span class="simular-artists-fans-description">434 086</span><span class="simular-artists-fans-description"> поклонников</span></p>
+        </div>
+        <div class="simular-artists-item">
+          <div class="simular-artists-adaptive-img">
+            <img src="images/Duran Duran.png" alt="Duran Duran" class="simular-artists-img">
+          </div>
+          <h3 class="simular-artists-name">Duran Duran</h3>
+          <p class="simular-artists-fans"><span class="simular-artists-fans-description">631 071</span><span class="simular-artists-fans-description"> поклонник</span></p>
+        </div>
+        <div class="simular-artists-item">
+          <div class="simular-artists-adaptive-img">
+            <img src="images/Jack Savoretti.png" alt="Jack Savoretti" class="simular-artists-img">
+          </div>
+          <h3 class="simular-artists-name">Jack Savoretti</h3>
+          <p class="simular-artists-fans"><span class="simular-artists-fans-description">26 857</span><span class="simular-artists-fans-description"> поклонников</span></p>
+        </div>
+        <div class="simular-artists-item">
+          <div class="simular-artists-adaptive-img">
+            <img src="images/Keane.png" alt="Keane" class="simular-artists-img">
+          </div>
+          <h3 class="simular-artists-name">Keane</h3>
+          <p class="simular-artists-fans"><span class="simular-artists-fans-description">1 704 358</span><span class="simular-artists-fans-description"> поклонников</span></p>
+        </div>
+        <div class="simular-artists-item">
+          <div class="simular-artists-adaptive-img">
+            <img src="images/Frank Sinatra.png" alt="Frank Sinatra" class="simular-artists-img">
+          </div>
+          <h3 class="simular-artists-name">Frank Sinatra</h3>
+          <p class="simular-artists-fans"><span class="simular-artists-fans-description">1 653 882</span><span class="simular-artists-fans-description"> поклонников</span></p>
+        </div>
+        <div class="simular-artists-item">
+          <div class="simular-artists-adaptive-img">
+            <img src="images/Paul Young.png" alt="Paul Young" class="simular-artists-img">
+          </div>
+          <h3 class="simular-artists-name">Paul Young</h3>
+          <p class="simular-artists-fans"><span class="simular-artists-fans-description">50 329</span><span class="simular-artists-fans-description"> поклонников</span></p>
+        </div>
+        <div class="simular-artists-item">
+          <div class="simular-artists-adaptive-img">
+            <img src="images/Chris Rea.png" alt="Chris Rea" class="simular-artists-img">
+          </div>
+          <h3 class="simular-artists-name">Chris Rea</h3>
+          <p class="simular-artists-fans"><span class="simular-artists-fans-description">73 351</span><span class="simular-artists-fans-description"> поклонников</span></p>
+        </div>
+      </div>
+    </section>
+  </main>
+  
+  <footer class="footer" id="footer">
+    <div class="footer-columns">
+      <div class="footer-columns-item">
+        <h2 class="footer-main-title">О нас</h2>
+        <span class="footer-description-item"><a href="#" class="footer-link">История компании</a></span>
+        <span class="footer-description-item"><a href="#" class="footer-link">Карьера</a></span>
+        <span class="footer-description-item"><a href="#" class="footer-link">Особенности</a></span>
+        <span class="footer-description-item"><a href="#" class="footer-link">Пресса</a></span>
+      </div>
+      <div class="footer-columns-item">
+        <h2 class="footer-main-title">Поддержка</h2>
+        <span class="footer-description-item"><a href="#" class="footer-link">База знаний</a></span>
+        <span class="footer-description-item"><a href="#page-pricing" class="footer-link">Тарифы</a></span>
+        <span class="footer-description-item"><a href="#page-app" class="footer-link">Мобильное приложение</a></span>
+        <span class="footer-description-item"><a href="#" class="footer-link">Условия использования</a></span>
+      </div>
+      <div class="footer-columns-item">
+        <h2 class="footer-main-title" name="contacts">Контакты</h2>
+        <a href="#" class="footer-link footer-replace-lineheight-1">hello@music.box</a>
+        <span class="footer-description-item footer-replace-lineheight-1">Russia, Moscow. Music Box studio</span>
+        <a href="#" class="footer-link footer-replace-lineheight-1">+ 7 499 999 99 99</a>
+      </div>
+      <div class="footer-columns-item">
+        <h2 class="footer-main-title">Подписывайтесь</h2>
+        <div class="footer-logoes">
+          <a href="#" class="footer-link footer-link-logoes-cont">
+            <img src="images/Google+.png" alt="google plus" class="footer-link-logoes">
+          </a>
+          <a href="#" class="footer-link footer-link-logoes-cont">
+            <img src="images/Twitter.png" alt="Twitter" class="footer-link-logoes">
+          </a>
+          <a href="#" class="footer-link footer-link-logoes-cont">
+            <img src="images/Facebook.png" alt="Facebook" class="footer-link-logoes">
+          </a>
+          <a href="#" class="footer-link footer-link-logoes-cont">
+            <img src="images/Instagram.png" alt="Instagram" class="footer-link-logoes">
+          </a>
+        </div>
+      </div>
     </div>
 
-    <div class="popular-tracks" id="page-popular-track">
-        <h2 class="popular-tracks-h2">Популярные треки</h2>
-        
-        <div class="popular-tracks-playlist">
-            <div class="popular-tracks-item">
-                <div class="popular-tracks-item-head">
-                    <img src="images/Wild Seed.png" alt="Wild Seed" class="popular-tracks-item-img">
-                    <div class="popular-tracks-item-description">
-                        <h3 class="popular-tracks-item-name">Spanish Step</h3>
-                        <p class="popular-tracks-item-album">Morten Harket</p>
-                    </div>
-                </div>
-                4:07
-            </div>
-
-            <div class="popular-tracks-item">
-                <div class="popular-tracks-item-head">
-                    <img src="images/Letter from Egypt.png" alt="Letter from Egypt" class="popular-tracks-item-img">
-                    <div class="popular-tracks-item-description">
-                        <h3 class="popular-tracks-item-name">With You - With Me</h3>
-                        <p class="popular-tracks-item-album">Morten Harket</p>
-                    </div>
-                </div>
-                3:48
-            </div>
-
-            <div class="popular-tracks-item">
-                <div class="popular-tracks-item-head">
-                    <img src="images/Brother.png" alt="Brother" class="popular-tracks-item-img">
-                    <div class="popular-tracks-item-description">
-                        <h3 class="popular-tracks-item-name">Brother</h3>
-                        <p class="popular-tracks-item-album">Morten Harket</p>
-                    </div>
-                </div>
-                5:05
-            </div>
-
-            <div class="popular-tracks-item">
-                <div class="popular-tracks-item-head">
-                    <img src="images/Wild Seed.png" alt="Wild Seed" class="popular-tracks-item-img">
-                    <div class="popular-tracks-item-description">
-                        <h3 class="popular-tracks-item-name">Brodsky Tune</h3>
-                        <p class="popular-tracks-item-album">Morten Harket</p>
-                    </div>
-                </div>
-                4:24
-            </div>
-
-            <div class="popular-tracks-item">
-                <div class="popular-tracks-item-head">
-                    <img src="images/Letter from Egypt.png" alt="Letter from Egypt" class="popular-tracks-item-img">
-                    <div class="popular-tracks-item-description">
-                        <h3 class="popular-tracks-item-name">Darkspace</h3>
-                        <p class="popular-tracks-item-album">Morten Harket</p>
-                    </div>
-                </div>
-                3:45
-            </div>
-
-            <div class="popular-tracks-item">
-                <div class="popular-tracks-item-head">
-                    <img src="images/Out of My Hands.png" alt="Out of My Hands" class="popular-tracks-item-img">
-                    <div class="popular-tracks-item-description">
-                        <h3 class="popular-tracks-item-name">Burn Money Burn</h3>
-                        <p class="popular-tracks-item-album">Morten Harket</p>
-                    </div>
-                </div>
-                3:52
-            </div>
-        </div>
+    <div class="footer-below">
+      <nav class="footer-nav">
+        <a href="page-description" class="footer-below-link">Магазин</a>
+        <a href="#catalogue" class="footer-below-link">Обслуживание</a>
+        <a href="#artists" class="footer-below-link">Блог</a>
+        <a href="#contacts" class="footer-below-link">Поддержка</a>
+        <a href="#contacts" class="footer-below-link">Контакты</a>
+      </nav>
     </div>
-
-    <div class="diskography" id="page-discography">
-        <h2 class="diskography-h2">Дискография</h2>
-        
-        <div class="diskography-list">
-            <div class="diskography-album">
-                <div class="diskography-album-adaptive-img">
-                    <img src="images/Brother.png" alt="Brother" class="diskography-album-img">
-                </div>
-                <h3 class="diskography-album-name">Brother</h3>
-                <p class="diskography-album-year">2014</p>
-            </div>
-            <div class="diskography-album">
-                <div class="diskography-album-adaptive-img">
-                    <img src="images/Out of My Hands.png" alt="Out of My Hands" class="diskography-album-img">
-                </div>
-                <h3 class="diskography-album-name">Out Of My Hands</h3>
-                <p class="diskography-album-year">2012</p>
-            </div>
-            <div class="diskography-album">
-                <div class="diskography-album-adaptive-img">
-                    <img src="images/Letter from Egypt.png" alt="Letter from Egypt" class="diskography-album-img">
-                </div>
-                <h3 class="diskography-album-name">Letter From Egypt</h3>
-                <p class="diskography-album-year">2008</p>
-            </div>
-            <div class="diskography-album">
-                <div class="diskography-album-adaptive-img">
-                    <img src="images/Vogts Villa.png" alt="Vogts Vills" class="diskography-album-img">
-                </div>
-                <h3 class="diskography-album-name">Vogts Vills</h3>
-                <p class="diskography-album-year">1996</p>
-            </div>
-            <div class="diskography-album">
-                <div class="diskography-album-adaptive-img">
-                    <img src="images/Wild Seed.png" alt="Wild Seed" class="diskography-album-img">
-                </div>
-                <h3 class="diskography-album-name">Wild Seed</h3>
-                <p class="diskography-album-year">1995</p>
-            </div>
-            <div class="diskography-album">
-                <div class="diskography-album-adaptive-img">
-                    <img src="images/Poetenes Evangelium.png" alt="Brother" class="diskography-album-img">
-                </div>
-                <h3 class="diskography-album-name">Poetenes Evangelium</h3>
-                <p class="diskography-album-year">1993</p>
-            </div>
-        </div>
-    </div>
-
-    <div class="simular-artists" id="page-similar">
-        <h2 class="simular-artists-h2">Похожие исполнители</h2>
-        
-        <div class="simular-artists-list">
-            <div class="simular-artists-item">
-                <div class="simular-artists-adaptive-img">
-                    <img src="images/A-ha.png" alt="A-ha" class="simular-artists-img">
-                </div>
-                <h3 class="simular-artists-name">A-Ha</h3>
-                <p class="simular-artists-fans"><span class="simular-artists-fans-span">417 086</span><span class="simular-artists-fans-span"> поклонников</span></p>
-            </div>
-            <div class="simular-artists-item">
-                <div class="simular-artists-adaptive-img">
-                    <img src="images/Tears for Fears.png" alt="Tears for Fears" class="simular-artists-img">
-                </div>
-                <h3 class="simular-artists-name">Tears For Fears</h3>
-                <p class="simular-artists-fans"><span class="simular-artists-fans-span">434 086</span><span class="simular-artists-fans-span"> поклонников</span></p>
-            </div>
-            <div class="simular-artists-item">
-                <div class="simular-artists-adaptive-img">
-                    <img src="images/Duran Duran.png" alt="Duran Duran" class="simular-artists-img">
-                </div>
-                <h3 class="simular-artists-name">Duran Duran</h3>
-                <p class="simular-artists-fans"><span class="simular-artists-fans-span">631 071</span><span class="simular-artists-fans-span"> поклонник</span></p>
-            </div>
-            <div class="simular-artists-item">
-                <div class="simular-artists-adaptive-img">
-                    <img src="images/Jack Savoretti.png" alt="Jack Savoretti" class="simular-artists-img">
-                </div>
-                <h3 class="simular-artists-name">Jack Savoretti</h3>
-                <p class="simular-artists-fans"><span class="simular-artists-fans-span">26 857</span><span class="simular-artists-fans-span"> поклонников</span></p>
-            </div>
-            <div class="simular-artists-item">
-                <div class="simular-artists-adaptive-img">
-                    <img src="images/Keane.png" alt="Keane" class="simular-artists-img">
-                </div>
-                <h3 class="simular-artists-name">Keane</h3>
-                <p class="simular-artists-fans"><span class="simular-artists-fans-span">1 704 358</span><span class="simular-artists-fans-span"> поклонников</span></p>
-            </div>
-            <div class="simular-artists-item">
-                <div class="simular-artists-adaptive-img">
-                    <img src="images/Frank Sinatra.png" alt="Frank Sinatra" class="simular-artists-img">
-                </div>
-                <h3 class="simular-artists-name">Frank Sinatra</h3>
-                <p class="simular-artists-fans"><span class="simular-artists-fans-span">1 653 882</span><span class="simular-artists-fans-span"> поклонников</span></p>
-            </div>
-            <div class="simular-artists-item">
-                <div class="simular-artists-adaptive-img">
-                    <img src="images/Paul Young.png" alt="Paul Young" class="simular-artists-img">
-                </div>
-                <h3 class="simular-artists-name">Paul Young</h3>
-                <p class="simular-artists-fans"><span class="simular-artists-fans-span">50 329</span><span class="simular-artists-fans-span"> поклонников</span></p>
-            </div>
-            <div class="simular-artists-item">
-                <div class="simular-artists-adaptive-img">
-                    <img src="images/Chris Rea.png" alt="Chris Rea" class="simular-artists-img">
-                </div>
-                <h3 class="simular-artists-name">Chris Rea</h3>
-                <p class="simular-artists-fans"><span class="simular-artists-fans-span">73 351</span><span class="simular-artists-fans-span"> поклонников</span></p>
-            </div>
-        </div>
-    </div>
-    
-    <footer class="footer" id="footer">
-        <div class="footer-columns">
-            <div class="footer-columns-item">
-                <h2 class="footer-h2">О нас</h2>
-                <span class="footer-text-span"><a href="#" class="footer-link">История компании</a></span>
-                <span class="footer-text-span"><a href="#" class="footer-link">Карьера</a></span>
-                <span class="footer-text-span"><a href="#" class="footer-link">Особенности</a></span>
-                <span class="footer-text-span"><a href="#" class="footer-link">Пресса</a></span>
-            </div>
-            <div class="footer-columns-item">
-                <h2 class="footer-h2">Поддержка</h2>
-                <span class="footer-text-span"><a href="#" class="footer-link">База знаний</a></span>
-                <span class="footer-text-span"><a href="#page-pricing" class="footer-link">Тарифы</a></span>
-                <span class="footer-text-span"><a href="#page-app" class="footer-link">Мобильное приложение</a></span>
-                <span class="footer-text-span"><a href="#" class="footer-link">Условия использования</a></span>
-            </div>
-            <div class="footer-columns-item">
-                <h2 class="footer-h2" name="contacts">Контакты</h2>
-                <a href="#" class="footer-link footer-lineheight-1">hello@music.box</a>
-                <span class="footer-text-span footer-lineheight-1">Russia, Moscow. Music Box studio</span>
-                <a href="#" class="footer-link footer-lineheight-1">+ 7 499 999 99 99</a>
-            </div>
-            <div class="footer-columns-item">
-                <h2 class="footer-h2">Подписывайтесь</h2>
-                <div class="footer-logoes">
-                    <a href="#" class="footer-link footer-link-logoes-cont">
-                        <img src="images/Google+.png" alt="google plus" class="footer-link-logoes">
-                    </a>
-                    <a href="#" class="footer-link footer-link-logoes-cont">
-                        <img src="images/Twitter.png" alt="Twitter" class="footer-link-logoes">
-                    </a>
-                    <a href="#" class="footer-link footer-link-logoes-cont">
-                        <img src="images/Facebook.png" alt="Facebook" class="footer-link-logoes">
-                    </a>
-                    <a href="#" class="footer-link footer-link-logoes-cont">
-                        <img src="images/Instagram.png" alt="Instagram" class="footer-link-logoes">
-                    </a>
-                </div>
-            </div>
-        </div>
-
-        <div class="footer-below">
-            <nav class="footer-nav">
-                <a href="page-description" class="footer-below-link margin-bottom-1">Магазин</a>
-                <a href="#catalogue" class="footer-below-link margin-bottom-1">Обслуживание</a>
-                <a href="#artists" class="footer-below-link margin-bottom-1">Блог</a>
-                <a href="#contacts" class="footer-below-link margin-bottom-1">Поддержка</a>
-                <a href="#contacts" class="footer-below-link margin-bottom-1">Контакты</a>
-            </nav>
-        </div>
-    </footer>
+  </footer>
 </body>
 </html>
