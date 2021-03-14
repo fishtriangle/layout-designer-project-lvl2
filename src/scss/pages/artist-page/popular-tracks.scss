@@ -1,11 +1,3 @@
-.popular-tracks {
-  @extend .container;
-
-  align-items: flex-start;
-
-  padding-top: 100px;
-}
-
 .popular-tracks-main-title {
   @include h2-base;
 }
@@ -32,8 +24,6 @@
 
   margin-top: 25px;
   margin-right: 0;
-
-  @extend .text-small;
 }
 
 @media (min-width: 1240px) {
@@ -58,16 +48,4 @@
 .popular-tracks-item-head {
   display: flex;
   flex-direction: row;
-}
-
-.popular-tracks-item-name {
-  @extend .popular-track-small-bold;
-
-  margin: 0;
-}
-
-.popular-tracks-item-album {
-  @extend .text-small;
-
-  margin: 0;
 }

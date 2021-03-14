@@ -1,36 +1,8 @@
-.simular-artists {
-  @extend .container;
-
-  align-items: flex-start;
-
-  padding-top: 100px;
-}
-
 .simular-artists-main-title {
   @include h2-base;
 }
 
-.simular-artists-list {
-  @extend .horizontal-list;
-}
-
-.simular-artists-item {
-  @extend .horizontal-list-item;
-
-  align-items: center;
-}
-
-.simular-artists-adaptive-img {
-  @extend .horizontal-list-adaptive-img;
-}
-
-.simular-artists-img {
-  @extend .horizontal-list-img;
-}
-
 .simular-artists-name {
-  @extend .h4-capitalize-bold;
-
   width: 100%;
   margin: 0;
 

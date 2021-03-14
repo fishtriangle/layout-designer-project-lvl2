@@ -1,34 +1,8 @@
-.diskography {
-  @extend .container;
-
-  align-items: flex-start;
-
-  padding-top: 100px;
-}
-
 .diskography-main-title {
   @include h2-base;
 }
 
-.diskography-list {
-  @extend .horizontal-list;
-}
-
-.diskography-album {
-  @extend .horizontal-list-item;
-}
-
-.diskography-album-adaptive-img {
-  @extend .horizontal-list-adaptive-img;
-}
-
-.diskography-album-img {
-  @extend .horizontal-list-img;
-}
-
 .diskography-album-name {
-  @extend .h4-capitalize-bold;
-
   width: 138px;
   margin: 0;
 
@@ -36,8 +10,6 @@
 }
 
 .diskography-album-year {
-  @extend .text-size-1;
-
   width: 100%;
   margin: 0;
 }

@@ -41,14 +41,14 @@ h4 {
   text-transform: uppercase;
 }
 
-.h4-capitalize-bold, .simular-artists-name, .diskography-album-name {
+.h4-capitalize-bold {
   font-weight: bold;
   font-size: 18px;
   line-height: 27px;
   text-transform: none;
 }
 
-.text-size-7, .pricing-number {
+.text-size-7 {
   font-weight: normal;
   font-size: 64px;
   line-height: 150%;
@@ -72,7 +72,7 @@ h4 {
   line-height: 150%;
 }
 
-.text-size-3, .pricing-roubles {
+.text-size-3 {
   font-weight: normal;
   font-size: 32px;
   line-height: 150%;
@@ -84,19 +84,19 @@ h4 {
   line-height: 150%;
 }
 
-.text-size-1, .diskography-album-year, .intro-fans, .application-column-description, .pricing-ps, .quick-registration-description, .footer-nav, .footer-columns {
+.text-size-1, .quick-registration-description, .footer-nav, .footer-columns {
   font-weight: normal;
   font-size: 16px;
   line-height: 150%;
 }
 
-.text-small, .simular-artists-fans, .popular-tracks-item-album, .popular-tracks-item, .news-author, .pricing-footer, .intro-button p {
+.text-small, .simular-artists-fans, .intro-button p {
   font-weight: normal;
   font-size: 12.8px;
   line-height: 150%;
 }
 
-.popular-track-small-bold, .popular-tracks-item-name {
+.popular-track-small-bold {
   font-weight: bold;
   font-size: 12.8px;
   line-height: 150%;
@@ -125,7 +125,7 @@ h4 {
     text-transform: uppercase;
   }
 
-  .h3-capitalize, .news-name {
+  .h3-capitalize {
     font-weight: normal;
     font-size: 24px;
     line-height: 45px;
@@ -156,7 +156,7 @@ body {
   background-color: #08020d;
 }
 
-.document-width, .intro, .footer-nav, .footer-columns, .container, .simular-artists, .diskography, .popular-tracks, .application, .news, .pricing {
+.document-width, .footer-nav, .footer-columns, .container {
   display: flex;
   box-sizing: border-box;
   width: 100%;
@@ -164,7 +164,7 @@ body {
 }
 
 @media (min-width: 1240px) {
-  .document-width, .intro, .footer-nav, .footer-columns, .container, .simular-artists, .diskography, .popular-tracks, .application, .news, .pricing {
+  .document-width, .footer-nav, .footer-columns, .container {
     width: 1240px;
     margin: 0 auto;
   }
@@ -268,12 +268,12 @@ body {
   background-color: #5328a1;
 }
 
-.container, .simular-artists, .diskography, .popular-tracks, .application, .news, .pricing {
+.container {
   flex-direction: column;
   align-items: center;
 }
 
-.horizontal-list, .simular-artists-list, .diskography-list {
+.horizontal-list {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -282,7 +282,7 @@ body {
   margin-top: 23px;
 }
 
-.horizontal-list-item, .simular-artists-item, .diskography-album {
+.horizontal-list-item {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -292,7 +292,7 @@ body {
   margin-right: 50px;
 }
 
-.horizontal-list-adaptive-img, .simular-artists-adaptive-img, .diskography-album-adaptive-img {
+.horizontal-list-adaptive-img {
   position: relative;
   display: flex;
   width: 250px;
@@ -301,7 +301,7 @@ body {
   padding-top: 100%;
 }
 
-.horizontal-list-img, .simular-artists-img, .diskography-album-img {
+.horizontal-list-img {
   position: absolute;
   top: 0;
   left: 0;
@@ -310,11 +310,11 @@ body {
 }
 
 @media (max-width: 660px) {
-  .horizontal-list-item, .simular-artists-item, .diskography-album {
+  .horizontal-list-item {
     width: 137px;
   }
 
-  .horizontal-list-adaptive-img, .simular-artists-adaptive-img, .diskography-album-adaptive-img {
+  .horizontal-list-adaptive-img {
     width: 137px;
   }
 }
@@ -646,10 +646,6 @@ body {
     margin-top: 2em;
   }
 }
-.pricing {
-  padding-top: 100px;
-}
-
 .pricing-main-title {
   width: 100%;
   margin: 0;
@@ -683,7 +679,7 @@ body {
   flex-direction: column;
   align-items: center;
   box-sizing: border-box;
-  max-width: 374px;
+  max-width: 100%;
   margin: 46px 0 0 0;
   padding: 18px 1.5rem 66px 1.5rem;
   border-radius: 1rem;
@@ -691,6 +687,7 @@ body {
 
 @media (min-width: 1240px) {
   .pricing-item {
+    max-width: 367px;
     padding: 21px 1.5rem 66px 1.5rem;
   }
 }
@@ -746,10 +743,6 @@ body {
 .pricing-ps {
   margin: 39px 0 0 0;
   text-align: center;
-}
-
-.news {
-  padding-top: 100px;
 }
 
 .news-item {
@@ -857,10 +850,6 @@ body {
     height: 186px;
   }
 }
-.application {
-  padding-top: 100px;
-}
-
 .application-main-title {
   width: 100%;
   margin: 0;
@@ -922,7 +911,6 @@ body {
 }
 
 .intro {
-  display: flex;
   flex-direction: column;
   flex-wrap: wrap;
   align-items: flex-start;
@@ -956,11 +944,6 @@ body {
 .intro-button-icon {
   width: 20px;
   margin-right: 16px;
-}
-
-.popular-tracks {
-  align-items: flex-start;
-  padding-top: 100px;
 }
 
 .popular-tracks-main-title {
@@ -1012,19 +995,6 @@ body {
   flex-direction: row;
 }
 
-.popular-tracks-item-name {
-  margin: 0;
-}
-
-.popular-tracks-item-album {
-  margin: 0;
-}
-
-.diskography {
-  align-items: flex-start;
-  padding-top: 100px;
-}
-
 .diskography-main-title {
   width: 100%;
   margin: 0;
@@ -1046,18 +1016,9 @@ body {
     width: 100%;
   }
 }
-.simular-artists {
-  align-items: flex-start;
-  padding-top: 100px;
-}
-
 .simular-artists-main-title {
   width: 100%;
   margin: 0;
-}
-
-.simular-artists-item {
-  align-items: center;
 }
 
 .simular-artists-name {
@@ -1111,6 +1072,18 @@ body {
 
 .text-uppercase {
   text-transform: uppercase;
+}
+
+.align-itm-start {
+  align-items: flex-start;
+}
+
+.align-itm-center {
+  align-items: center;
+}
+
+.padding-top-100 {
+  padding-top: 100px;
 }
 
 /*# sourceMappingURL=styles.css.map */

@@ -9,15 +9,12 @@
 }
 
 .intro {
-  display: flex;
   flex-direction: column;
   flex-wrap: wrap;
   align-items: flex-start;
   justify-content: space-between;
 
   color: $primary-text-color;
-
-  @extend .document-width;
 }
 
 .intro-page-name {
@@ -35,8 +32,6 @@
   width: 100%;
   margin-top: 1em;
   margin-bottom: 3em;
-
-  @extend .text-size-1;
 }
 
 .intro-buttons-block {

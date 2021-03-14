@@ -1,9 +1,3 @@
-.pricing {
-  @extend .container;
-
-  padding-top: 100px;
-}
-
 .pricing-main-title {
   @include h2-base;
 
@@ -41,7 +35,7 @@
   align-items: center;
 
   box-sizing: border-box;
-  max-width: 374px;
+  max-width: 100%;
   margin: 46px 0 0 0;
   padding: 18px 1.5rem 66px 1.5rem;
 
@@ -50,6 +44,7 @@
 
 @media (min-width: 1240px) {
   .pricing-item {
+    max-width: 367px;
     padding: 21px 1.5rem 66px 1.5rem;
   }
 }
@@ -70,8 +65,6 @@
 }
 
 .pricing-number {
-  @extend .text-size-7;
-
   height: 64px;
   margin: 0 16px 0 0;
   padding: 0;
@@ -84,16 +77,12 @@
   top: 0;
 
   text-transform: uppercase;
-
-  @extend .text-size-3;
 }
 
 .pricing-footer {
   margin: 64px 0 0 0;
 
   text-align: center;
-
-  @extend .text-small;
 }
 
 .pricing-bg-free {
@@ -115,8 +104,6 @@
 }
 
 .pricing-ps {
-  @extend .text-size-1;
-
   margin: 39px 0 0 0;
 
   text-align: center;

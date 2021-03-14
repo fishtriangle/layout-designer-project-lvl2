@@ -1,9 +1,3 @@
-.news {
-  @extend .container;
-
-  padding-top: 100px;
-}
-
 .news-item {
   display: flex;
   flex-wrap: wrap;
@@ -48,8 +42,6 @@
 }
 
 .news-name {
-  @extend .h3-capitalize;
-
   width: 100%;
   margin-top: 0;
   margin-bottom: 16px;
@@ -79,8 +71,6 @@
   margin-bottom: 60px;
 
   text-transform: uppercase;
-
-  @extend .text-small;
 }
 
 .news-avatar {
