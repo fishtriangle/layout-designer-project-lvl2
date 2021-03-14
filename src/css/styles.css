@@ -168,7 +168,6 @@ body {
   .document-width, .intro, .footer-nav, .footer-columns, .header, .container, .simular-artists, .diskography, .popular-tracks, .application, .news, .pricing, .quick-registration {
     width: 1200px;
     margin: 0 auto;
-    padding: 0;
   }
 }
 .sr-only {
@@ -272,7 +271,6 @@ body {
 }
 
 .container, .simular-artists, .diskography, .popular-tracks, .application, .news, .pricing, .quick-registration {
-  display: flex;
   flex-direction: column;
   align-items: center;
   padding-top: 100px;
