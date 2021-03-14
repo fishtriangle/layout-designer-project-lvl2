@@ -10,14 +10,14 @@
   justify-content: space-between;
 
   box-sizing: border-box;
+  width: 1200px;
+  margin: 0 auto;
 
   color: $primary-text-color;
   font-weight: bold;
   font-size: 11px;
   font-style: normal;
   line-height: 13px;
-
-  @extend .document-width;
 }
 
 .header-logo-block {
@@ -105,6 +105,9 @@
 @media (max-width: 1239px) {
   .header {
     flex-direction: column;
+
+    width: 100%;
+    padding: 0 20px;
   }
 
   .header-nav {
