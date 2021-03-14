@@ -160,14 +160,15 @@ body {
   display: flex;
   box-sizing: border-box;
   width: 100%;
+  margin: 0;
   padding: 0 20px;
 }
 
 @media (min-width: 1240px) {
   .document-width, .intro, .footer-nav, .footer-columns, .header, .container, .simular-artists, .diskography, .popular-tracks, .application, .news, .pricing, .quick-registration {
-    box-sizing: content-box;
     width: 1200px;
     margin: 0 auto;
+    padding: 0;
   }
 }
 .sr-only {
@@ -195,9 +196,9 @@ body {
 .green-button {
   font-size: 13.3px;
   line-height: 15px;
+  text-transform: uppercase;
   background-color: #34c176;
   border: 0;
-  text-transform: uppercase;
 }
 
 .white-n-alpha-button, .white-n-alpha-button-small {
