@@ -84,7 +84,7 @@ h4 {
   line-height: 150%;
 }
 
-.text-size-1, .quick-registration-description, .footer-nav, .footer-columns {
+.text-size-1, .footer-nav, .footer-columns {
   font-weight: normal;
   font-size: 16px;
   line-height: 150%;
@@ -664,6 +664,7 @@ body {
   .pricing-secondary-title {
     padding-top: 5px;
     padding-bottom: 4px;
+    font-weight: 400;
   }
 }
 .pricing-cards {
