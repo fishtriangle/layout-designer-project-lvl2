@@ -165,8 +165,7 @@ body {
 
 @media (min-width: 1240px) {
   .document-width, .intro, .footer-nav, .footer-columns, .container, .simular-artists, .diskography, .popular-tracks, .application, .news, .pricing {
-    box-sizing: content-box;
-    width: 1200px;
+    width: 1240px;
     margin: 0 auto;
   }
 }
