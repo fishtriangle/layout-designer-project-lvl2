@@ -1,9 +1,21 @@
 .diskography-main-title {
-  @include h2-base;
+  text-align: start;
+}
+
+@media (max-width: $full-size) {
+  .diskography-main-title {
+    text-align: center;
+  }
+}
+
+@media (max-width: $small-size) {
+  .diskography-main-title {
+    text-align: start;
+  }
 }
 
 .diskography-album-name {
-  width: 138px;
+  width: 100%;
   margin: 0;
 
   text-transform: capitalize;
@@ -14,8 +26,8 @@
   margin: 0;
 }
 
-@media (min-width: 1240px) {
+@media (max-width: $full-size) {
   .diskography-album-name {
-    width: 100%;
+    width: 138px;
   }
 }

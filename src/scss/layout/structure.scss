@@ -1,10 +1,3 @@
-.container {
-  @extend .document-width;
-
-  flex-direction: column;
-  align-items: center;
-}
-
 .horizontal-list {
   display: flex;
   flex-direction: row;
@@ -13,6 +6,18 @@
   width: 100%;
 
   margin-top: 23px;
+}
+
+@media (max-width: $full-size) {
+  .horizontal-list {
+    justify-content: space-around;
+  }
+}
+
+@media (max-width: $small-size) {
+  .horizontal-list {
+    justify-content: flex-start;
+  }
 }
 
 .horizontal-list-item {
@@ -46,7 +51,7 @@
   height: auto;
 }
 
-@media (max-width: 660px) {
+@media (max-width: $medium-size) {
   .horizontal-list-item {
     width: 137px;
   }
@@ -54,4 +59,9 @@
   .horizontal-list-adaptive-img {
     width: 137px;
   }
+}
+
+.h2-base {
+  width: 100%;
+  margin: 0;
 }

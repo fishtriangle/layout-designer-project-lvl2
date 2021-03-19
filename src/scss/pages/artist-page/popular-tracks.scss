@@ -1,5 +1,17 @@
 .popular-tracks-main-title {
-  @include h2-base;
+  text-align: start;
+}
+
+@media (max-width: $full-size) {
+  .popular-tracks-main-title {
+    text-align: center;
+  }
+}
+
+@media (max-width: $small-size) {
+  .popular-tracks-main-title {
+    text-align: start;
+  }
 }
 
 .popular-tracks-playlist {
@@ -10,6 +22,17 @@
   width: 100%;
 
   margin-top: 23px;
+}
+
+@media (max-width: $full-size) {
+  .popular-tracks-playlist {
+    justify-content: space-around;
+  }
+}
+@media (max-width: $small-size) {
+  .popular-tracks-playlist {
+    justify-content: space-between;
+  }
 }
 
 .popular-tracks-item {
@@ -23,12 +46,12 @@
   max-width: 550px;
 
   margin-top: 25px;
-  margin-right: 0;
+  margin-right: 50px;
 }
 
-@media (min-width: 1240px) {
+@media (max-width: $large-size) {
   .popular-tracks-item {
-    margin-right: 50px;
+    margin-right: 0;
   }
 }
 

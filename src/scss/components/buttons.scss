@@ -9,9 +9,11 @@
   text-transform: uppercase;
 
   border-radius: 5px;
+
+  cursor: pointer;
 }
 
-.green-button {
+.green-btn {
   font-size: 13.3px;
   line-height: 15px;
 
@@ -19,7 +21,7 @@
   border: 0;
 }
 
-.white-n-alpha-button {
+.white-n-alpha-btn {
   box-sizing: border-box;
   padding-top: 20px;
   padding-bottom: 20px;
@@ -31,8 +33,8 @@
   border: 1px solid $primary-text-color;
 }
 
-.white-n-alpha-button-small {
-  @extend .white-n-alpha-button;
+.white-n-alpha-btn-small {
+  @extend .white-n-alpha-btn;
 
   padding-top: 16px;
   padding-bottom: 16px;
@@ -41,14 +43,14 @@
 }
 
 @media (max-width: 1239px) {
-  .white-n-alpha-button-small {
+  .white-n-alpha-btn-small {
     font-weight: normal;
     font-size: 12.8px;
     line-height: 150%;
   }
 }
 
-.red-button {
+.red-btn {
   box-sizing: border-box;
   width: fit-content;
   padding: 16px 40px 16px 40px;
@@ -66,7 +68,7 @@
   border-radius: 2rem;
 }
 
-.intro-button {
+.intro-btn {
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
@@ -95,10 +97,10 @@
   }
 }
 
-.button-red {
+.btn-red {
   background-color: $red;
 }
 
-.button-purple {
+.btn-purple {
   background-color: $purple;
 }
