@@ -848,6 +848,7 @@ body {
     margin-bottom: 16px;
     padding-top: 1px;
     padding-bottom: 1px;
+    font-size: 16px;
     font-weight: 400;
     line-height: 24px;
   }
@@ -1052,6 +1053,9 @@ body {
 .diskography-album-name {
   width: 100%;
   margin: 0;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 27px;
   text-transform: capitalize;
 }
 
@@ -1082,6 +1086,7 @@ body {
 .simular-artists-name {
   width: 100%;
   margin: 0;
+  font-size: 18px;
   text-align: center;
   text-transform: capitalize;
 }
