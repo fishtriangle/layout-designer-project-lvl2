@@ -65,17 +65,17 @@
   list-style: none;
 
   a {
-  font-weight: bold;
-  font-size: 11px;
-  font-style: normal;
-  line-height: 13px;
-  text-decoration: none;
+    font-weight: bold;
+    font-size: 11px;
+    font-style: normal;
+    line-height: 13px;
+    text-decoration: none;
   }
 }
 
 .header-active-link {
   color: $primary-text-color;
-  
+
   &:hover {
     color: $primary-text-color;
   }
