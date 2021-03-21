@@ -13,7 +13,7 @@
   cursor: pointer;
 }
 
-.green-btn {
+.btn-green {
   font-size: 13.3px;
   line-height: 15px;
 
@@ -21,7 +21,7 @@
   border: 0;
 }
 
-.white-n-alpha-btn {
+.btn-white-n-alpha {
   box-sizing: border-box;
   padding-top: 20px;
   padding-bottom: 20px;
@@ -33,8 +33,8 @@
   border: 1px solid $primary-text-color;
 }
 
-.white-n-alpha-btn-small {
-  @extend .white-n-alpha-btn;
+.btn-white-n-alpha-small {
+  @extend .btn-white-n-alpha;
 
   padding-top: 16px;
   padding-bottom: 16px;
@@ -43,14 +43,14 @@
 }
 
 @media (max-width: 1239px) {
-  .white-n-alpha-btn-small {
+  .btn-white-n-alpha-small {
     font-weight: normal;
     font-size: 12.8px;
     line-height: 150%;
   }
 }
 
-.red-btn {
+.btn-red {
   box-sizing: border-box;
   width: fit-content;
   padding: 16px 40px 16px 40px;
@@ -68,7 +68,7 @@
   border-radius: 2rem;
 }
 
-.intro-btn {
+.btn-intro {
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;

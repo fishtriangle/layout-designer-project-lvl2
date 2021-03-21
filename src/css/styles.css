@@ -96,7 +96,7 @@ h4 {
   line-height: 150%;
 }
 
-.text-small, .simular-artists-fans, .intro-btn p {
+.text-small, .simular-artists-fans, .btn-intro p {
   font-weight: normal;
   font-size: 12.8px;
   line-height: 150%;
@@ -191,14 +191,14 @@ body {
   cursor: pointer;
 }
 
-.green-btn {
+.btn-green {
   font-size: 13.3px;
   line-height: 15px;
   background-color: #34c176;
   border: 0;
 }
 
-.white-n-alpha-btn, .white-n-alpha-btn-small {
+.btn-white-n-alpha, .btn-white-n-alpha-small {
   box-sizing: border-box;
   padding-top: 20px;
   padding-bottom: 20px;
@@ -208,20 +208,20 @@ body {
   border: 1px solid #fff;
 }
 
-.white-n-alpha-btn-small {
+.btn-white-n-alpha-small {
   padding-top: 16px;
   padding-bottom: 16px;
   font-size: 12.8px;
 }
 
 @media (max-width: 1239px) {
-  .white-n-alpha-btn-small {
+  .btn-white-n-alpha-small {
     font-weight: normal;
     font-size: 12.8px;
     line-height: 150%;
   }
 }
-.red-btn {
+.btn-red {
   box-sizing: border-box;
   width: fit-content;
   padding: 16px 40px 16px 40px;
@@ -237,7 +237,7 @@ body {
   border-radius: 2rem;
 }
 
-.intro-btn {
+.btn-intro {
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
@@ -255,7 +255,7 @@ body {
   text-decoration: none;
   border: 0;
 }
-.intro-btn p {
+.btn-intro p {
   margin: 0;
   text-transform: uppercase;
 }
@@ -805,8 +805,8 @@ body {
   margin-bottom: 30px;
   padding-top: 0;
   padding-bottom: 0;
-  font-size: 30px;
   font-weight: 400;
+  font-size: 30px;
   line-height: 45px;
   text-transform: capitalize;
 }
@@ -848,8 +848,8 @@ body {
     margin-bottom: 16px;
     padding-top: 1px;
     padding-bottom: 1px;
-    font-size: 16px;
     font-weight: 400;
+    font-size: 16px;
     line-height: 24px;
   }
 
@@ -1053,8 +1053,8 @@ body {
 .diskography-album-name {
   width: 100%;
   margin: 0;
-  font-size: 18px;
   font-weight: 700;
+  font-size: 18px;
   line-height: 27px;
   text-transform: capitalize;
 }
@@ -1086,8 +1086,8 @@ body {
 .simular-artists-name {
   width: 100%;
   margin: 0;
-  font-size: 18px;
   font-weight: 700;
+  font-size: 18px;
   line-height: 27px;
   text-align: center;
   text-transform: capitalize;
