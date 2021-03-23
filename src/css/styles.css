@@ -221,7 +221,7 @@ body {
     line-height: 150%;
   }
 }
-.btn-red {
+.btn-application {
   box-sizing: border-box;
   width: fit-content;
   padding: 16px 40px 16px 40px;
@@ -609,6 +609,11 @@ body {
   margin: 0 auto;
   padding: 0 20px 0 20px;
   color: #fff;
+}
+
+.quick-registration-description {
+  margin-top: 2em;
+  text-align: center;
 }
 
 .quick-registration-form {
@@ -1110,10 +1115,6 @@ body {
 }
 .margin-right-16 {
   margin-right: 16px;
-}
-
-.margin-top-32 {
-  margin-top: 32px;
 }
 
 .no-margin {
