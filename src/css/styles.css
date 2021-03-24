@@ -579,12 +579,7 @@ body {
 }
 
 .quick-registration {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-between;
   box-sizing: border-box;
-  width: 1200px;
   margin: 0 auto;
   padding: 0 20px 0 20px;
   color: #fff;
@@ -619,15 +614,12 @@ body {
 .quick-registration-backgr-picture {
   background-position: center;
   background-size: cover;
-  width: 100%;
-  margin: 0;
   padding: 200px 0 200px 0;
   background-image: url("../images/banner.png");
 }
 
 @media (max-width: 1239px) {
   .quick-registration {
-    width: 100%;
     margin: 0;
     padding: 50px 20px 0 20px;
   }
