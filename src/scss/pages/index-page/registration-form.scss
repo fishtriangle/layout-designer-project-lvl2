@@ -1,4 +1,4 @@
-.quick-registration {
+.registration {
   box-sizing: border-box;
   margin: 0 auto;
   padding: 0 20px 0 20px;
@@ -6,13 +6,13 @@
   color: $primary-text-color;
 }
 
-.quick-registration-description {
+.registration-description {
   margin-top: 2em;
 
   text-align: center;
 }
 
-.quick-registration-form {
+.registration-form {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -21,7 +21,7 @@
   margin: 0 auto;
 }
 
-.quick-registration-textfield {
+.registration-textfield {
   box-sizing: border-box;
   width: auto;
   min-width: 270px;
@@ -36,7 +36,7 @@
   border-radius: 3px;
 }
 
-.quick-registration-backgr-picture {
+.registration-backgr-picture {
   @include backgr-picture;
 
   padding: 200px 0 200px 0;
@@ -45,20 +45,16 @@
 }
 
 @media (max-width: $full-size) {
-  .quick-registration {
+  .registration {
     margin: 0;
     padding: 50px 20px 0 20px;
   }
 
-  .quick-registration-form {
-    margin: 0;
-  }
-
-  .quick-registration-textfield {
+  .registration-textfield {
     width: 100%;
   }
 
-  .quick-registration-description {
+  .registration-description {
     margin-top: 1rem;
   }
 }
