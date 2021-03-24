@@ -16,10 +16,8 @@
 
 .popular-tracks-playlist {
   display: flex;
-  flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-between;
-  width: 100%;
 
   margin-top: 23px;
 }
@@ -39,11 +37,8 @@
 .popular-tracks-item {
   display: flex;
   flex: 0 1 550px;
-  flex-direction: row;
-  flex-wrap: nowrap;
   align-items: center;
   justify-content: space-between;
-  width: auto;
   max-width: 550px;
 
   margin-top: 25px;
@@ -71,5 +66,4 @@
 
 .popular-tracks-item-head {
   display: flex;
-  flex-direction: row;
 }
