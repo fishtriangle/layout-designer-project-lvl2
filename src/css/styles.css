@@ -851,24 +851,13 @@ body {
   }
 }
 .intro-backgr {
-  width: 100%;
-  margin: 0;
   padding: 200px 0;
   background-image: url("../images/Morten Harket.png");
   background-position: center;
   background-size: cover;
 }
 
-.intro {
-  flex-direction: column;
-  flex-wrap: wrap;
-  align-items: flex-start;
-  justify-content: space-between;
-  color: #fff;
-}
-
 .intro-page-name {
-  width: 100%;
   margin: 25px 0 0 0;
 }
 
@@ -878,16 +867,13 @@ body {
   }
 }
 .intro-fans {
-  width: 100%;
   margin-top: 1em;
   margin-bottom: 3em;
 }
 
 .intro-buttons-block {
   display: flex;
-  flex-direction: row;
   flex-wrap: wrap;
-  width: 100%;
 }
 
 .intro-button-icon {
@@ -1052,6 +1038,10 @@ body {
 
 .color-orange {
   color: #f89202;
+}
+
+.color-primary {
+  color: #fff;
 }
 
 .fill-white {

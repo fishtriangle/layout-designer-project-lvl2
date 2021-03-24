@@ -1,6 +1,4 @@
 .intro-backgr {
-  width: 100%;
-  margin: 0;
   padding: 200px 0;
 
   background-image: url("../images/Morten Harket.png");
@@ -8,17 +6,7 @@
   @include backgr-picture;
 }
 
-.intro {
-  flex-direction: column;
-  flex-wrap: wrap;
-  align-items: flex-start;
-  justify-content: space-between;
-
-  color: $primary-text-color;
-}
-
 .intro-page-name {
-  width: 100%;
   margin: 25px 0 0 0;
 }
 
@@ -29,16 +17,13 @@
 }
 
 .intro-fans {
-  width: 100%;
   margin-top: 1em;
   margin-bottom: 3em;
 }
 
 .intro-buttons-block {
   display: flex;
-  flex-direction: row;
   flex-wrap: wrap;
-  width: 100%;
 }
 
 .intro-button-icon {
