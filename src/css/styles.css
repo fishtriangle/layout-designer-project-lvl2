@@ -90,7 +90,7 @@ h4 {
   line-height: 150%;
 }
 
-.text-size-1, .footer-nav, .footer-columns {
+.text-size-1, .footer-nav {
   font-weight: normal;
   font-size: 16px;
   line-height: 150%;
@@ -156,7 +156,7 @@ body {
   background-color: #08020d;
 }
 
-.document-width, .footer-nav, .footer-columns {
+.document-width, .footer-nav {
   box-sizing: border-box;
   width: 1240px;
   margin: 0 auto;
@@ -164,7 +164,7 @@ body {
 }
 
 @media (max-width: 1239px) {
-  .document-width, .footer-nav, .footer-columns {
+  .document-width, .footer-nav {
     width: 100%;
     margin: 0;
   }
@@ -443,7 +443,6 @@ body {
   }
 }
 .footer {
-  width: 100%;
   margin-top: 100px;
   padding-top: 45px;
   color: #fff;
@@ -457,9 +456,7 @@ body {
 }
 .footer-columns {
   display: flex;
-  flex-direction: row;
   flex-wrap: wrap;
-  justify-content: space-between;
   padding-top: 0;
   padding-bottom: 75px;
 }
@@ -474,7 +471,6 @@ body {
   flex: 1 1 270px;
   flex-direction: column;
   align-items: flex-start;
-  box-sizing: border-box;
   margin-right: 40px;
   margin-bottom: 0;
 }
@@ -490,20 +486,15 @@ body {
 }
 .footer-main-title {
   margin: 16px 0 16px 0;
-  font-weight: bold;
   font-size: 18px;
   line-height: 27px;
-  text-align: start;
-  text-transform: uppercase;
 }
 
 .footer-logoes {
   display: flex;
-  flex-direction: row;
 }
 
 .footer-link, .footer-below-link, .footer-link-logoes-cont {
-  width: auto;
   margin-right: 44px;
   color: #e0e0e0;
   text-decoration: none;
@@ -517,13 +508,11 @@ body {
 
 @media (max-width: 415px) {
   .footer-link, .footer-below-link, .footer-link-logoes-cont {
-    width: 100%;
     margin-right: 24px;
   }
 }
 .footer-link-logoes-cont {
   display: flex;
-  flex-direction: row;
   align-items: flex-end;
   height: 24px;
   margin-right: 24px;
@@ -534,7 +523,6 @@ body {
 }
 
 .footer-below {
-  margin: 0;
   padding-top: 40px;
   padding-bottom: 32px;
   border-top: 1px solid #e0e0e0;
@@ -542,9 +530,6 @@ body {
 
 .footer-nav {
   display: flex;
-  flex-direction: row;
-  align-items: flex-start;
-  box-sizing: border-box;
 }
 
 @media (max-width: 649px) {
@@ -553,8 +538,6 @@ body {
   }
 }
 .footer-below-link {
-  display: flex;
-  box-sizing: border-box;
   margin-right: 0;
   margin-bottom: 1em;
   padding-right: 15px;
@@ -567,11 +550,6 @@ body {
   padding-top: 2px;
   padding-bottom: 2px;
   line-height: 100%;
-}
-
-.footer-description-item {
-  width: 100%;
-  text-align: left;
 }
 
 .quick-registration {
@@ -1102,6 +1080,10 @@ body {
 
 .padding-top-100 {
   padding-top: 100px;
+}
+
+.width-full {
+  width: 100%;
 }
 
 /*# sourceMappingURL=styles.css.map */
