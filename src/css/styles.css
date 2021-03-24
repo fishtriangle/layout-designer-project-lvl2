@@ -223,14 +223,9 @@ body {
   }
 }
 .btn-application {
-  box-sizing: border-box;
   width: fit-content;
   padding: 16px 40px 16px 40px;
-  color: #fff;
-  font-weight: normal;
   font-size: 12.8px;
-  line-height: 150%;
-  text-align: center;
   text-transform: none;
   text-decoration: none;
   background-color: #95390c;
@@ -831,17 +826,10 @@ body {
     height: 186px;
   }
 }
-.application-main-title {
-  width: 100%;
-  margin: 0;
-  text-align: center;
-}
-
 .application-content {
   display: flex;
   flex-direction: row-reverse;
   flex-wrap: wrap;
-  justify-content: space-between;
   width: 100%;
   margin-top: 48px;
 }
@@ -873,9 +861,6 @@ body {
 .application-img {
   position: relative;
   left: 20px;
-  width: auto;
-  max-width: 333px;
-  height: 100%;
 }
 
 @media (max-width: 1239px) {

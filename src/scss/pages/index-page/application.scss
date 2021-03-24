@@ -1,15 +1,7 @@
-.application-main-title {
-  width: 100%;
-  margin: 0;
-
-  text-align: center;
-}
-
 .application-content {
   display: flex;
   flex-direction: row-reverse;
   flex-wrap: wrap;
-  justify-content: space-between;
 
   width: 100%;
   margin-top: 48px;
@@ -47,10 +39,6 @@
 .application-img {
   position: relative;
   left: 20px;
-
-  width: auto;
-  max-width: 333px;
-  height: 100%;
 }
 
 @media (max-width: $full-size) {
