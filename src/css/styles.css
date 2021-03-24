@@ -738,11 +738,7 @@ body {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  width: 100%;
   margin-bottom: 17px;
-}
-.news-item:nth-child(2n) {
-  flex-direction: row;
 }
 .news-item:nth-child(2n-1) {
   flex-direction: row-reverse;
