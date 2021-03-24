@@ -16,21 +16,21 @@
 h1 {
   font-weight: bold;
   font-size: 60px;
-  line-height: 90px;
+  line-height: 150%;
   text-transform: uppercase;
 }
 
 h2 {
   font-weight: bold;
   font-size: 38px;
-  line-height: 57px;
+  line-height: 150%;
   text-transform: uppercase;
 }
 
 h3 {
   font-weight: normal;
   font-size: 24px;
-  line-height: 36px;
+  line-height: 150%;
   text-transform: uppercase;
 }
 
@@ -51,13 +51,13 @@ h3 {
 h4 {
   font-weight: bold;
   font-size: 18px;
-  line-height: 27px;
+  line-height: 150%;
 }
 
 .h4-capitalize-bold {
   font-weight: bold;
   font-size: 18px;
-  line-height: 27px;
+  line-height: 150%;
   text-transform: capitalize;
 }
 
@@ -97,7 +97,7 @@ h4 {
   line-height: 150%;
 }
 
-.text-size-1, .footer-nav {
+.text-size-1 {
   font-weight: normal;
   font-size: 16px;
   line-height: 150%;
@@ -120,21 +120,21 @@ h4 {
   h1 {
     font-weight: bold;
     font-size: 30px;
-    line-height: 45px;
+    line-height: 150%;
     text-transform: uppercase;
   }
 
   h2 {
     font-weight: bold;
     font-size: 18px;
-    line-height: 27px;
+    line-height: 150%;
     text-transform: uppercase;
   }
 
   h3 {
     font-weight: bold;
     font-size: 16px;
-    line-height: 24px;
+    line-height: 150%;
     text-transform: uppercase;
   }
 
@@ -149,10 +149,11 @@ body {
   margin: 0;
   padding: 0;
   color: #cacaca;
-  font-size: 18px;
+  font-weight: normal;
+  font-size: 16px;
   font-family: Roboto, sans-serif;
   font-style: normal;
-  line-height: 1.5em;
+  line-height: 150%;
   background-color: #08020d;
 }
 
@@ -184,9 +185,6 @@ body {
   width: 100%;
   padding: 21px 30px;
   color: #fff;
-  font-weight: normal;
-  font-size: 16px;
-  line-height: 150%;
   text-transform: uppercase;
   border-radius: 5px;
   cursor: pointer;
@@ -219,7 +217,6 @@ body {
   .btn-white-n-alpha-small {
     font-weight: normal;
     font-size: 12.8px;
-    line-height: 150%;
   }
 }
 .btn-application {
@@ -247,7 +244,6 @@ body {
   padding-bottom: 20px;
   font-weight: normal;
   font-size: 12.8px;
-  line-height: 150%;
   text-decoration: none;
   border: 0;
 }
@@ -336,6 +332,7 @@ body {
   display: flex;
   align-items: center;
   margin-right: 88px;
+  font-weight: 700;
 }
 .header-logo-block .header-logo-img {
   width: 24px;
@@ -480,7 +477,7 @@ body {
 .footer-main-title {
   margin: 16px 0 16px 0;
   font-size: 18px;
-  line-height: 27px;
+  line-height: 150%;
 }
 
 .footer-logoes {
@@ -733,7 +730,6 @@ body {
   padding-bottom: 0;
   font-weight: 400;
   font-size: 30px;
-  line-height: 45px;
   text-transform: capitalize;
 }
 
@@ -776,7 +772,6 @@ body {
     padding-bottom: 1px;
     font-weight: 400;
     font-size: 16px;
-    line-height: 24px;
   }
 
   .news-footer {

@@ -51,7 +51,7 @@
   margin: 16px 0 16px 0;
 
   font-size: 18px;
-  line-height: 27px;
+  line-height: 150%;
 }
 
 .footer-logoes {
@@ -102,7 +102,6 @@
 .footer-nav {
   display: flex;
 
-  @extend .text-size-1;
   @extend .document-width;
 }
 
