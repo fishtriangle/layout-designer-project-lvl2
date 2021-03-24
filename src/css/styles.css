@@ -38,20 +38,27 @@ h3 {
   font-weight: normal;
   font-size: 24px;
   line-height: 45px;
-  text-transform: none;
+  text-transform: capitalize;
 }
 
 .h3-capitalize-bold {
   font-weight: bold;
   font-size: 24px;
   line-height: 45px;
-  text-transform: none;
+  text-transform: capitalize;
 }
 
 h4 {
   font-weight: bold;
   font-size: 18px;
   line-height: 27px;
+}
+
+.h4-capitalize-bold {
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 27px;
+  text-transform: none;
 }
 
 .text-size-7 {
@@ -136,13 +143,6 @@ h4 {
     font-size: 18px;
     line-height: 24px;
     text-transform: uppercase;
-  }
-
-  .h4-capitalize-bold {
-    font-weight: bold;
-    font-size: 18px;
-    line-height: 27px;
-    text-transform: none;
   }
 }
 body {
@@ -266,10 +266,7 @@ body {
 
 .horizontal-list {
   display: flex;
-  flex-direction: row;
   flex-wrap: wrap;
-  justify-content: flex-start;
-  width: 100%;
   margin-top: 23px;
 }
 
@@ -286,16 +283,12 @@ body {
 .horizontal-list-item {
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
-  width: 250px;
-  max-width: 250px;
   margin-top: 25px;
   margin-right: 50px;
 }
 
 .horizontal-list-adaptive-img {
   position: relative;
-  display: flex;
   width: 250px;
   height: 0;
   margin-bottom: 18px;
@@ -958,16 +951,6 @@ body {
   }
 }
 .diskography-album-name {
-  width: 100%;
-  margin: 0;
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 27px;
-  text-transform: capitalize;
-}
-
-.diskography-album-year {
-  width: 100%;
   margin: 0;
 }
 
